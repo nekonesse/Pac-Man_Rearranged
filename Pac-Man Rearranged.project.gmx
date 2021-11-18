@@ -14,6 +14,7 @@
     <sound>sound\snd_ghosteat</sound>
     <sound>sound\snd_scaredstart</sound>
     <sound>sound\snd_ghostambientscared</sound>
+    <sound>sound\snd_ghostrespawn</sound>
     <sound>sound\mus_world0</sound>
     <sound>sound\mus_world1</sound>
   </sounds>
@@ -96,6 +97,7 @@
     <object>objects\obj_pinky</object>
     <object>objects\obj_clyde</object>
     <object>objects\obj_inky</object>
+    <object>objects\obj_sue</object>
     <object>objects\obj_pacman</object>
     <object>objects\obj_wall</object>
   </objects>

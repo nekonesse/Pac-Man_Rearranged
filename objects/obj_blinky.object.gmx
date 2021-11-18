@@ -263,6 +263,7 @@ dy = obj_ghostspawn.y;
 
 if instance_position(x,y,obj_ghostspawn)
 {
+audio_play_sound(snd_ghostrespawn,498,false)
 immune = true
 state = blinkystates.normal
 }

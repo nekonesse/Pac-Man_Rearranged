@@ -216,6 +216,21 @@ else if insinky.state == inkystates.normal
 room_restart();
 }
 
+var inssue = collision_rectangle(x-boxx1,y-boxy1,x+boxx2,y+boxy2, obj_sue, false, false);
+if inssue != noone &amp;&amp; z &gt; -8
+if inssue.state == suestates.scared
+{
+audio_play_sound(snd_ghosteat,101,false)
+with(inssue)
+{
+state = suestates.eaten
+}
+}
+else if inssue.state == suestates.normal
+{
+room_restart();
+}
+
 if keyboard_check(vk_left) == true
 {
 if place_meeting(x-2,y, obj_wall) == false
