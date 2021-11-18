@@ -273,7 +273,7 @@
     <instance objName="obj_dot" x="160" y="152" name="inst_30C98625" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
     <instance objName="obj_dot" x="152" y="152" name="inst_34A9F9CA" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
     <instance objName="obj_dot" x="168" y="200" name="inst_E184BF05" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
-    <instance objName="obj_dashpanel" x="48" y="80" name="inst_BC696F2F" locked="0" code="cut = true&#xA;" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
+    <instance objName="obj_dashpanel" x="48" y="72" name="inst_BC696F2F" locked="0" code="cut = true&#xA;" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
     <instance objName="obj_dashpanel" x="144" y="64" name="inst_A2C2D9DC" locked="0" code="dir = &quot;down&quot;" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
     <instance objName="obj_dashpanel" x="24" y="248" name="inst_9A1432C5" locked="0" code="dir = &quot;up&quot;&#xA;" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
     <instance objName="obj_blinky" x="104" y="144" name="inst_9E7294F6" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
@@ -281,7 +281,7 @@
     <instance objName="obj_dot" x="24" y="256" name="inst_2980ED9C" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
     <instance objName="obj_dashpanel" x="192" y="248" name="inst_758C1C1F" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
     <instance objName="obj_dot" x="192" y="232" name="inst_D3A8F6DE" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
-    <instance objName="obj_dashpanel" x="168" y="80" name="inst_0EB5C057" locked="0" code="cut = true&#xA;" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
+    <instance objName="obj_dashpanel" x="168" y="72" name="inst_0EB5C057" locked="0" code="cut = true&#xA;" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
     <instance objName="obj_dashpanel" x="72" y="64" name="inst_D366EA57" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
     <instance objName="obj_dot" x="144" y="48" name="inst_9E6B48B1" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
     <instance objName="obj_dot" x="72" y="48" name="inst_989B5084" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>

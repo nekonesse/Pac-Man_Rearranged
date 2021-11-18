@@ -358,7 +358,9 @@ move_contact_solid(direction,ghost_speed)
           <argument>
             <kind>1</kind>
             <string>draw_self();
+/*DEBUG FOR TIMER VALUES PT 2
 draw_text(obj_pacman.x,obj_pacman.y-32,immune)
+*/
 </string>
           </argument>
         </arguments>

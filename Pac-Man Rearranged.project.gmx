@@ -12,6 +12,8 @@
     <sound>sound\snd_dashpanel</sound>
     <sound>sound\snd_powerdot</sound>
     <sound>sound\snd_ghosteat</sound>
+    <sound>sound\snd_scaredstart</sound>
+    <sound>sound\snd_ghostambientscared</sound>
     <sound>sound\mus_world0</sound>
     <sound>sound\mus_world1</sound>
   </sounds>

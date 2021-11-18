@@ -26,6 +26,7 @@
           <argument>
             <kind>1</kind>
             <string>global.scared = false
+musicplay = mus_world0
 
 timerscared = 600
 
@@ -63,6 +64,28 @@ break;
             <string>clamp(timerscared,0,600)
 depth = 500
 
+if !audio_is_playing(musicplay) &amp;&amp; global.scared == false
+{
+audio_play_sound(musicplay, 1000, true)
+}
+
+if global.scared == true
+{
+audio_stop_sound(musicplay)
+if !audio_is_playing(snd_ghostambientscared)
+{
+audio_play_sound(snd_ghostambientscared, 1000, false)
+}
+}
+else
+{
+audio_stop_sound(snd_ghostambientscared)
+if !audio_is_playing(musicplay)
+{
+audio_play_sound(musicplay, 1000, false)
+}
+}
+
 if timerscared = 0
 {
 global.scared = false
@@ -95,7 +118,8 @@ timerscared -= 1
         <arguments>
           <argument>
             <kind>1</kind>
-            <string>draw_text(obj_pacman.x,obj_pacman.y-16,timerscared)
+            <string>// DEBUG FOR TIMER VALUES PT 1 
+draw_text(obj_pacman.x,obj_pacman.y-16,timerscared)
 draw_text(obj_pacman.x,obj_pacman.y-24,global.scared)
 draw_sprite(spr_shadow,0,obj_pacman.x,obj_pacman.y,)
 </string>

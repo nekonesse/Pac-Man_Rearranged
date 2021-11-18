@@ -25,19 +25,24 @@
         <arguments>
           <argument>
             <kind>1</kind>
-            <string>boxx1 = 0.5
+            <string>//please dont mess with this its for the collision box
+boxx1 = 0.5
 boxy1 = 0.5
 boxx2 = 0.5
 boxy2 = 0.5
+//jumping stuff
 zspeed = 0;
 jumpspeed = -4;
 grav = 0.2;
 z = 0;
 zfloor = 0;
+//timer stuff i dont remember you can just look in the code
 timer1def = 60
 timer1 = timer1def
 timer1bool = false
+//player default speed
 pm_defaultsp = 1;
+//player current speed
 pm_speed = pm_defaultsp;
 </string>
           </argument>
@@ -112,6 +117,10 @@ var ins = collision_rectangle(x-boxx1,y-boxy1-1,x+boxx2,y+boxy2-1, obj_powerdot,
 if ins != noone &amp;&amp; z &gt; -4
 {
 audio_play_sound(snd_powerdot,100, false)
+if global.scared == false
+{
+audio_play_sound(snd_scaredstart,99,false)
+}
 obj_music.timerscared = 600
 global.scared = true
 with(ins)
@@ -266,7 +275,7 @@ move_contact_solid(direction,pm_speed)
           <argument>
             <kind>1</kind>
             <string>draw_sprite(sprite_index,image_index,x,y+z)
-draw_rectangle(x-boxx1,y-boxy1,x+boxx2,y+boxy2,true)
+// DEBUG PT 3 draw_rectangle(x-boxx1,y-boxy1,x+boxx2,y+boxy2,true)
 </string>
           </argument>
         </arguments>
