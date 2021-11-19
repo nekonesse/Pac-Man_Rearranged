@@ -26,14 +26,14 @@
           <argument>
             <kind>1</kind>
             <string>//please dont mess with this its for the collision box
-boxx1 = 0.5
-boxy1 = 0.5
-boxx2 = 0.5
-boxy2 = 0.5
+boxx1 = 2
+boxy1 = 1
+boxx2 = 2
+boxy2 = 1
 //jumping stuff
 zspeed = 0;
-jumpspeed = -4;
-grav = 0.2;
+jumpspeed = -8;
+grav = 0.6;
 z = 0;
 zfloor = 0;
 //timer stuff i dont remember you can just look in the code
@@ -41,7 +41,7 @@ timer1def = 60
 timer1 = timer1def
 timer1bool = false
 //player default speed
-pm_defaultsp = 1;
+pm_defaultsp = 4;
 //player current speed
 pm_speed = pm_defaultsp;
 </string>
@@ -78,17 +78,17 @@ timer1 -= 1;
 
 if timer1 = 0
 {
-pm_defaultsp = 1
+pm_defaultsp = 4
 timer1 = timer1def
 }
 
 if pm_speed != 0
 {
-image_speed = pm_speed / 4
+image_speed = pm_speed / 8
 }
 else
 {
-image_speed = 0.1
+image_speed = 1
 }
 
 move_wrap(true,true,8)
@@ -148,12 +148,12 @@ if !audio_is_playing(snd_dashpanel)
 {
 audio_play_sound(snd_dashpanel, 50,false)
 }
-pm_defaultsp = 4
+pm_defaultsp = 8
 timer1 = timer1def
 }
 
 var insblink = collision_rectangle(x-boxx1,y-boxy1,x+boxx2,y+boxy2, obj_blinky, false, false);
-if insblink != noone &amp;&amp; z &gt; -8
+if insblink != noone &amp;&amp; z &gt; -16
 {
 if insblink.state == blinkystates.scared
 {
@@ -170,7 +170,7 @@ room_restart();
 }
 
 var inspinky = collision_rectangle(x-boxx1,y-boxy1,x+boxx2,y+boxy2, obj_pinky, false, false);
-if inspinky != noone &amp;&amp; z &gt; -8
+if inspinky != noone &amp;&amp; z &gt; -16
 {
 if inspinky.state == pinkystates.scared
 {
@@ -187,7 +187,7 @@ room_restart();
 }
 
 var insclyde = collision_rectangle(x-boxx1,y-boxy1,x+boxx2,y+boxy2, obj_clyde, false, false);
-if insclyde != noone &amp;&amp; z &gt; -8
+if insclyde != noone &amp;&amp; z &gt; -16
 if insclyde.state == clydestates.scared
 {
 audio_play_sound(snd_ghosteat,101,false)
@@ -202,7 +202,7 @@ room_restart();
 }
 
 var insinky = collision_rectangle(x-boxx1,y-boxy1,x+boxx2,y+boxy2, obj_inky, false, false);
-if insinky != noone &amp;&amp; z &gt; -8
+if insinky != noone &amp;&amp; z &gt; -16
 if insinky.state == inkystates.scared
 {
 audio_play_sound(snd_ghosteat,101,false)
@@ -217,7 +217,7 @@ room_restart();
 }
 
 var inssue = collision_rectangle(x-boxx1,y-boxy1,x+boxx2,y+boxy2, obj_sue, false, false);
-if inssue != noone &amp;&amp; z &gt; -8
+if inssue != noone &amp;&amp; z &gt; -16
 if inssue.state == suestates.scared
 {
 audio_play_sound(snd_ghosteat,101,false)
@@ -233,7 +233,7 @@ room_restart();
 
 if keyboard_check(vk_left) == true
 {
-if place_meeting(x-2,y, obj_wall) == false
+if place_meeting(x-4,y, obj_wall) == false
 {
 direction = 180;
 sprite_index = spr_pacmanleft
@@ -242,7 +242,7 @@ sprite_index = spr_pacmanleft
 
 if keyboard_check(vk_right) == true
 {
-if place_meeting(x+2,y, obj_wall) == false
+if place_meeting(x+4,y, obj_wall) == false
 {
 direction = 0;
 sprite_index = spr_pacmanright
@@ -251,7 +251,7 @@ sprite_index = spr_pacmanright
 
 if keyboard_check(vk_up) == true
 {
-if place_meeting(x,y-2, obj_wall) == false
+if place_meeting(x,y-4, obj_wall) == false
 {
 direction = 90;
 sprite_index = spr_pacmanup
@@ -260,7 +260,7 @@ sprite_index = spr_pacmanup
 
 if keyboard_check(vk_down) == true
 {
-if place_meeting(x,y+2, obj_wall) == false
+if place_meeting(x,y+4, obj_wall) == false
 {
 direction = 270;
 sprite_index = spr_pacmandown
@@ -290,7 +290,7 @@ move_contact_solid(direction,pm_speed)
           <argument>
             <kind>1</kind>
             <string>draw_sprite(sprite_index,image_index,x,y+z)
-// DEBUG PT 3 draw_rectangle(x-boxx1,y-boxy1,x+boxx2,y+boxy2,true)
+draw_rectangle(x-boxx1,y-boxy1,x+boxx2,y+boxy2,true)
 </string>
           </argument>
         </arguments>

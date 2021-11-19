@@ -27,7 +27,7 @@
             <kind>1</kind>
             <string>timer1 = 60;
 image_speed = 1;
-ghost_speed = 1;
+ghost_speed = 4;
 direction = 180;
 enum inkystates
 {
@@ -73,7 +73,7 @@ if global.scared = true &amp;&amp; immune = false
 {
 state = inkystates.scared
 }
-ghost_speed = 1;
+ghost_speed = 4;
 new_direction = -1;
 distance_to_pacman = 9999999;
 
@@ -163,6 +163,7 @@ move_contact_solid(direction,ghost_speed)
 else if state == inkystates.scared
 {
 randomize();
+ghost_speed = 2;
 new_direction = -1;
 distance_to_pacman = 9999999;
 
@@ -253,7 +254,7 @@ move_contact_solid(direction,ghost_speed)
 }
 else if state == inkystates.eaten
 {
-ghost_speed = 1
+ghost_speed = 4
 new_direction = -1;
 distance_to_pacman = 9999999;
 

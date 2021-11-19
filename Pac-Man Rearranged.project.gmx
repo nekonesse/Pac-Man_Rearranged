@@ -21,8 +21,8 @@
   <sprites name="sprites">
     <sprite>sprites\spr_ghostspawn</sprite>
     <sprite>sprites\spr_ghosteatenup</sprite>
-    <sprite>sprites\spr_ghosteatenleft</sprite>
     <sprite>sprites\spr_ghosteatenright</sprite>
+    <sprite>sprites\spr_ghosteatenleft</sprite>
     <sprite>sprites\spr_ghosteatendown</sprite>
     <sprite>sprites\spr_shadow</sprite>
     <sprite>sprites\spr_powerdot</sprite>
