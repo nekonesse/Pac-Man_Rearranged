@@ -290,7 +290,7 @@ move_contact_solid(direction,pm_speed)
           <argument>
             <kind>1</kind>
             <string>draw_sprite(sprite_index,image_index,x,y+z)
-draw_rectangle(x-boxx1,y-boxy1,x+boxx2,y+boxy2,true)
+// debug pt 1 draw_rectangle(x-boxx1,y-boxy1,x+boxx2,y+boxy2,true)
 </string>
           </argument>
         </arguments>
