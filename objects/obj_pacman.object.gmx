@@ -95,6 +95,7 @@ move_wrap(true,true,8)
 
 depth = -y;
 
+//jumping
 if (jump &amp;&amp; zspeed == 0)
 {
     zspeed = jumpspeed;
@@ -227,6 +228,21 @@ state = suestates.eaten
 }
 }
 else if inssue.state == suestates.normal
+{
+room_restart();
+}
+
+var insfunky = collision_rectangle(x-boxx1,y-boxy1,x+boxx2,y+boxy2, obj_funky, false, false);
+if insfunky != noone &amp;&amp; z &gt; insfunky.z-16
+if insfunky.state == funkystates.scared
+{
+audio_play_sound(snd_ghosteat,101,false)
+with(insfunky)
+{
+state = funkystates.eaten
+}
+}
+else if insfunky.state == funkystates.normal
 {
 room_restart();
 }

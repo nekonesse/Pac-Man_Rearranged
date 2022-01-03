@@ -111,6 +111,9 @@
     <background>background\bg_level2</background>
   </backgrounds>
   <paths name="paths"/>
+  <fonts name="fonts">
+    <font>fonts\font0</font>
+  </fonts>
   <objects name="objects">
     <object>objects\obj_music</object>
     <object>objects\obj_ghostspawn</object>
@@ -118,10 +121,12 @@
     <object>objects\obj_dot</object>
     <object>objects\obj_powerdot</object>
     <object>objects\obj_blinky</object>
+    <object>objects\obj_funky</object>
     <object>objects\obj_pinky</object>
     <object>objects\obj_clyde</object>
     <object>objects\obj_inky</object>
     <object>objects\obj_sue</object>
+    <object>objects\obj_fruit</object>
     <object>objects\obj_pacman</object>
     <object>objects\obj_wall</object>
   </objects>
