@@ -34,7 +34,7 @@ zfloor = 0;
 timer1 = 60;
 immune = false;
 image_speed = 1;
-ghost_speed = 4;
+ghost_speed = 3;
 direction = 180;
 enum funkystates
 {
@@ -179,7 +179,7 @@ move_contact_solid(direction,ghost_speed)
 else if state == funkystates.scared
 {
 randomize();
-ghost_speed = 3;
+ghost_speed = 2;
 new_direction = -1;
 distance_to_pacman = 9999999;
 

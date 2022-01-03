@@ -25,7 +25,10 @@
         <arguments>
           <argument>
             <kind>1</kind>
-            <string>global.scared = false
+            <string>map_string = " ABCDEFGHIJKLMNOPQRSTUVWXYZ!'?-:/0123456789."
+global.bitmap_font = font_add_sprite_ext(spr_font1big, map_string, false, 2)
+
+global.scared = false
 musicplay = mus_world0
 
 timerscared = 600
@@ -119,6 +122,8 @@ timerscared -= 1
           <argument>
             <kind>1</kind>
             <string>// DEBUG FOR TIMER VALUES PT 1 
+draw_set_color(c_white);
+draw_set_font(global.bitmap_font);
 draw_text(obj_pacman.x,obj_pacman.y-16,timerscared)
 draw_text(obj_pacman.x,obj_pacman.y-24,global.scared)
 draw_sprite(spr_shadow,0,obj_pacman.x,obj_pacman.y,)
