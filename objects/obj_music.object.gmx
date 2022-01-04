@@ -25,8 +25,16 @@
         <arguments>
           <argument>
             <kind>1</kind>
-            <string>map_string = " ABCDEFGHIJKLMNOPQRSTUVWXYZ!'?-:/0123456789."
-global.bitmap_font = font_add_sprite_ext(spr_font1big, map_string, false, 2)
+            <string>font1big_string = " ABCDEFGHIJKLMNOPQRSTUVWXYZ!'?-:/0123456789."
+font1small_string = " 0123456789ABCDEFGHIJKLMNOPQRSTUVWXYZ!?-./"
+font2big_string = " 0123456789ABCDEFGHIJKLMNOPQRSTUVWXYZ!'?-:/."
+font3small_string = " 0123456789ABCDEFGHIJKLMNOPQRSTUVWXYZ!;?=:&amp;',.()*+-/@|#_%up"
+global.font1big = font_add_sprite_ext(spr_font1big, font1big_string, false, 2)
+global.font2big = font_add_sprite_ext(spr_font2big, font2big_string, false, 2)
+global.font1small = font_add_sprite_ext(spr_font1small, font1small_string, false, 2)
+global.font3small = font_add_sprite_ext(spr_font3small, font3small_string, false, 2)
+
+global.points = 0
 
 global.scared = false
 musicplay = mus_world0
@@ -104,6 +112,34 @@ timerscared -= 1
         </arguments>
       </action>
     </event>
+    <event eventtype="8" enumb="64">
+      <action>
+        <libid>1</libid>
+        <id>603</id>
+        <kind>7</kind>
+        <userelative>0</userelative>
+        <isquestion>0</isquestion>
+        <useapplyto>-1</useapplyto>
+        <exetype>2</exetype>
+        <functionname></functionname>
+        <codestring></codestring>
+        <whoName>self</whoName>
+        <relative>0</relative>
+        <isnot>0</isnot>
+        <arguments>
+          <argument>
+            <kind>1</kind>
+            <string>display_set_gui_size(480,320)
+draw_set_font(global.font3small)
+draw_set_color(c_yellow)
+draw_text(display_get_gui_width()-420,0,"1up")
+draw_set_color(c_white)
+draw_text(display_get_gui_width()-428,display_get_gui_height()-304,global.points)
+</string>
+          </argument>
+        </arguments>
+      </action>
+    </event>
     <event eventtype="8" enumb="0">
       <action>
         <libid>1</libid>
@@ -122,10 +158,7 @@ timerscared -= 1
           <argument>
             <kind>1</kind>
             <string>// DEBUG FOR TIMER VALUES PT 1 
-draw_set_color(c_white);
-draw_set_font(global.bitmap_font);
-draw_text(obj_pacman.x,obj_pacman.y-16,timerscared)
-draw_text(obj_pacman.x,obj_pacman.y-24,global.scared)
+draw_sprite(spr_shadow,0,obj_funky.x,obj_funky.y,)
 draw_sprite(spr_shadow,0,obj_pacman.x,obj_pacman.y,)
 </string>
           </argument>

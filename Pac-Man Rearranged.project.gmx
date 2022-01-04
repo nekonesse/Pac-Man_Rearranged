@@ -124,8 +124,8 @@
     <object>objects\obj_powerdot</object>
     <object>objects\obj_blinky</object>
     <object>objects\obj_pinky</object>
-    <object>objects\obj_clyde</object>
     <object>objects\obj_inky</object>
+    <object>objects\obj_clyde</object>
     <object>objects\obj_sue</object>
     <object>objects\obj_funky</object>
     <object>objects\obj_fruit</object>
