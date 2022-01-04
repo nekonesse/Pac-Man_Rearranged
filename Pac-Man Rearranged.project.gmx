@@ -115,7 +115,6 @@
     <background>background\bg_level2</background>
   </backgrounds>
   <paths name="paths"/>
-  <fonts name="fonts"/>
   <objects name="objects">
     <object>objects\obj_music</object>
     <object>objects\obj_ghostspawn</object>

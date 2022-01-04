@@ -118,6 +118,7 @@ var ins = collision_rectangle(x-boxx1,y-boxy1-1,x+boxx2,y+boxy2-1, obj_powerdot,
 if ins != noone &amp;&amp; z &gt; -4
 {
 audio_play_sound(snd_powerdot,100, false)
+global.points += 50
 if global.scared == false
 {
 audio_play_sound(snd_scaredstart,99,false)
@@ -135,6 +136,7 @@ var insp = collision_rectangle(x-boxx1,y-boxy1,x+boxx2,y+boxy2, obj_dot, false, 
 if insp != noone &amp;&amp; z &gt; -4
 {
 audio_play_sound(choose(snd_wakka1,snd_wakka2,snd_wakka3,snd_wakka4),100, false)
+global.points += 10
 with(insp)
 {
 instance_destroy()
@@ -159,6 +161,7 @@ if insblink != noone &amp;&amp; z &gt; -16
 if insblink.state == blinkystates.scared
 {
 audio_play_sound(snd_ghosteat,101,false)
+global.points += 200
 with(insblink)
 {
 state = blinkystates.eaten
@@ -176,6 +179,7 @@ if inspinky != noone &amp;&amp; z &gt; -16
 if inspinky.state == pinkystates.scared
 {
 audio_play_sound(snd_ghosteat,101,false)
+global.points += 200
 with(inspinky)
 {
 state = pinkystates.eaten
@@ -192,6 +196,7 @@ if insclyde != noone &amp;&amp; z &gt; -16
 if insclyde.state == clydestates.scared
 {
 audio_play_sound(snd_ghosteat,101,false)
+global.points += 200
 with(insclyde)
 {
 state = clydestates.eaten
@@ -207,6 +212,7 @@ if insinky != noone &amp;&amp; z &gt; -16
 if insinky.state == inkystates.scared
 {
 audio_play_sound(snd_ghosteat,101,false)
+global.points += 200
 with(insinky)
 {
 state = inkystates.eaten
@@ -222,6 +228,7 @@ if inssue != noone &amp;&amp; z &gt; -16
 if inssue.state == suestates.scared
 {
 audio_play_sound(snd_ghosteat,101,false)
+global.points += 200
 with(inssue)
 {
 state = suestates.eaten
@@ -237,6 +244,7 @@ if insfunky != noone &amp;&amp; z &gt; insfunky.z-16
 if insfunky.state == funkystates.scared
 {
 audio_play_sound(snd_ghosteat,101,false)
+global.points += 200
 with(insfunky)
 {
 state = funkystates.eaten

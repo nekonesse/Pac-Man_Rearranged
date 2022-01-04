@@ -29,7 +29,7 @@
 timer1bool = false
 immune = false
 image_speed = 1;
-ghost_speed = 5;
+ghost_speed = 4;
 direction = 180;
 enum suestates
 {
@@ -76,7 +76,7 @@ if global.scared = true &amp;&amp; immune = false
 state = suestates.scared
 }
 
-ghost_speed = 5;
+ghost_speed = 4;
 new_direction = -1;
 distance_to_pacman = 9999999;
 
