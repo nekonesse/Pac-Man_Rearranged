@@ -19,6 +19,7 @@
     <sound>sound\mus_world1</sound>
   </sounds>
   <sprites name="sprites">
+    <sprite>sprites\spr_font4small</sprite>
     <sprite>sprites\spr_font3small</sprite>
     <sprite>sprites\spr_font2big</sprite>
     <sprite>sprites\spr_font1small</sprite>
@@ -117,6 +118,7 @@
   <paths name="paths"/>
   <objects name="objects">
     <object>objects\obj_music</object>
+    <object>objects\obj_scoreindicator</object>
     <object>objects\obj_ghostspawn</object>
     <object>objects\obj_dashpanel</object>
     <object>objects\obj_dot</object>

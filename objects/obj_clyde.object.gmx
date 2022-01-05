@@ -25,8 +25,9 @@
         <arguments>
           <argument>
             <kind>1</kind>
-            <string>image_speed = 1;
-ghost_speed = 3;
+            <string>immune = false;
+image_speed = 1;
+ghost_speed = 2;
 direction = 180;
 enum clydestates
 {
@@ -72,7 +73,7 @@ if global.scared = true &amp;&amp; immune = false
 {
 state = clydestates.scared
 }
-ghost_speed = 3
+ghost_speed = 2
 new_direction = -1;
 distance_to_pacman = 9999999;
 
@@ -159,7 +160,7 @@ move_contact_solid(direction,ghost_speed)
 else if state == clydestates.scared
 {
 randomize();
-ghost_speed = 2;
+ghost_speed = 1;
 new_direction = -1;
 distance_to_pacman = 9999999;
 
@@ -260,12 +261,6 @@ depth = -y;
 
 var dx = obj_ghostspawn.x;
 var dy = obj_ghostspawn.y;
-
-if point_distance(x,y, obj_pacman.x,obj_pacman.y) &lt; 64
-{
-dx = obj_ghostspawn.x;
-dy = obj_ghostspawn.y;
-}
 
 if instance_position(x,y,obj_ghostspawn)
 {

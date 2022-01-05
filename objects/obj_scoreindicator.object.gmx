@@ -3,7 +3,7 @@
   <spriteName>&lt;undefined&gt;</spriteName>
   <solid>0</solid>
   <visible>-1</visible>
-  <depth>500</depth>
+  <depth>-99</depth>
   <persistent>0</persistent>
   <parentName>&lt;undefined&gt;</parentName>
   <maskName>&lt;undefined&gt;</maskName>
@@ -25,33 +25,8 @@
         <arguments>
           <argument>
             <kind>1</kind>
-            <string>font1big_string = " ABCDEFGHIJKLMNOPQRSTUVWXYZ!'?-:/0123456789."
-font1small_string = " 0123456789ABCDEFGHIJKLMNOPQRSTUVWXYZ!?-./"
-font2big_string = " 0123456789ABCDEFGHIJKLMNOPQRSTUVWXYZ!'?-:/."
-font3small_string = " 0123456789ABCDEFGHIJKLMNOPQRSTUVWXYZ!;?=:&amp;',.()*+-/@|#_%up"
-font4small_string = " 0123456789x"
-global.font1big = font_add_sprite_ext(spr_font1big, font1big_string, false, 2)
-global.font2big = font_add_sprite_ext(spr_font2big, font2big_string, false, 2)
-global.font1small = font_add_sprite_ext(spr_font1small, font1small_string, false, 2)
-global.font3small = font_add_sprite_ext(spr_font3small, font3small_string, false, 2)
-global.font4small = font_add_sprite_ext(spr_font4small, font4small_string, false, 1)
-
-global.points = 0
-
-global.scared = false
-musicplay = mus_world0
-
-timerscared = 300
-
-audio_stop_all();
-
-switch room
-{
-case lvl_room2: audio_play_sound(mus_world0,1000,true)
-break;
-case lvl_room3: audio_play_sound(mus_world1,1000,true)
-break;
-}
+            <string>decay = 30
+drawscore = ""
 </string>
           </argument>
         </arguments>
@@ -74,64 +49,11 @@ break;
         <arguments>
           <argument>
             <kind>1</kind>
-            <string>clamp(timerscared,0,300)
-
-if !audio_is_playing(musicplay) &amp;&amp; global.scared == false
+            <string>decay -= 1
+if decay &lt;= 0
 {
-audio_play_sound(musicplay, 1000, true)
+instance_destroy();
 }
-
-if global.scared == true
-{
-if !audio_is_playing(snd_ghostambientscared)
-{
-audio_play_sound(snd_ghostambientscared, 1000, false)
-}
-}
-else
-{
-audio_stop_sound(snd_ghostambientscared)
-}
-
-if timerscared = 0
-{
-global.scared = false
-timerscared = 600
-}
-
-if global.scared = true
-{
-timerscared -= 1
-}
-</string>
-          </argument>
-        </arguments>
-      </action>
-    </event>
-    <event eventtype="8" enumb="64">
-      <action>
-        <libid>1</libid>
-        <id>603</id>
-        <kind>7</kind>
-        <userelative>0</userelative>
-        <isquestion>0</isquestion>
-        <useapplyto>-1</useapplyto>
-        <exetype>2</exetype>
-        <functionname></functionname>
-        <codestring></codestring>
-        <whoName>self</whoName>
-        <relative>0</relative>
-        <isnot>0</isnot>
-        <arguments>
-          <argument>
-            <kind>1</kind>
-            <string>display_set_gui_size(480,320)
-draw_set_halign(fa_center)
-draw_set_font(global.font3small)
-draw_set_color(c_yellow)
-draw_text(display_get_gui_width()-400,0,"1up")
-draw_set_color(c_white)
-draw_text(display_get_gui_width()-400,display_get_gui_height()-304,global.points)
 </string>
           </argument>
         </arguments>
@@ -154,9 +76,10 @@ draw_text(display_get_gui_width()-400,display_get_gui_height()-304,global.points
         <arguments>
           <argument>
             <kind>1</kind>
-            <string>// DEBUG FOR TIMER VALUES PT 1 
-draw_sprite(spr_shadow,0,obj_funky.x,obj_funky.y,)
-draw_sprite(spr_shadow,0,obj_pacman.x,obj_pacman.y,)
+            <string>draw_set_halign(fa_center)
+draw_set_color(c_white)
+draw_set_font(global.font4small)
+draw_text(x,y,drawscore)
 </string>
           </argument>
         </arguments>

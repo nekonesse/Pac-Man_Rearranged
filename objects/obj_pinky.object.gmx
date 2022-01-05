@@ -25,10 +25,9 @@
         <arguments>
           <argument>
             <kind>1</kind>
-            <string>timer1 = 60;
-immune = false;
+            <string>immune = false;
 image_speed = 1;
-ghost_speed = 5;
+ghost_speed = 2;
 direction = 180;
 enum pinkystates
 {
@@ -74,7 +73,7 @@ if global.scared = true &amp;&amp; immune = false
 {
 state = pinkystates.scared
 }
-ghost_speed = 5;
+ghost_speed = 2;
 new_direction = -1;
 distance_to_pacman = 9999999;
 
@@ -164,7 +163,7 @@ move_contact_solid(direction,ghost_speed)
 else if state == pinkystates.scared
 {
 randomize();
-ghost_speed = 2;
+ghost_speed = 1;
 new_direction = -1;
 distance_to_pacman = 9999999;
 

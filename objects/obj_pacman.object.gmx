@@ -27,21 +27,21 @@
             <kind>1</kind>
             <string>//please dont mess with this its for the collision box
 boxx1 = 2
-boxy1 = 1
+boxy1 = 0.1
 boxx2 = 2
-boxy2 = 1
+boxy2 = 0.1
 //jumping stuff
 zspeed = 0;
 jumpspeed = -8;
-grav = 0.6;
+grav = 0.4;
 z = 0;
 zfloor = 0;
 //timer stuff i dont remember you can just look in the code
-timer1def = 60
+timer1def = 120
 timer1 = timer1def
 timer1bool = false
 //player default speed
-pm_defaultsp = 4;
+pm_defaultsp = 2;
 //player current speed
 pm_speed = pm_defaultsp;
 </string>
@@ -78,7 +78,7 @@ timer1 -= 1;
 
 if timer1 = 0
 {
-pm_defaultsp = 4
+pm_defaultsp = 2
 timer1 = timer1def
 }
 
@@ -119,28 +119,38 @@ if ins != noone &amp;&amp; z &gt; -4
 {
 audio_play_sound(snd_powerdot,100, false)
 global.points += 50
+var insscore = instance_create(x,y,obj_scoreindicator)
+    with(insscore)
+    {
+        drawscore = 50
+    }
 if global.scared == false
-{
-audio_play_sound(snd_scaredstart,99,false)
-}
+    {
+        audio_play_sound(snd_scaredstart,99,false)
+    }
 obj_music.timerscared = 600
 global.scared = true
 with(ins)
-{
-instance_destroy()
-}
+    {
+        instance_destroy()
+    }
 exit
 }
 
 var insp = collision_rectangle(x-boxx1,y-boxy1,x+boxx2,y+boxy2, obj_dot, false, false);
 if insp != noone &amp;&amp; z &gt; -4
 {
-audio_play_sound(choose(snd_wakka1,snd_wakka2,snd_wakka3,snd_wakka4),100, false)
-global.points += 10
-with(insp)
-{
-instance_destroy()
-}
+    audio_play_sound(choose(snd_wakka1,snd_wakka2,snd_wakka3,snd_wakka4),100, false)
+    var insscore = instance_create(x,y,obj_scoreindicator)
+    with(insscore)
+    {
+        drawscore = 10
+    }
+    global.points += 10
+    with(insp)
+    {
+    instance_destroy()
+    }
 exit
 }
 
@@ -151,7 +161,7 @@ if !audio_is_playing(snd_dashpanel)
 {
 audio_play_sound(snd_dashpanel, 50,false)
 }
-pm_defaultsp = 8
+pm_defaultsp = 4
 timer1 = timer1def
 }
 

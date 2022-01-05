@@ -25,11 +25,9 @@
         <arguments>
           <argument>
             <kind>1</kind>
-            <string>timer1 = 600
-timer1bool = false
-immune = false
+            <string>immune = false
 image_speed = 1;
-ghost_speed = 4;
+ghost_speed = 2;
 direction = 180;
 enum suestates
 {
@@ -76,7 +74,7 @@ if global.scared = true &amp;&amp; immune = false
 state = suestates.scared
 }
 
-ghost_speed = 4;
+ghost_speed = 2;
 new_direction = -1;
 distance_to_pacman = 9999999;
 
@@ -154,7 +152,7 @@ move_contact_solid(direction,ghost_speed)
 else if state == suestates.scared
 {
 randomize();
-ghost_speed = 2;
+ghost_speed = 1;
 new_direction = -1;
 distance_to_pacman = 9999999;
 
@@ -169,12 +167,6 @@ depth = -y;
 
 var dx = choose(24,80,72,204,152,208,144);
 var dy = choose(274,160,104,40,80,272,216);
-
-if point_distance(x,y, obj_pacman.x,obj_pacman.y) &lt; 64
-{
-dx = choose(24,80,72,204,152,208,144);
-dy = choose(274,160,104,40,80,272,216);
-}
 
 //UP
 if direction != 270

@@ -27,14 +27,13 @@
             <kind>1</kind>
             <string>zspeed = 0;
 jumpspeed = -8;
-grav = 0.9;
+grav = 0.6;
 z = 0;
 zfloor = 0;
 
-timer1 = 60;
 immune = false;
 image_speed = 1;
-ghost_speed = 3;
+ghost_speed = 2;
 direction = 180;
 enum funkystates
 {
@@ -83,7 +82,7 @@ state = funkystates.scared
 
 var jump = keyboard_check_pressed(vk_space)
 
-ghost_speed = 5;
+ghost_speed = 2;
 new_direction = -1;
 distance_to_pacman = 9999999;
 
@@ -179,7 +178,7 @@ move_contact_solid(direction,ghost_speed)
 else if state == funkystates.scared
 {
 randomize();
-ghost_speed = 2;
+ghost_speed = 1;
 new_direction = -1;
 distance_to_pacman = 9999999;
 
@@ -280,12 +279,6 @@ depth = -y;
 
 var dx = obj_ghostspawn.x;
 var dy = obj_ghostspawn.y;
-
-if point_distance(x,y, obj_sue.x, obj_sue.y) &lt; 64
-{
-dx = obj_ghostspawn.x;
-dy = obj_ghostspawn.y;
-}
 
 if instance_position(x,y,obj_ghostspawn)
 {
