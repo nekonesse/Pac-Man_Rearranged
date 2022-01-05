@@ -117,20 +117,23 @@ z += zspeed;
 var ins = collision_rectangle(x-boxx1,y-boxy1-1,x+boxx2,y+boxy2-1, obj_powerdot, false, false);
 if ins != noone &amp;&amp; z &gt; -4
 {
-audio_play_sound(snd_powerdot,100, false)
-global.points += 50
-var insscore = instance_create(x,y,obj_scoreindicator)
-    with(insscore)
+    audio_play_sound(snd_powerdot,100, false)
+    global.points += 50
+    var insscore = instance_create(x,y,obj_scoreindicator)
+    if insscore != noone
     {
-        drawscore = 50
-    }
-if global.scared == false
+        with(insscore)
+        {
+            drawscore = 50
+        }
+    }  
+    if global.scared == false
     {
         audio_play_sound(snd_scaredstart,99,false)
     }
-obj_music.timerscared = 600
-global.scared = true
-with(ins)
+    obj_music.timerscared = 600
+    global.scared = true
+    with(ins)
     {
         instance_destroy()
     }
@@ -142,12 +145,35 @@ if insp != noone &amp;&amp; z &gt; -4
 {
     audio_play_sound(choose(snd_wakka1,snd_wakka2,snd_wakka3,snd_wakka4),100, false)
     var insscore = instance_create(x,y,obj_scoreindicator)
-    with(insscore)
+    if insscore != noone
     {
-        drawscore = 10
-    }
+        with(insscore)
+        {
+            drawscore = 10
+        }
+    }    
     global.points += 10
     with(insp)
+    {
+    instance_destroy()
+    }
+exit
+}
+
+var insfruit = collision_rectangle(x-boxx1,y-boxy1,x+boxx2,y+boxy2, obj_fruit, false, false);
+if insfruit != noone &amp;&amp; z &gt; -4 &amp;&amp; insfruit.sprite_index != spr_empty
+{
+    audio_play_sound(snd_fruiteaten,100, false)
+    var insscore = instance_create(obj_fruit.x,obj_fruit.y,obj_scoreindicator)
+    global.points += global.fruitscore
+    if insscore != noone
+    {
+        with(insscore)
+        {
+            drawscore = global.fruitscore
+        }
+    }
+    with(insfruit)
     {
     instance_destroy()
     }
@@ -172,6 +198,14 @@ if insblink.state == blinkystates.scared
 {
 audio_play_sound(snd_ghosteat,101,false)
 global.points += 200
+var insscore = instance_create(x,y,obj_scoreindicator)
+    if insscore != noone
+    {
+        with(insscore)
+        {
+            drawscore = 200
+        }
+    }  
 with(insblink)
 {
 state = blinkystates.eaten
@@ -190,6 +224,14 @@ if inspinky.state == pinkystates.scared
 {
 audio_play_sound(snd_ghosteat,101,false)
 global.points += 200
+var insscore = instance_create(x,y,obj_scoreindicator)
+    if insscore != noone
+    {
+        with(insscore)
+        {
+            drawscore = 200
+        }
+    }  
 with(inspinky)
 {
 state = pinkystates.eaten
@@ -207,6 +249,14 @@ if insclyde.state == clydestates.scared
 {
 audio_play_sound(snd_ghosteat,101,false)
 global.points += 200
+var insscore = instance_create(x,y,obj_scoreindicator)
+    if insscore != noone
+    {
+        with(insscore)
+        {
+            drawscore = 200
+        }
+    }  
 with(insclyde)
 {
 state = clydestates.eaten
@@ -223,6 +273,14 @@ if insinky.state == inkystates.scared
 {
 audio_play_sound(snd_ghosteat,101,false)
 global.points += 200
+var insscore = instance_create(x,y,obj_scoreindicator)
+    if insscore != noone
+    {
+        with(insscore)
+        {
+            drawscore = 200
+        }
+    }  
 with(insinky)
 {
 state = inkystates.eaten
@@ -239,6 +297,14 @@ if inssue.state == suestates.scared
 {
 audio_play_sound(snd_ghosteat,101,false)
 global.points += 200
+var insscore = instance_create(x,y,obj_scoreindicator)
+    if insscore != noone
+    {
+        with(insscore)
+        {
+            drawscore = 200
+        }
+    }  
 with(inssue)
 {
 state = suestates.eaten
@@ -255,6 +321,14 @@ if insfunky.state == funkystates.scared
 {
 audio_play_sound(snd_ghosteat,101,false)
 global.points += 200
+var insscore = instance_create(x,y,obj_scoreindicator)
+    if insscore != noone
+    {
+        with(insscore)
+        {
+            drawscore = 200
+        }
+    }  
 with(insfunky)
 {
 state = funkystates.eaten

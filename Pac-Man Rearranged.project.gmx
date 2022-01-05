@@ -15,10 +15,12 @@
     <sound>sound\snd_scaredstart</sound>
     <sound>sound\snd_ghostambientscared</sound>
     <sound>sound\snd_ghostrespawn</sound>
+    <sound>sound\snd_fruiteaten</sound>
     <sound>sound\mus_world0</sound>
     <sound>sound\mus_world1</sound>
   </sounds>
   <sprites name="sprites">
+    <sprite>sprites\spr_empty</sprite>
     <sprite>sprites\spr_font4small</sprite>
     <sprite>sprites\spr_font3small</sprite>
     <sprite>sprites\spr_font2big</sprite>
