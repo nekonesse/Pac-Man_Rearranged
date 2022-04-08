@@ -44,6 +44,14 @@ timer1bool = false
 pm_defaultsp = 2;
 //player current speed
 pm_speed = pm_defaultsp;
+
+enum pacmanstates
+{
+normal,
+dead
+}
+
+state = pacmanstates.normal
 </string>
           </argument>
         </arguments>
@@ -66,7 +74,8 @@ pm_speed = pm_defaultsp;
         <arguments>
           <argument>
             <kind>1</kind>
-            <string>
+            <string>if state == pacmanstates.normal
+{
 var jump = keyboard_check_pressed(vk_space)
 
 pm_speed = pm_defaultsp;
@@ -375,6 +384,12 @@ sprite_index = spr_pacmandown
 }
 }
 move_contact_solid(direction,pm_speed)
+}
+else if state == pacmanstates.dead
+{
+image_speed = 1
+sprite_index = spr_pacmandie
+}
 </string>
           </argument>
         </arguments>
