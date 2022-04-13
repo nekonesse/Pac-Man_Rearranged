@@ -25,7 +25,8 @@
         <arguments>
           <argument>
             <kind>1</kind>
-            <string>depth = -y;
+            <string>image_speed = 0.05;
+depth = -y-2;
 </string>
           </argument>
         </arguments>

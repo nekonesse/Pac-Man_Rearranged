@@ -120,6 +120,16 @@
     <background>background\bg_level2</background>
   </backgrounds>
   <paths name="paths"/>
+  <scripts name="scripts">
+    <scripts name="Functions">
+      <script>scripts\approach_val.gml</script>
+      <script>scripts\draw_sprite_ext_skew.gml</script>
+      <script>scripts\inst_wrap.gml</script>
+      <script>scripts\jump_to_inst.gml</script>
+      <script>scripts\pos_wave.gml</script>
+      <script>scripts\random_chance.gml</script>
+    </scripts>
+  </scripts>
   <objects name="objects">
     <object>objects\obj_music</object>
     <object>objects\obj_scoreindicator</object>

@@ -243,6 +243,10 @@ move_contact_solid(direction,ghost_speed)
 }
 else if state == blinkystates.eaten
 {
+var decaytimer = 300;
+
+decaytimer -= 1;
+
 ghost_speed = 4
 new_direction = -1;
 distance_to_pacman = 9999999;
@@ -352,9 +356,7 @@ move_contact_solid(direction,ghost_speed)
           <argument>
             <kind>1</kind>
             <string>draw_self();
-/*DEBUG FOR TIMER VALUES PT 2
-draw_text(obj_pacman.x,obj_pacman.y-32,immune)
-*/
+
 </string>
           </argument>
         </arguments>
