@@ -39,19 +39,18 @@ global.font4small = font_add_sprite_ext(spr_font4small, font4small_string, false
 global.points = 0
 
 global.scared = false
-musicplay = mus_world0
+
+switch room
+{
+case lvl_room2: musicplay = mus_world0 break;
+case lvl_room3: musicplay = mus_world1 break;
+}
 
 timerscared = 300
 
 audio_stop_all();
 
-switch room
-{
-case lvl_room2: audio_play_sound(mus_world0,1000,true)
-break;
-case lvl_room3: audio_play_sound(mus_world1,1000,true)
-break;
-}
+audio_play_sound(musicplay,1000,true);
 </string>
           </argument>
         </arguments>

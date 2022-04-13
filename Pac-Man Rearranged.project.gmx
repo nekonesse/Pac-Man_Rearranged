@@ -138,6 +138,7 @@
     <object>objects\obj_wall</object>
   </objects>
   <rooms name="rooms">
+    <room>rooms\lvl_room3</room>
     <room>rooms\lvl_room2</room>
   </rooms>
   <help>
