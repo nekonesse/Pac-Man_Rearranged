@@ -126,6 +126,7 @@
   <scripts name="scripts">
     <scripts name="Chomp Engine">
       <script>scripts\player_die.gml</script>
+      <script>scripts\player_respawn.gml</script>
     </scripts>
     <scripts name="Functions">
       <script>scripts\approach_val.gml</script>
