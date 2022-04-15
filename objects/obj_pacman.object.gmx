@@ -26,10 +26,10 @@
           <argument>
             <kind>1</kind>
             <string>//please dont mess with this its for the collision box
-boxx1 = 2
-boxy1 = 0.1
-boxx2 = 2
-boxy2 = 0.1
+boxx1 = 1
+boxy1 = 0.05
+boxx2 = 1
+boxy2 = 0.05
 //jumping stuff
 zspeed = 0;
 jumpspeed = -8;
@@ -226,7 +226,7 @@ state = blinkystates.eaten
 }
 else if insblink.state == blinkystates.normal
 {
-room_restart();
+player_die();
 }
 }
 
@@ -253,7 +253,7 @@ state = pinkystates.eaten
 }
 else if inspinky.state == pinkystates.normal
 {
-room_restart();
+player_die();
 }
 }
 
@@ -279,7 +279,7 @@ state = clydestates.eaten
 }
 else if insclyde.state == clydestates.normal
 {
-room_restart();
+player_die();
 }
 
 var insinky = collision_rectangle(x-boxx1,y-boxy1,x+boxx2,y+boxy2, obj_inky, false, false);
@@ -304,7 +304,7 @@ state = inkystates.eaten
 }
 else if insinky.state == inkystates.normal
 {
-room_restart();
+player_die();
 }
 
 var inssue = collision_rectangle(x-boxx1,y-boxy1,x+boxx2,y+boxy2, obj_sue, false, false);
@@ -329,7 +329,7 @@ state = suestates.eaten
 }
 else if inssue.state == suestates.normal
 {
-room_restart();
+player_die();
 }
 
 var insfunky = collision_rectangle(x-boxx1,y-boxy1,x+boxx2,y+boxy2, obj_funky, false, false);
@@ -354,7 +354,7 @@ state = funkystates.eaten
 }
 else if insfunky.state == funkystates.normal
 {
-room_restart();
+player_die();
 }
 
 if keyboard_check(vk_left) == true
@@ -392,7 +392,9 @@ direction = 270;
 sprite_index = spr_pacmandown
 }
 }
+
 move_contact_solid(direction,pm_speed)
+
 }
 else if state == pacmanstates.dead
 {
@@ -423,8 +425,8 @@ sprite_index = spr_pacmandie
             <kind>1</kind>
             <string>draw_sprite(sprite_index,image_index,x,y+z)
 // debug pt 1 
-draw_rectangle(x-boxx1,y-boxy1,x+boxx2,y+boxy2,true)
-draw_text(x,y-16,global.lifepoints)
+//draw_rectangle(x-boxx1,y-boxy1,x+boxx2,y+boxy2,true)
+//draw_text(x,y-16,global.lifepoints)
 </string>
           </argument>
         </arguments>

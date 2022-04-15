@@ -30,6 +30,7 @@
     <sprite>sprites\spr_font1big</sprite>
     <sprite>sprites\spr_lives</sprite>
     <sprite>sprites\spr_ghostspawn</sprite>
+    <sprite>sprites\spr_mapspawnmarker</sprite>
     <sprite>sprites\spr_shadow</sprite>
     <sprite>sprites\spr_powerdot</sprite>
     <sprites name="Ghosts">
@@ -123,6 +124,9 @@
   </backgrounds>
   <paths name="paths"/>
   <scripts name="scripts">
+    <scripts name="Chomp Engine">
+      <script>scripts\player_die.gml</script>
+    </scripts>
     <scripts name="Functions">
       <script>scripts\approach_val.gml</script>
       <script>scripts\draw_sprite_ext_skew.gml</script>
@@ -136,6 +140,7 @@
     <object>objects\obj_music</object>
     <object>objects\obj_scoreindicator</object>
     <object>objects\obj_ghostspawn</object>
+    <object>objects\obj_pacmanspawn</object>
     <object>objects\obj_dashpanel</object>
     <object>objects\obj_dot</object>
     <object>objects\obj_powerdot</object>

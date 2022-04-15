@@ -107,7 +107,6 @@
     <instance objName="obj_pinky" x="208" y="256" name="inst_5979BB26" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
     <instance objName="obj_clyde" x="256" y="288" name="inst_7799A410" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
     <instance objName="obj_inky" x="256" y="256" name="inst_B0C2969F" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
-    <instance objName="obj_pacman" x="224" y="368" name="inst_ACFDDCC2" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
     <instance objName="obj_dot" x="160" y="368" name="inst_A8ADC03F" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
     <instance objName="obj_dot" x="304" y="368" name="inst_4600F496" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
     <instance objName="obj_dot" x="256" y="384" name="inst_33DA8DE5" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
@@ -316,6 +315,7 @@
     <instance objName="obj_wall" x="416" y="336" name="inst_51D71616" locked="0" code="" scaleX="4" scaleY="1" colour="4294967295" rotation="0"/>
     <instance objName="obj_wall" x="416" y="384" name="inst_4F9F6626" locked="0" code="" scaleX="4" scaleY="1" colour="4294967295" rotation="0"/>
     <instance objName="obj_wall" x="416" y="288" name="inst_E3DD6DDB" locked="0" code="" scaleX="4" scaleY="1" colour="4294967295" rotation="0"/>
+    <instance objName="obj_pacmanspawn" x="232" y="368" name="inst_FEAF95D7" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
   </instances>
   <tiles/>
   <PhysicsWorld>0</PhysicsWorld>

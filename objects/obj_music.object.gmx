@@ -38,7 +38,7 @@ global.font4small = font_add_sprite_ext(spr_font4small, font4small_string, false
 
 global.points = 0
 global.lifepoints = 0
-global.lifes = 5;
+global.lifes = 3;
 
 global.scared = false
 
@@ -105,11 +105,16 @@ if global.scared = true
 timerscared -= 1
 }
 
-if global.lifepoints &gt; 9999 &amp;&amp; global.lifes &lt; 9
+if global.lifepoints &gt; 999 &amp;&amp; global.lifes &lt; 9
 {
 global.lifes += 1
 audio_play_sound(snd_lifegained, 1000, false)
-global.lifepoints -= 10000
+global.lifepoints -= 1000
+}
+
+if global.lifes &lt; 0
+{
+room_restart();
 }
 </string>
           </argument>
