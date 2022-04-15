@@ -147,7 +147,7 @@
     <instance objName="obj_dashpanel" x="400" y="512" name="inst_41DBCBF0" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
     <instance objName="obj_dashpanel" x="304" y="144" name="inst_523166D7" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
     <instance objName="obj_dashpanel" x="160" y="144" name="inst_2BC57562" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
-    <instance objName="obj_dashpanel" x="112" y="160" name="inst_5B439699" locked="0" code="cut = true&#xA;" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
+    <instance objName="obj_dashpanel" x="112" y="160" name="inst_5B439699" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
     <instance objName="obj_dot" x="64" y="528" name="inst_9A05E220" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
     <instance objName="obj_dot" x="80" y="528" name="inst_49148D00" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
     <instance objName="obj_dot" x="96" y="528" name="inst_D70AC845" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
@@ -307,7 +307,7 @@
     <instance objName="obj_dot" x="272" y="160" name="inst_EAE3FBAA" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
     <instance objName="obj_dot" x="240" y="160" name="inst_1EEF90CB" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
     <instance objName="obj_dot" x="288" y="160" name="inst_EF404B4F" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
-    <instance objName="obj_dashpanel" x="352" y="160" name="inst_F9DED74A" locked="0" code="cut = true&#xA;" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
+    <instance objName="obj_dashpanel" x="352" y="160" name="inst_F9DED74A" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
     <instance objName="obj_music" x="0" y="0" name="inst_37A3090F" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
     <instance objName="obj_wall" x="224" y="288" name="inst_FF3BA612" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
     <instance objName="obj_wall" x="224" y="240" name="inst_F819839D" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>

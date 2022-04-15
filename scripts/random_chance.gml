@@ -1,4 +1,4 @@
-﻿/// @description Chance(percent)
+/// @description Chance(percent)
 /// @param percent
 
 // Returns true or false depending on RNG

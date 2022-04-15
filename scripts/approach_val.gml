@@ -1,4 +1,4 @@
-﻿/// Approach(a, b, amount)
+/// Approach(a, b, amount)
 // Moves "a" towards "b" by "amount" and returns the result
 // Nice bcause it will not overshoot "b", and works in both directions
 // Examples:

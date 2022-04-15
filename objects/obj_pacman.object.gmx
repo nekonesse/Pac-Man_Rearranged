@@ -128,6 +128,7 @@ if ins != noone &amp;&amp; z &gt; -4
 {
     audio_play_sound(snd_powerdot,100, false)
     global.points += 50
+    global.lifepoints += 50
     var insscore = instance_create(x,y,obj_scoreindicator)
     if insscore != noone
     {
@@ -162,6 +163,7 @@ if insp != noone &amp;&amp; z &gt; -4
         }
     }    
     global.points += 10
+    global.lifepoints += 10
     with(insp)
     {
     instance_destroy()
@@ -182,6 +184,7 @@ if insfruit != noone &amp;&amp; z &gt; -4 &amp;&amp; insfruit.sprite_index != sp
             drawscore = global.fruitscore
         }
     }
+    global.lifepoints += global.fruitscore
     with(insfruit)
     {
     instance_destroy()
@@ -207,6 +210,7 @@ if insblink.state == blinkystates.scared
 {
 audio_play_sound(snd_ghosteat,101,false)
 global.points += 200
+global.lifepoints += 200
 var insscore = instance_create(x,y,obj_scoreindicator)
     if insscore != noone
     {
@@ -233,6 +237,7 @@ if inspinky.state == pinkystates.scared
 {
 audio_play_sound(snd_ghosteat,101,false)
 global.points += 200
+global.lifepoints += 200
 var insscore = instance_create(x,y,obj_scoreindicator)
     if insscore != noone
     {
@@ -258,6 +263,7 @@ if insclyde.state == clydestates.scared
 {
 audio_play_sound(snd_ghosteat,101,false)
 global.points += 200
+global.lifepoints += 200
 var insscore = instance_create(x,y,obj_scoreindicator)
     if insscore != noone
     {
@@ -282,6 +288,7 @@ if insinky.state == inkystates.scared
 {
 audio_play_sound(snd_ghosteat,101,false)
 global.points += 200
+global.lifepoints += 200
 var insscore = instance_create(x,y,obj_scoreindicator)
     if insscore != noone
     {
@@ -306,6 +313,7 @@ if inssue.state == suestates.scared
 {
 audio_play_sound(snd_ghosteat,101,false)
 global.points += 200
+global.lifepoints += 200
 var insscore = instance_create(x,y,obj_scoreindicator)
     if insscore != noone
     {
@@ -330,6 +338,7 @@ if insfunky.state == funkystates.scared
 {
 audio_play_sound(snd_ghosteat,101,false)
 global.points += 200
+global.lifepoints += 200
 var insscore = instance_create(x,y,obj_scoreindicator)
     if insscore != noone
     {
@@ -413,7 +422,9 @@ sprite_index = spr_pacmandie
           <argument>
             <kind>1</kind>
             <string>draw_sprite(sprite_index,image_index,x,y+z)
-// debug pt 1 draw_rectangle(x-boxx1,y-boxy1,x+boxx2,y+boxy2,true)
+// debug pt 1 
+draw_rectangle(x-boxx1,y-boxy1,x+boxx2,y+boxy2,true)
+draw_text(x,y-16,global.lifepoints)
 </string>
           </argument>
         </arguments>

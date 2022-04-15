@@ -1,4 +1,4 @@
-﻿/// @description JumpInDirection(distance, direction)
+/// @description JumpInDirection(distance, direction)
 /// @param distance
 /// @param direction
  

@@ -1,4 +1,4 @@
-﻿/// draw_sprite_ext_skew(sprite,subimg, x,y, xscale,yscale, rot,alpha, kx,ky, xmult,ymult)
+/// draw_sprite_ext_skew(sprite,subimg, x,y, xscale,yscale, rot,alpha, kx,ky, xmult,ymult)
 /// https://yal.cc/draw_sprite_ext_skew
 /// @arg sprite
 /// @arg subimg
