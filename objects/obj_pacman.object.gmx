@@ -42,7 +42,7 @@ timer1 = timer1def
 timer1bool = false
 timerwait = 60;
 timerrespawn = 60;
-respawnstate = false;
+respawnstate = true;
 deadaf = false;
 //player default speed
 pm_defaultsp = 2;
@@ -52,10 +52,11 @@ pm_speed = pm_defaultsp;
 enum pacmanstates
 {
 normal,
-dead
+dead,
+spawn
 }
 
-state = pacmanstates.normal
+state = pacmanstates.spawn
 </string>
           </argument>
         </arguments>
@@ -236,6 +237,7 @@ state = blinkystates.eaten
 else if insblink.state == blinkystates.normal
 {
 player_die();
+exit;
 }
 }
 
@@ -263,6 +265,7 @@ state = pinkystates.eaten
 else if inspinky.state == pinkystates.normal
 {
 player_die();
+exit;
 }
 }
 
@@ -289,6 +292,7 @@ state = clydestates.eaten
 else if insclyde.state == clydestates.normal
 {
 player_die();
+exit;
 }
 
 var insinky = collision_rectangle(x-boxx1,y-boxy1,x+boxx2,y+boxy2, obj_inky, false, false);
@@ -314,6 +318,7 @@ state = inkystates.eaten
 else if insinky.state == inkystates.normal
 {
 player_die();
+exit;
 }
 
 var inssue = collision_rectangle(x-boxx1,y-boxy1,x+boxx2,y+boxy2, obj_sue, false, false);
@@ -339,6 +344,7 @@ state = suestates.eaten
 else if inssue.state == suestates.normal
 {
 player_die();
+exit;
 }
 
 var insfunky = collision_rectangle(x-boxx1,y-boxy1,x+boxx2,y+boxy2, obj_funky, false, false);
@@ -364,6 +370,7 @@ state = funkystates.eaten
 else if insfunky.state == funkystates.normal
 {
 player_die();
+exit;
 }
 
 if keyboard_check(vk_left) == true
@@ -404,6 +411,7 @@ sprite_index = spr_pacmandown
 
 move_contact_solid(direction,pm_speed)
 
+
 }
 else if state == pacmanstates.dead
 {
@@ -417,6 +425,7 @@ sprite_index = spr_empty
 
 if deadaf == true
 {
+    image_speed = 0;
     timerwait -= 1
 
     if timerwait &lt; 1
@@ -434,6 +443,16 @@ if deadaf == true
             }
         }
     }
+}
+}
+else if state == pacmanstates.spawn
+{
+image_speed = 0;
+timerrespawn -= 1
+
+if timerrespawn &lt; 1
+{
+state = pacmanstates.normal
 }
 }
 </string>
@@ -464,10 +483,10 @@ if deadaf == true
 //draw_rectangle(x-boxx1,y-boxy1,x+boxx2,y+boxy2,true)
 
 /// DEBUG FOR DEATH
-draw_text(x,y-64,timerwait)
-draw_text(x,y-48,deadaf)
-draw_text(x,y-32,sprite_index)
-draw_text(x,y-16,image_index)
+//draw_text(x,y-64,state)
+//draw_text(x,y-48,deadaf)
+//draw_text(x,y-32,sprite_index)
+//draw_text(x,y-16,image_index)
 </string>
           </argument>
         </arguments>

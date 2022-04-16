@@ -75,7 +75,7 @@ audio_play_sound(musicplay,1000,true);
         <arguments>
           <argument>
             <kind>1</kind>
-            <string>clamp(timerscared,0,300)
+            <string> clamp(timerscared,0,300)
 
 if !audio_is_playing(musicplay) &amp;&amp; global.scared == false
 {
@@ -88,21 +88,18 @@ if !audio_is_playing(snd_ghostambientscared)
 {
 audio_play_sound(snd_ghostambientscared, 1000, false)
 }
+timerscared -= 1
 }
 else
 {
+timerscared = 300
 audio_stop_sound(snd_ghostambientscared)
 }
 
 if timerscared = 0
 {
 global.scared = false
-timerscared = 600
-}
-
-if global.scared = true
-{
-timerscared -= 1
+timerscared = 300
 }
 
 if global.lifepoints &gt; 999 &amp;&amp; global.lifes &lt; 9
