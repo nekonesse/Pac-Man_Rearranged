@@ -179,7 +179,10 @@ case 9: draw_sprite(spr_lives,1,0,display_get_gui_height()-32) draw_sprite(spr_l
           <argument>
             <kind>1</kind>
             <string>// DEBUG FOR TIMER VALUES PT 1 
+if instance_exists(obj_funky)
+{
 draw_sprite(spr_shadow,0,obj_funky.x,obj_funky.y,)
+}
 draw_sprite(spr_shadow,0,obj_pacman.x,obj_pacman.y,)
 </string>
           </argument>

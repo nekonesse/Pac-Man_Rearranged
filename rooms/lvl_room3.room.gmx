@@ -8,8 +8,8 @@
   <isometric>0</isometric>
   <speed>60</speed>
   <persistent>0</persistent>
-  <colour>0</colour>
-  <showcolour>-1</showcolour>
+  <colour>12632256</colour>
+  <showcolour>0</showcolour>
   <code></code>
   <enableViews>-1</enableViews>
   <clearViewBackground>-1</clearViewBackground>
@@ -31,7 +31,7 @@
     <yoffset>0</yoffset>
   </makerSettings>
   <backgrounds>
-    <background visible="-1" foreground="0" name="bg_level2" x="0" y="0" htiled="0" vtiled="0" hspeed="0" vspeed="0" stretch="0"/>
+    <background visible="-1" foreground="0" name="bg_world3" x="0" y="0" htiled="-1" vtiled="-1" hspeed="0" vspeed="0" stretch="0"/>
     <background visible="0" foreground="0" name="" x="0" y="0" htiled="-1" vtiled="-1" hspeed="0" vspeed="0" stretch="0"/>
     <background visible="0" foreground="0" name="" x="0" y="0" htiled="-1" vtiled="-1" hspeed="0" vspeed="0" stretch="0"/>
     <background visible="0" foreground="0" name="" x="0" y="0" htiled="-1" vtiled="-1" hspeed="0" vspeed="0" stretch="0"/>
@@ -51,272 +51,817 @@
     <view visible="0" objName="&lt;undefined&gt;" xview="0" yview="0" wview="1024" hview="768" xport="0" yport="0" wport="1024" hport="768" hborder="32" vborder="32" hspeed="-1" vspeed="-1"/>
   </views>
   <instances>
-    <instance objName="obj_wall" x="0" y="240" name="inst_D8D81C2C" locked="0" code="" scaleX="3" scaleY="1" colour="4294967295" rotation="0"/>
-    <instance objName="obj_wall" x="80" y="176" name="inst_1CD4DFC6" locked="0" code="" scaleX="4" scaleY="2" colour="4294967295" rotation="0"/>
-    <instance objName="obj_wall" x="176" y="176" name="inst_F067FE05" locked="0" code="" scaleX="1" scaleY="2" colour="4294967295" rotation="0"/>
-    <instance objName="obj_wall" x="224" y="176" name="inst_AF16AFEC" locked="0" code="" scaleX="1" scaleY="2" colour="4294967295" rotation="0"/>
-    <instance objName="obj_wall" x="272" y="176" name="inst_636C37C4" locked="0" code="" scaleX="1" scaleY="2" colour="4294967295" rotation="0"/>
-    <instance objName="obj_wall" x="80" y="112" name="inst_2387ED21" locked="0" code="" scaleX="4" scaleY="2" colour="4294967295" rotation="0"/>
-    <instance objName="obj_wall" x="32" y="64" name="inst_6BF99800" locked="0" code="" scaleX="1" scaleY="11" colour="4294967295" rotation="0"/>
-    <instance objName="obj_wall" x="48" y="64" name="inst_E7E0CE1A" locked="0" code="" scaleX="9" scaleY="1" colour="4294967295" rotation="0"/>
-    <instance objName="obj_wall" x="176" y="80" name="inst_6FBE196A" locked="0" code="" scaleX="1" scaleY="4" colour="4294967295" rotation="0"/>
-    <instance objName="obj_wall" x="192" y="128" name="inst_DDEFE547" locked="0" code="" scaleX="6" scaleY="1" colour="4294967295" rotation="0"/>
-    <instance objName="obj_wall" x="272" y="64" name="inst_C5F81BE8" locked="0" code="" scaleX="1" scaleY="4" colour="4294967295" rotation="0"/>
-    <instance objName="obj_wall" x="288" y="64" name="inst_55EBDEF1" locked="0" code="" scaleX="9" scaleY="1" colour="4294967295" rotation="0"/>
-    <instance objName="obj_wall" x="416" y="80" name="inst_0FB83AF6" locked="0" code="" scaleX="1" scaleY="11" colour="4294967295" rotation="0"/>
-    <instance objName="obj_wall" x="432" y="240" name="inst_E63AC4F2" locked="0" code="" scaleX="3" scaleY="1" colour="4294967295" rotation="0"/>
-    <instance objName="obj_wall" x="416" y="304" name="inst_49B83633" locked="0" code="" scaleX="1" scaleY="2" colour="4294967295" rotation="0"/>
-    <instance objName="obj_wall" x="320" y="176" name="inst_8517F477" locked="0" code="" scaleX="4" scaleY="2" colour="4294967295" rotation="0"/>
-    <instance objName="obj_wall" x="320" y="112" name="inst_17291A02" locked="0" code="" scaleX="4" scaleY="2" colour="4294967295" rotation="0"/>
-    <instance objName="obj_wall" x="0" y="288" name="inst_E957AA9C" locked="0" code="" scaleX="3" scaleY="1" colour="4294967295" rotation="0"/>
-    <instance objName="obj_wall" x="0" y="336" name="inst_BFFCF10A" locked="0" code="" scaleX="3" scaleY="1" colour="4294967295" rotation="0"/>
-    <instance objName="obj_wall" x="32" y="304" name="inst_178BDDAA" locked="0" code="" scaleX="1" scaleY="2" colour="4294967295" rotation="0"/>
-    <instance objName="obj_ghostspawn" x="240" y="272" name="inst_7FAAC041" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
-    <instance objName="obj_wall" x="80" y="240" name="inst_B5BC5F25" locked="0" code="" scaleX="4" scaleY="1" colour="4294967295" rotation="0"/>
-    <instance objName="obj_wall" x="128" y="256" name="inst_75FD6AD6" locked="0" code="" scaleX="1" scaleY="3" colour="4294967295" rotation="0"/>
-    <instance objName="obj_wall" x="176" y="240" name="inst_9FB5E9C9" locked="0" code="" scaleX="1" scaleY="4" colour="4294967295" rotation="0"/>
-    <instance objName="obj_wall" x="272" y="240" name="inst_5CB2DED9" locked="0" code="" scaleX="1" scaleY="4" colour="4294967295" rotation="0"/>
-    <instance objName="obj_wall" x="320" y="240" name="inst_F2E1E92B" locked="0" code="" scaleX="4" scaleY="1" colour="4294967295" rotation="0"/>
-    <instance objName="obj_wall" x="320" y="256" name="inst_5F8F0F1B" locked="0" code="" scaleX="1" scaleY="3" colour="4294967295" rotation="0"/>
-    <instance objName="obj_wall" x="320" y="336" name="inst_A109C124" locked="0" code="" scaleX="4" scaleY="1" colour="4294967295" rotation="0"/>
-    <instance objName="obj_wall" x="80" y="336" name="inst_56B19B23" locked="0" code="" scaleX="4" scaleY="1" colour="4294967295" rotation="0"/>
-    <instance objName="obj_wall" x="368" y="288" name="inst_C8FDDCBF" locked="0" code="" scaleX="1" scaleY="3" colour="4294967295" rotation="0"/>
-    <instance objName="obj_wall" x="176" y="336" name="inst_CB20814F" locked="0" code="" scaleX="7" scaleY="1" colour="4294967295" rotation="0"/>
-    <instance objName="obj_wall" x="80" y="288" name="inst_9F34BFB8" locked="0" code="" scaleX="1" scaleY="3" colour="4294967295" rotation="0"/>
-    <instance objName="obj_wall" x="0" y="384" name="inst_0E9EE12D" locked="0" code="" scaleX="3" scaleY="1" colour="4294967295" rotation="0"/>
-    <instance objName="obj_wall" x="416" y="400" name="inst_DF0D35A3" locked="0" code="" scaleX="1" scaleY="10" colour="4294967295" rotation="0"/>
-    <instance objName="obj_wall" x="272" y="544" name="inst_67B2BB9E" locked="0" code="" scaleX="9" scaleY="1" colour="4294967295" rotation="0"/>
-    <instance objName="obj_wall" x="32" y="400" name="inst_89991001" locked="0" code="" scaleX="1" scaleY="10" colour="4294967295" rotation="0"/>
-    <instance objName="obj_wall" x="48" y="544" name="inst_30B3DC36" locked="0" code="" scaleX="9" scaleY="1" colour="4294967295" rotation="0"/>
-    <instance objName="obj_wall" x="176" y="480" name="inst_CA3FB54F" locked="0" code="" scaleX="7" scaleY="1" colour="4294967295" rotation="0"/>
-    <instance objName="obj_wall" x="272" y="496" name="inst_3471DA51" locked="0" code="" scaleX="1" scaleY="3" colour="4294967295" rotation="0"/>
-    <instance objName="obj_wall" x="176" y="496" name="inst_7D5C63C7" locked="0" code="" scaleX="1" scaleY="3" colour="4294967295" rotation="0"/>
-    <instance objName="obj_wall" x="320" y="480" name="inst_FF7A7524" locked="0" code="" scaleX="4" scaleY="2" colour="4294967295" rotation="0"/>
-    <instance objName="obj_wall" x="320" y="384" name="inst_ECF552E5" locked="0" code="" scaleX="4" scaleY="1" colour="4294967295" rotation="0"/>
-    <instance objName="obj_wall" x="368" y="400" name="inst_E65A0E83" locked="0" code="" scaleX="1" scaleY="3" colour="4294967295" rotation="0"/>
-    <instance objName="obj_wall" x="80" y="480" name="inst_EEA6AC8C" locked="0" code="" scaleX="4" scaleY="2" colour="4294967295" rotation="0"/>
-    <instance objName="obj_wall" x="80" y="384" name="inst_7FC0D390" locked="0" code="" scaleX="4" scaleY="1" colour="4294967295" rotation="0"/>
-    <instance objName="obj_wall" x="80" y="400" name="inst_2BA630DE" locked="0" code="" scaleX="1" scaleY="3" colour="4294967295" rotation="0"/>
-    <instance objName="obj_wall" x="128" y="432" name="inst_17A8C7E8" locked="0" code="" scaleX="4" scaleY="1" colour="4294967295" rotation="0"/>
-    <instance objName="obj_wall" x="176" y="384" name="inst_61C06FAB" locked="0" code="" scaleX="1" scaleY="3" colour="4294967295" rotation="0"/>
-    <instance objName="obj_wall" x="224" y="384" name="inst_0409E956" locked="0" code="" scaleX="1" scaleY="4" colour="4294967295" rotation="0"/>
-    <instance objName="obj_wall" x="272" y="384" name="inst_F242A084" locked="0" code="" scaleX="1" scaleY="4" colour="4294967295" rotation="0"/>
-    <instance objName="obj_wall" x="288" y="432" name="inst_E8C44E21" locked="0" code="" scaleX="3" scaleY="1" colour="4294967295" rotation="0"/>
-    <instance objName="obj_blinky" x="208" y="288" name="inst_145BA685" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
-    <instance objName="obj_sue" x="256" y="272" name="inst_ABAE2C52" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
-    <instance objName="obj_pinky" x="208" y="256" name="inst_5979BB26" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
-    <instance objName="obj_clyde" x="256" y="288" name="inst_7799A410" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
-    <instance objName="obj_inky" x="256" y="256" name="inst_B0C2969F" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
-    <instance objName="obj_dot" x="160" y="368" name="inst_A8ADC03F" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
-    <instance objName="obj_dot" x="304" y="368" name="inst_4600F496" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
-    <instance objName="obj_dot" x="256" y="384" name="inst_33DA8DE5" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
-    <instance objName="obj_dot" x="208" y="384" name="inst_4D7AF046" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
-    <instance objName="obj_dot" x="208" y="400" name="inst_C62D3D9F" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
-    <instance objName="obj_dot" x="256" y="400" name="inst_2D1DB41A" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
-    <instance objName="obj_dot" x="256" y="416" name="inst_ABE3D983" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
-    <instance objName="obj_dot" x="208" y="416" name="inst_43B52A29" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
-    <instance objName="obj_dot" x="208" y="432" name="inst_AA5C26B8" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
-    <instance objName="obj_dot" x="256" y="432" name="inst_BF409957" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
-    <instance objName="obj_dot" x="256" y="448" name="inst_5FC3A5AA" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
-    <instance objName="obj_dot" x="208" y="448" name="inst_28700959" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
-    <instance objName="obj_dot" x="208" y="464" name="inst_5336B5DC" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
-    <instance objName="obj_dot" x="256" y="464" name="inst_310C9E94" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
-    <instance objName="obj_dot" x="224" y="464" name="inst_6CC83CFA" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
-    <instance objName="obj_dot" x="240" y="464" name="inst_3DC4AAFA" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
-    <instance objName="obj_dot" x="272" y="464" name="inst_8970DA6E" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
-    <instance objName="obj_dot" x="288" y="464" name="inst_1B5F9605" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
-    <instance objName="obj_dot" x="304" y="464" name="inst_A77217AE" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
-    <instance objName="obj_dot" x="352" y="464" name="inst_A8C8C71B" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
-    <instance objName="obj_dot" x="352" y="448" name="inst_DF389FDA" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
-    <instance objName="obj_dot" x="352" y="432" name="inst_F198C3BD" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
-    <instance objName="obj_dot" x="352" y="416" name="inst_DA8B92AC" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
-    <instance objName="obj_dot" x="336" y="416" name="inst_78148B6F" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
-    <instance objName="obj_dot" x="320" y="416" name="inst_CA3C121D" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
-    <instance objName="obj_dot" x="304" y="416" name="inst_6FBEBBCD" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
-    <instance objName="obj_dot" x="304" y="400" name="inst_EB489A90" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
-    <instance objName="obj_dot" x="304" y="384" name="inst_C7A70F46" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
-    <instance objName="obj_dot" x="192" y="464" name="inst_71BC6FF8" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
-    <instance objName="obj_dot" x="176" y="464" name="inst_E99C3C5C" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
-    <instance objName="obj_dot" x="160" y="464" name="inst_2CBF4442" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
-    <instance objName="obj_dot" x="112" y="464" name="inst_027BF953" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
-    <instance objName="obj_dot" x="80" y="464" name="inst_CAD622F7" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
-    <instance objName="obj_dot" x="64" y="464" name="inst_90705BB5" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
-    <instance objName="obj_dot" x="64" y="480" name="inst_E714E63A" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
-    <instance objName="obj_dashpanel" x="64" y="512" name="inst_0B3C45E1" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
-    <instance objName="obj_dashpanel" x="400" y="512" name="inst_41DBCBF0" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
-    <instance objName="obj_dashpanel" x="304" y="144" name="inst_523166D7" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
-    <instance objName="obj_dashpanel" x="160" y="144" name="inst_2BC57562" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
-    <instance objName="obj_dashpanel" x="112" y="160" name="inst_5B439699" locked="0" code="cut = true&#xA;" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
-    <instance objName="obj_dot" x="64" y="528" name="inst_9A05E220" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
-    <instance objName="obj_dot" x="80" y="528" name="inst_49148D00" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
-    <instance objName="obj_dot" x="96" y="528" name="inst_D70AC845" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
-    <instance objName="obj_dot" x="112" y="528" name="inst_88754F91" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
-    <instance objName="obj_dot" x="128" y="528" name="inst_9DD463FC" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
-    <instance objName="obj_dot" x="144" y="528" name="inst_2E610B16" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
-    <instance objName="obj_dot" x="160" y="528" name="inst_68803E46" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
-    <instance objName="obj_dot" x="160" y="512" name="inst_9D351866" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
-    <instance objName="obj_dot" x="160" y="496" name="inst_A0DD6AD3" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
-    <instance objName="obj_dot" x="160" y="480" name="inst_A589A748" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
-    <instance objName="obj_dot" x="304" y="480" name="inst_AE0FA872" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
-    <instance objName="obj_dot" x="304" y="496" name="inst_C123334F" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
-    <instance objName="obj_dot" x="304" y="512" name="inst_5BBB8E32" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
-    <instance objName="obj_dot" x="304" y="528" name="inst_945C6873" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
-    <instance objName="obj_dot" x="320" y="528" name="inst_316E13C4" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
-    <instance objName="obj_dot" x="336" y="528" name="inst_A1415B2C" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
-    <instance objName="obj_dot" x="352" y="528" name="inst_52571D9C" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
-    <instance objName="obj_dot" x="368" y="528" name="inst_5A0AD608" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
-    <instance objName="obj_dot" x="384" y="528" name="inst_264B1814" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
-    <instance objName="obj_dot" x="400" y="528" name="inst_6DAF2E00" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
-    <instance objName="obj_dot" x="400" y="480" name="inst_B8FDA5B5" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
-    <instance objName="obj_dot" x="400" y="464" name="inst_0D323327" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
-    <instance objName="obj_dot" x="384" y="464" name="inst_4024CDB0" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
-    <instance objName="obj_powerdot" x="96" y="464" name="inst_24ADBA69" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
-    <instance objName="obj_powerdot" x="368" y="464" name="inst_9AA53AD1" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
-    <instance objName="obj_dot" x="112" y="448" name="inst_F04A14BB" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
-    <instance objName="obj_dot" x="112" y="432" name="inst_C2395610" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
-    <instance objName="obj_dot" x="112" y="416" name="inst_825D4758" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
-    <instance objName="obj_dot" x="128" y="416" name="inst_37A46280" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
-    <instance objName="obj_dot" x="144" y="416" name="inst_6A73998F" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
-    <instance objName="obj_dot" x="160" y="416" name="inst_B6A40563" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
-    <instance objName="obj_dot" x="160" y="400" name="inst_17F24677" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
-    <instance objName="obj_dot" x="160" y="384" name="inst_B4AFE213" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
-    <instance objName="obj_dot" x="304" y="352" name="inst_4B4DE3F7" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
-    <instance objName="obj_dot" x="304" y="336" name="inst_F7657FA6" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
-    <instance objName="obj_dot" x="304" y="320" name="inst_3A87D2FE" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
-    <instance objName="obj_dot" x="304" y="304" name="inst_634BFECB" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
-    <instance objName="obj_dot" x="304" y="288" name="inst_6039B419" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
-    <instance objName="obj_dot" x="304" y="272" name="inst_E4940ECE" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
-    <instance objName="obj_dot" x="304" y="256" name="inst_AE0791E2" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
-    <instance objName="obj_dot" x="304" y="240" name="inst_5FA8A262" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
-    <instance objName="obj_dot" x="304" y="224" name="inst_3306084B" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
-    <instance objName="obj_dot" x="304" y="208" name="inst_644B42ED" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
-    <instance objName="obj_dot" x="304" y="192" name="inst_C03C3DD8" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
-    <instance objName="obj_dot" x="304" y="176" name="inst_62A2C28E" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
-    <instance objName="obj_dot" x="304" y="160" name="inst_32D235EA" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
-    <instance objName="obj_dot" x="304" y="112" name="inst_C5A0C890" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
-    <instance objName="obj_dot" x="304" y="96" name="inst_119B3A6C" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
-    <instance objName="obj_dot" x="320" y="96" name="inst_01A882C7" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
-    <instance objName="obj_dot" x="336" y="96" name="inst_D5C57173" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
-    <instance objName="obj_dot" x="352" y="96" name="inst_9952F678" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
-    <instance objName="obj_dot" x="368" y="96" name="inst_5BBED581" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
-    <instance objName="obj_dot" x="384" y="96" name="inst_D055BAD0" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
-    <instance objName="obj_dot" x="400" y="96" name="inst_4B7784CE" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
-    <instance objName="obj_dot" x="400" y="112" name="inst_4431E9E1" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
-    <instance objName="obj_dot" x="400" y="128" name="inst_6EE6CE52" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
-    <instance objName="obj_dot" x="400" y="128" name="inst_CB93EA29" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
-    <instance objName="obj_dot" x="400" y="144" name="inst_D797FBC1" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
-    <instance objName="obj_dot" x="400" y="160" name="inst_B59968EB" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
-    <instance objName="obj_dot" x="384" y="160" name="inst_F0F43ADA" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
-    <instance objName="obj_dot" x="320" y="160" name="inst_11D7591F" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
-    <instance objName="obj_dot" x="256" y="160" name="inst_FBBA6E58" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
-    <instance objName="obj_dot" x="64" y="448" name="inst_51491225" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
-    <instance objName="obj_dot" x="64" y="432" name="inst_D4BD711F" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
-    <instance objName="obj_dot" x="64" y="416" name="inst_3725A918" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
-    <instance objName="obj_dot" x="64" y="400" name="inst_BEA76A47" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
-    <instance objName="obj_dot" x="64" y="384" name="inst_B3DD9F95" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
-    <instance objName="obj_dot" x="64" y="368" name="inst_AC091D68" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
-    <instance objName="obj_dot" x="64" y="352" name="inst_0E966902" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
-    <instance objName="obj_dot" x="64" y="336" name="inst_E1E728EB" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
-    <instance objName="obj_dot" x="64" y="320" name="inst_C29D7D27" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
-    <instance objName="obj_dot" x="64" y="304" name="inst_7690F244" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
-    <instance objName="obj_dot" x="64" y="288" name="inst_3E2D48E5" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
-    <instance objName="obj_dot" x="64" y="272" name="inst_3CC912FD" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
-    <instance objName="obj_dot" x="64" y="256" name="inst_6CD02F27" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
-    <instance objName="obj_dot" x="64" y="240" name="inst_02D4249B" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
-    <instance objName="obj_dot" x="64" y="224" name="inst_ECFB4F78" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
-    <instance objName="obj_dot" x="64" y="208" name="inst_A2CBE8D8" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
-    <instance objName="obj_dot" x="64" y="192" name="inst_66332D82" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
-    <instance objName="obj_dot" x="64" y="176" name="inst_3876C877" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
-    <instance objName="obj_dot" x="64" y="160" name="inst_5BCB9C51" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
-    <instance objName="obj_dot" x="64" y="144" name="inst_B0B1BE88" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
-    <instance objName="obj_dot" x="64" y="128" name="inst_57DCF271" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
-    <instance objName="obj_dot" x="64" y="112" name="inst_66EB40CB" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
-    <instance objName="obj_dot" x="64" y="96" name="inst_FBD173B8" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
-    <instance objName="obj_dot" x="80" y="96" name="inst_1B991A7D" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
-    <instance objName="obj_dot" x="96" y="96" name="inst_F33EC57B" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
-    <instance objName="obj_dot" x="112" y="96" name="inst_DC063FDE" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
-    <instance objName="obj_dot" x="128" y="96" name="inst_BF1724B8" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
-    <instance objName="obj_dot" x="144" y="96" name="inst_403C475A" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
-    <instance objName="obj_dot" x="160" y="96" name="inst_067C3773" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
-    <instance objName="obj_dot" x="160" y="112" name="inst_5C006E62" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
-    <instance objName="obj_dot" x="160" y="160" name="inst_5BCC1EC3" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
-    <instance objName="obj_dot" x="160" y="176" name="inst_92480C35" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
-    <instance objName="obj_dot" x="160" y="352" name="inst_FC27F4BF" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
-    <instance objName="obj_dot" x="160" y="336" name="inst_26B636E2" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
-    <instance objName="obj_dot" x="160" y="320" name="inst_2DBCBB19" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
-    <instance objName="obj_dot" x="176" y="320" name="inst_3DF53D05" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
-    <instance objName="obj_dot" x="192" y="320" name="inst_684B0F09" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
-    <instance objName="obj_dot" x="208" y="320" name="inst_0BFE8CC4" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
-    <instance objName="obj_dot" x="256" y="320" name="inst_F2D411A4" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
-    <instance objName="obj_dot" x="272" y="320" name="inst_18D8F8BB" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
-    <instance objName="obj_dot" x="288" y="320" name="inst_9D07D56D" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
-    <instance objName="obj_dot" x="352" y="272" name="inst_AFF7490A" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
-    <instance objName="obj_dot" x="352" y="320" name="inst_BDF43830" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
-    <instance objName="obj_dot" x="320" y="320" name="inst_37146E46" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
-    <instance objName="obj_dot" x="336" y="320" name="inst_5A7CD853" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
-    <instance objName="obj_dot" x="352" y="304" name="inst_26F77FA8" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
-    <instance objName="obj_dot" x="368" y="272" name="inst_F41A5A82" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
-    <instance objName="obj_dot" x="384" y="272" name="inst_C86105C7" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
-    <instance objName="obj_dot" x="144" y="320" name="inst_862F1CBD" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
-    <instance objName="obj_dot" x="128" y="320" name="inst_BD9AEF6B" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
-    <instance objName="obj_dot" x="112" y="320" name="inst_7F56F12D" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
-    <instance objName="obj_dot" x="112" y="304" name="inst_A9E6BF4C" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
-    <instance objName="obj_dot" x="80" y="272" name="inst_1D5BB596" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
-    <instance objName="obj_dot" x="96" y="272" name="inst_9F805D04" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
-    <instance objName="obj_dot" x="112" y="272" name="inst_C91057CE" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
-    <instance objName="obj_powerdot" x="112" y="288" name="inst_45E4F414" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
-    <instance objName="obj_powerdot" x="352" y="288" name="inst_6C8B27D8" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
-    <instance objName="obj_dot" x="80" y="160" name="inst_9B89CD9E" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
-    <instance objName="obj_dot" x="144" y="160" name="inst_AB8B2AEF" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
-    <instance objName="obj_dot" x="160" y="192" name="inst_E72D8BDE" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
-    <instance objName="obj_dot" x="160" y="208" name="inst_6C77F4AC" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
-    <instance objName="obj_dot" x="160" y="224" name="inst_EDAC6FB0" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
-    <instance objName="obj_dot" x="160" y="240" name="inst_9888A6DB" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
-    <instance objName="obj_dot" x="160" y="256" name="inst_C6FB9E7B" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
-    <instance objName="obj_dot" x="160" y="272" name="inst_FCB5634A" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
-    <instance objName="obj_dot" x="160" y="288" name="inst_FD5CD053" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
-    <instance objName="obj_dot" x="160" y="304" name="inst_50DFBE47" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
-    <instance objName="obj_dot" x="80" y="224" name="inst_38524C4E" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
-    <instance objName="obj_dot" x="96" y="224" name="inst_04C348C0" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
-    <instance objName="obj_dot" x="112" y="224" name="inst_D4681F91" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
-    <instance objName="obj_dot" x="128" y="224" name="inst_5205B4B8" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
-    <instance objName="obj_dot" x="144" y="224" name="inst_3139FC72" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
-    <instance objName="obj_dot" x="400" y="176" name="inst_A3F1DE65" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
-    <instance objName="obj_dot" x="400" y="192" name="inst_2DC6EC3A" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
-    <instance objName="obj_dot" x="400" y="208" name="inst_D0D4DC55" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
-    <instance objName="obj_dot" x="400" y="224" name="inst_B969FC46" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
-    <instance objName="obj_dot" x="400" y="240" name="inst_2C5CE581" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
-    <instance objName="obj_dot" x="400" y="256" name="inst_5D9DFE27" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
-    <instance objName="obj_dot" x="400" y="272" name="inst_67CD1982" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
-    <instance objName="obj_dot" x="400" y="288" name="inst_93E1400E" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
-    <instance objName="obj_dot" x="400" y="304" name="inst_2DBEB9D6" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
-    <instance objName="obj_dot" x="400" y="320" name="inst_27112C04" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
-    <instance objName="obj_dot" x="400" y="336" name="inst_421A7915" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
-    <instance objName="obj_dot" x="400" y="352" name="inst_AB6192E6" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
-    <instance objName="obj_dot" x="400" y="368" name="inst_A2298A23" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
-    <instance objName="obj_dot" x="400" y="384" name="inst_16EAAB63" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
-    <instance objName="obj_dot" x="400" y="400" name="inst_CE377373" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
-    <instance objName="obj_dot" x="400" y="416" name="inst_3D617271" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
-    <instance objName="obj_dot" x="400" y="432" name="inst_2DAC3A8E" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
-    <instance objName="obj_dot" x="400" y="448" name="inst_8A47F4FC" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
-    <instance objName="obj_dot" x="176" y="160" name="inst_8E2862E0" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
-    <instance objName="obj_dot" x="192" y="160" name="inst_88B14858" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
-    <instance objName="obj_dot" x="208" y="160" name="inst_C602C0CE" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
-    <instance objName="obj_dot" x="224" y="160" name="inst_B42114C7" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
-    <instance objName="obj_dot" x="272" y="160" name="inst_EAE3FBAA" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
-    <instance objName="obj_dot" x="240" y="160" name="inst_1EEF90CB" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
-    <instance objName="obj_dot" x="288" y="160" name="inst_EF404B4F" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
-    <instance objName="obj_dashpanel" x="352" y="160" name="inst_F9DED74A" locked="0" code="cut = true&#xA;" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
-    <instance objName="obj_music" x="0" y="0" name="inst_37A3090F" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
-    <instance objName="obj_wall" x="224" y="288" name="inst_FF3BA612" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
-    <instance objName="obj_wall" x="224" y="240" name="inst_F819839D" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
-    <instance objName="obj_funky" x="208" y="272" name="inst_20ED73CD" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
-    <instance objName="obj_fruit" x="216" y="304" name="inst_05FF275D" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
-    <instance objName="obj_wall" x="416" y="336" name="inst_51D71616" locked="0" code="" scaleX="4" scaleY="1" colour="4294967295" rotation="0"/>
-    <instance objName="obj_wall" x="416" y="384" name="inst_4F9F6626" locked="0" code="" scaleX="4" scaleY="1" colour="4294967295" rotation="0"/>
-    <instance objName="obj_wall" x="416" y="288" name="inst_E3DD6DDB" locked="0" code="" scaleX="4" scaleY="1" colour="4294967295" rotation="0"/>
+    <instance objName="obj_music" x="0" y="0" name="inst_700DAF4A" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
+    <instance objName="obj_pacmanspawn" x="232" y="400" name="inst_2203C5D0" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
+    <instance objName="obj_ghostspawn" x="240" y="240" name="inst_88D912A5" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
+    <instance objName="obj_fruit" x="232" y="304" name="inst_07645C87" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
+    <instance objName="obj_dot" x="144" y="400" name="inst_45410BAF" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
+    <instance objName="obj_dot" x="144" y="384" name="inst_E3AB3123" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
+    <instance objName="obj_dot" x="144" y="368" name="inst_6F8EE56E" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
+    <instance objName="obj_dot" x="144" y="352" name="inst_7E075449" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
+    <instance objName="obj_dot" x="128" y="400" name="inst_C72F49DE" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
+    <instance objName="obj_dot" x="112" y="400" name="inst_A3F59EA2" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
+    <instance objName="obj_dot" x="96" y="400" name="inst_09C6F672" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
+    <instance objName="obj_dot" x="96" y="416" name="inst_7DBB6F80" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
+    <instance objName="obj_dot" x="96" y="432" name="inst_D507DE3E" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
+    <instance objName="obj_dot" x="96" y="448" name="inst_A0AE1AB7" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
+    <instance objName="obj_dot" x="96" y="464" name="inst_C8A2021B" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
+    <instance objName="obj_dot" x="96" y="480" name="inst_BC9EEECE" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
+    <instance objName="obj_dot" x="96" y="384" name="inst_69D17591" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
+    <instance objName="obj_dot" x="96" y="368" name="inst_745064CB" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
+    <instance objName="obj_dot" x="96" y="352" name="inst_CD535093" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
+    <instance objName="obj_dot" x="96" y="336" name="inst_2BC6F78D" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
+    <instance objName="obj_dot" x="96" y="320" name="inst_A7AC1122" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
+    <instance objName="obj_dot" x="208" y="304" name="inst_CA76507F" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
+    <instance objName="obj_dot" x="256" y="304" name="inst_570010F3" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
+    <instance objName="obj_dot" x="192" y="304" name="inst_40B7CF81" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
+    <instance objName="obj_dot" x="272" y="304" name="inst_36C89046" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
+    <instance objName="obj_dot" x="160" y="304" name="inst_4A7C88F9" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
+    <instance objName="obj_dot" x="288" y="304" name="inst_14700174" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
+    <instance objName="obj_dot" x="144" y="288" name="inst_BA388DDA" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
+    <instance objName="obj_dot" x="304" y="304" name="inst_74A5C82D" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
+    <instance objName="obj_dot" x="96" y="304" name="inst_4062E645" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
+    <instance objName="obj_dot" x="96" y="288" name="inst_C70AAFCD" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
+    <instance objName="obj_dot" x="96" y="272" name="inst_5D32C044" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
+    <instance objName="obj_dot" x="96" y="256" name="inst_4F9E7E1B" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
+    <instance objName="obj_dot" x="96" y="240" name="inst_FEABD0F4" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
+    <instance objName="obj_dot" x="96" y="224" name="inst_292942B6" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
+    <instance objName="obj_dot" x="96" y="208" name="inst_49E62790" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
+    <instance objName="obj_dot" x="96" y="192" name="inst_DCF2B33D" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
+    <instance objName="obj_dot" x="96" y="176" name="inst_C39B3C45" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
+    <instance objName="obj_dot" x="96" y="160" name="inst_108149E0" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
+    <instance objName="obj_dot" x="96" y="144" name="inst_3085104B" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
+    <instance objName="obj_dot" x="96" y="128" name="inst_F22253A1" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
+    <instance objName="obj_dot" x="96" y="112" name="inst_3E9E983F" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
+    <instance objName="obj_dot" x="96" y="96" name="inst_01CFD98E" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
+    <instance objName="obj_dot" x="96" y="80" name="inst_E4A2624D" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
+    <instance objName="obj_dot" x="112" y="80" name="inst_5D51F7A6" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
+    <instance objName="obj_dot" x="128" y="80" name="inst_C84924B6" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
+    <instance objName="obj_dot" x="144" y="80" name="inst_6B8D1FB5" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
+    <instance objName="obj_dot" x="144" y="96" name="inst_FEBD4223" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
+    <instance objName="obj_dot" x="144" y="112" name="inst_F1F2E32A" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
+    <instance objName="obj_dot" x="160" y="128" name="inst_F3C07C2F" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
+    <instance objName="obj_dot" x="176" y="128" name="inst_5F8B4BA7" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
+    <instance objName="obj_dot" x="192" y="128" name="inst_698ADFFE" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
+    <instance objName="obj_dot" x="208" y="128" name="inst_2955D262" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
+    <instance objName="obj_dot" x="208" y="112" name="inst_61184EA2" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
+    <instance objName="obj_dot" x="208" y="96" name="inst_6EB30692" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
+    <instance objName="obj_dot" x="208" y="80" name="inst_02CD86B6" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
+    <instance objName="obj_dot" x="224" y="80" name="inst_0ED27DA8" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
+    <instance objName="obj_dot" x="240" y="80" name="inst_E60A7C2A" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
+    <instance objName="obj_dot" x="256" y="80" name="inst_E45141DF" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
+    <instance objName="obj_dot" x="256" y="96" name="inst_EEDE222B" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
+    <instance objName="obj_dot" x="256" y="112" name="inst_AC12128A" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
+    <instance objName="obj_dot" x="256" y="128" name="inst_63EFC1EA" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
+    <instance objName="obj_dot" x="256" y="144" name="inst_23E64950" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
+    <instance objName="obj_dot" x="256" y="160" name="inst_ECB1E6DF" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
+    <instance objName="obj_dot" x="224" y="176" name="inst_08024664" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
+    <instance objName="obj_dot" x="208" y="144" name="inst_28339D18" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
+    <instance objName="obj_dot" x="208" y="160" name="inst_352AA7A2" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
+    <instance objName="obj_dot" x="192" y="176" name="inst_03BA54BB" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
+    <instance objName="obj_dot" x="240" y="176" name="inst_55275CA8" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
+    <instance objName="obj_dot" x="256" y="176" name="inst_D04B2C7B" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
+    <instance objName="obj_dot" x="272" y="128" name="inst_7114AAA5" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
+    <instance objName="obj_dot" x="288" y="128" name="inst_9C238E9E" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
+    <instance objName="obj_dot" x="304" y="128" name="inst_C72A33CF" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
+    <instance objName="obj_dot" x="320" y="112" name="inst_9A2D7D41" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
+    <instance objName="obj_dot" x="320" y="96" name="inst_67C553D8" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
+    <instance objName="obj_dot" x="320" y="80" name="inst_94291F99" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
+    <instance objName="obj_dot" x="336" y="80" name="inst_586FACB5" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
+    <instance objName="obj_dot" x="352" y="80" name="inst_CA7EC3F7" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
+    <instance objName="obj_dot" x="368" y="80" name="inst_4605B5DC" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
+    <instance objName="obj_dot" x="368" y="96" name="inst_24ABE02D" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
+    <instance objName="obj_dot" x="368" y="112" name="inst_E32790AB" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
+    <instance objName="obj_dot" x="368" y="128" name="inst_9FFFC1B6" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
+    <instance objName="obj_dot" x="368" y="144" name="inst_DECDA26B" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
+    <instance objName="obj_dot" x="368" y="160" name="inst_15E3767A" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
+    <instance objName="obj_dot" x="368" y="176" name="inst_2ED44BAF" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
+    <instance objName="obj_dot" x="368" y="192" name="inst_D2F2C942" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
+    <instance objName="obj_dot" x="112" y="176" name="inst_603A58E3" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
+    <instance objName="obj_dot" x="128" y="176" name="inst_D7BFD1DD" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
+    <instance objName="obj_dot" x="144" y="176" name="inst_91D4CC5C" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
+    <instance objName="obj_dot" x="160" y="176" name="inst_0EBA9C5F" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
+    <instance objName="obj_dot" x="176" y="176" name="inst_EBD54187" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
+    <instance objName="obj_dot" x="208" y="176" name="inst_E0F54B5F" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
+    <instance objName="obj_dot" x="272" y="176" name="inst_A894C6E1" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
+    <instance objName="obj_dot" x="288" y="176" name="inst_F0B0D376" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
+    <instance objName="obj_dot" x="304" y="176" name="inst_1847A468" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
+    <instance objName="obj_dot" x="320" y="176" name="inst_EDF3796F" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
+    <instance objName="obj_dot" x="336" y="176" name="inst_A4DBF861" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
+    <instance objName="obj_dot" x="352" y="176" name="inst_C9DDFA0C" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
+    <instance objName="obj_dot" x="368" y="208" name="inst_7A55F6E9" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
+    <instance objName="obj_dot" x="368" y="224" name="inst_734E7392" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
+    <instance objName="obj_dot" x="368" y="240" name="inst_338814C2" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
+    <instance objName="obj_dot" x="112" y="240" name="inst_F1B4E726" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
+    <instance objName="obj_dot" x="128" y="240" name="inst_9E6F9AAB" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
+    <instance objName="obj_dot" x="144" y="256" name="inst_359EA25B" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
+    <instance objName="obj_dot" x="144" y="272" name="inst_B332B000" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
+    <instance objName="obj_dot" x="144" y="304" name="inst_DDAEFD92" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
+    <instance objName="obj_dot" x="144" y="320" name="inst_178D94C4" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
+    <instance objName="obj_dot" x="144" y="336" name="inst_D1C5A238" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
+    <instance objName="obj_dot" x="352" y="240" name="inst_CF55B373" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
+    <instance objName="obj_dot" x="336" y="240" name="inst_EA9B5D23" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
+    <instance objName="obj_dot" x="320" y="256" name="inst_E77A602C" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
+    <instance objName="obj_dot" x="320" y="272" name="inst_2D3ACB13" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
+    <instance objName="obj_dot" x="320" y="288" name="inst_704287FA" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
+    <instance objName="obj_dot" x="320" y="304" name="inst_ABB5A76F" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
+    <instance objName="obj_dot" x="368" y="256" name="inst_C17AC3F2" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
+    <instance objName="obj_dot" x="368" y="272" name="inst_BBB3DEC7" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
+    <instance objName="obj_dot" x="368" y="288" name="inst_701CBD05" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
+    <instance objName="obj_dot" x="368" y="304" name="inst_0FE35384" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
+    <instance objName="obj_dot" x="384" y="304" name="inst_98E36EC4" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
+    <instance objName="obj_dot" x="400" y="304" name="inst_C8C138C4" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
+    <instance objName="obj_dot" x="416" y="304" name="inst_53AA3F04" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
+    <instance objName="obj_dot" x="432" y="304" name="inst_8BE6713D" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
+    <instance objName="obj_dot" x="448" y="304" name="inst_DC9DF2A1" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
+    <instance objName="obj_dot" x="464" y="304" name="inst_7CF12A88" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
+    <instance objName="obj_dot" x="320" y="320" name="inst_01C987F4" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
+    <instance objName="obj_dot" x="368" y="320" name="inst_DE115D00" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
+    <instance objName="obj_dot" x="320" y="336" name="inst_F6B5F296" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
+    <instance objName="obj_dot" x="368" y="336" name="inst_964BCE59" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
+    <instance objName="obj_dot" x="320" y="352" name="inst_1776D1A3" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
+    <instance objName="obj_dot" x="368" y="352" name="inst_56CDEEA1" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
+    <instance objName="obj_dot" x="320" y="368" name="inst_36705130" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
+    <instance objName="obj_dot" x="368" y="368" name="inst_E8403D17" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
+    <instance objName="obj_dot" x="320" y="384" name="inst_22963A24" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
+    <instance objName="obj_dot" x="368" y="384" name="inst_936D529F" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
+    <instance objName="obj_dot" x="320" y="400" name="inst_150165A6" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
+    <instance objName="obj_dot" x="336" y="400" name="inst_412D909D" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
+    <instance objName="obj_dot" x="352" y="400" name="inst_CA7CF9F0" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
+    <instance objName="obj_dot" x="368" y="400" name="inst_6854D484" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
+    <instance objName="obj_dot" x="368" y="416" name="inst_5CF6CE3A" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
+    <instance objName="obj_dot" x="368" y="432" name="inst_79A8B078" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
+    <instance objName="obj_dot" x="368" y="448" name="inst_E10C0943" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
+    <instance objName="obj_dot" x="368" y="464" name="inst_7E4CE8C0" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
+    <instance objName="obj_dot" x="368" y="480" name="inst_D8F909F4" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
+    <instance objName="obj_dot" x="368" y="496" name="inst_69389596" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
+    <instance objName="obj_dot" x="368" y="512" name="inst_E116B264" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
+    <instance objName="obj_dot" x="368" y="528" name="inst_5E7B8807" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
+    <instance objName="obj_dot" x="352" y="544" name="inst_D2FCDFA3" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
+    <instance objName="obj_dot" x="336" y="544" name="inst_FB7260C0" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
+    <instance objName="obj_dot" x="320" y="544" name="inst_5226926D" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
+    <instance objName="obj_dot" x="304" y="544" name="inst_52744BB4" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
+    <instance objName="obj_dot" x="288" y="544" name="inst_03566089" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
+    <instance objName="obj_dot" x="272" y="544" name="inst_ED501248" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
+    <instance objName="obj_dot" x="256" y="544" name="inst_41CA47BB" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
+    <instance objName="obj_dot" x="240" y="544" name="inst_1AC8D087" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
+    <instance objName="obj_dot" x="224" y="544" name="inst_5066E0B7" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
+    <instance objName="obj_dot" x="208" y="544" name="inst_861CC960" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
+    <instance objName="obj_dot" x="192" y="544" name="inst_B334F516" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
+    <instance objName="obj_dot" x="176" y="544" name="inst_DCEEE90B" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
+    <instance objName="obj_dot" x="160" y="544" name="inst_D7710027" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
+    <instance objName="obj_dot" x="144" y="544" name="inst_CF30A37D" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
+    <instance objName="obj_dot" x="128" y="544" name="inst_B31D2C6F" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
+    <instance objName="obj_dot" x="112" y="544" name="inst_CD47B5E8" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
+    <instance objName="obj_dot" x="96" y="496" name="inst_7AF0F806" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
+    <instance objName="obj_dot" x="96" y="512" name="inst_086C1905" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
+    <instance objName="obj_dot" x="96" y="528" name="inst_7C47BCA8" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
+    <instance objName="obj_dot" x="112" y="496" name="inst_93496607" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
+    <instance objName="obj_dot" x="128" y="496" name="inst_F54372DC" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
+    <instance objName="obj_dot" x="144" y="496" name="inst_9E0BD00E" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
+    <instance objName="obj_dot" x="176" y="496" name="inst_E8255233" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
+    <instance objName="obj_dot" x="160" y="496" name="inst_B00E53FD" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
+    <instance objName="obj_dot" x="192" y="496" name="inst_81614456" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
+    <instance objName="obj_dot" x="208" y="496" name="inst_7B3FABE8" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
+    <instance objName="obj_dot" x="224" y="496" name="inst_C4A47235" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
+    <instance objName="obj_dot" x="240" y="496" name="inst_C5654976" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
+    <instance objName="obj_dot" x="352" y="496" name="inst_3FD34CD4" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
+    <instance objName="obj_dot" x="336" y="496" name="inst_7A55F346" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
+    <instance objName="obj_dot" x="320" y="496" name="inst_9DE8884A" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
+    <instance objName="obj_dot" x="304" y="496" name="inst_48D84784" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
+    <instance objName="obj_dot" x="288" y="496" name="inst_EDD3293B" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
+    <instance objName="obj_dot" x="272" y="496" name="inst_971FC602" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
+    <instance objName="obj_dot" x="256" y="496" name="inst_48E5D5AF" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
+    <instance objName="obj_dot" x="192" y="512" name="inst_1A3688FA" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
+    <instance objName="obj_dot" x="272" y="512" name="inst_F411CC02" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
+    <instance objName="obj_dot" x="272" y="528" name="inst_09039270" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
+    <instance objName="obj_dot" x="192" y="528" name="inst_11F82882" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
+    <instance objName="obj_powerdot" x="144" y="240" name="inst_5C785540" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
+    <instance objName="obj_powerdot" x="320" y="240" name="inst_C6131312" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
+    <instance objName="obj_powerdot" x="144" y="128" name="inst_C7FE4AC2" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
+    <instance objName="obj_powerdot" x="320" y="128" name="inst_EE5B50A3" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
+    <instance objName="obj_powerdot" x="96" y="544" name="inst_7DF61EE2" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
+    <instance objName="obj_powerdot" x="368" y="544" name="inst_D271CBB2" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
+    <instance objName="obj_blinky" x="208" y="256" name="inst_8290DA35" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
+    <instance objName="obj_pinky" x="208" y="224" name="inst_7C019255" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
+    <instance objName="obj_inky" x="256" y="224" name="inst_C2C2E744" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
+    <instance objName="obj_clyde" x="256" y="256" name="inst_D04C1679" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
+    <instance objName="obj_sue" x="256" y="240" name="inst_82C909EC" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
+    <instance objName="obj_funky" x="208" y="240" name="inst_14F83F41" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
+    <instance objName="obj_wall" x="64" y="320" name="inst_BACA6F9B" locked="0" code="" scaleX="1" scaleY="16" colour="4294967295" rotation="0"/>
+    <instance objName="obj_wall" x="80" y="560" name="inst_A4C7EE33" locked="0" code="" scaleX="20" scaleY="1" colour="4294967295" rotation="0"/>
+    <instance objName="obj_wall" x="384" y="320" name="inst_2EC3505B" locked="0" code="" scaleX="1" scaleY="15" colour="4294967295" rotation="0"/>
+    <instance objName="obj_wall" x="112" y="416" name="inst_9D38DBBC" locked="0" code="" scaleX="15" scaleY="4" colour="4294967295" rotation="0"/>
+    <instance objName="obj_wall" x="160" y="320" name="inst_7E776D6C" locked="0" code="" scaleX="9" scaleY="4" colour="4294967295" rotation="0"/>
+    <instance objName="obj_wall" x="336" y="256" name="inst_F1437137" locked="0" code="" scaleX="1" scaleY="8" colour="4294967295" rotation="0"/>
+    <instance objName="obj_wall" x="112" y="512" name="inst_4D7CF39E" locked="0" code="" scaleX="4" scaleY="1" colour="4294967295" rotation="0"/>
+    <instance objName="obj_wall" x="208" y="512" name="inst_D9334F25" locked="0" code="" scaleX="3" scaleY="1" colour="4294967295" rotation="0"/>
+    <instance objName="obj_wall" x="288" y="512" name="inst_9FF94A3B" locked="0" code="" scaleX="4" scaleY="1" colour="4294967295" rotation="0"/>
+    <instance objName="obj_wall" x="400" y="320" name="inst_518AAC88" locked="0" code="" scaleX="5" scaleY="1" colour="4294967295" rotation="0"/>
+    <instance objName="obj_wall" x="384" y="272" name="inst_60C1EBE3" locked="0" code="" scaleX="6" scaleY="1" colour="4294967295" rotation="0"/>
+    <instance objName="obj_wall" x="384" y="48" name="inst_2970E4FF" locked="0" code="" scaleX="1" scaleY="14" colour="4294967295" rotation="0"/>
+    <instance objName="obj_wall" x="64" y="48" name="inst_35DF6956" locked="0" code="" scaleX="20" scaleY="1" colour="4294967295" rotation="0"/>
+    <instance objName="obj_wall" x="64" y="64" name="inst_E7E02EB3" locked="0" code="" scaleX="1" scaleY="14" colour="4294967295" rotation="0"/>
+    <instance objName="obj_wall" x="0" y="272" name="inst_2BFBD484" locked="0" code="" scaleX="4" scaleY="1" colour="4294967295" rotation="0"/>
+    <instance objName="obj_wall" x="0" y="320" name="inst_784A44CF" locked="0" code="" scaleX="4" scaleY="1" colour="4294967295" rotation="0"/>
+    <instance objName="obj_wall" x="112" y="256" name="inst_9A36F267" locked="0" code="" scaleX="1" scaleY="8" colour="4294967295" rotation="0"/>
+    <instance objName="obj_wall" x="112" y="192" name="inst_7CCA93AE" locked="0" code="" scaleX="5" scaleY="2" colour="4294967295" rotation="0"/>
+    <instance objName="obj_wall" x="224" y="192" name="inst_7FCE9370" locked="0" code="" scaleX="1" scaleY="2" colour="4294967295" rotation="0"/>
+    <instance objName="obj_wall" x="272" y="192" name="inst_9B28D006" locked="0" code="" scaleX="5" scaleY="2" colour="4294967295" rotation="0"/>
+    <instance objName="obj_wall" x="112" y="96" name="inst_5FB01050" locked="0" code="" scaleX="1" scaleY="4" colour="4294967295" rotation="0"/>
+    <instance objName="obj_wall" x="160" y="64" name="inst_8F7129E1" locked="0" code="" scaleX="2" scaleY="3" colour="4294967295" rotation="0"/>
+    <instance objName="obj_wall" x="224" y="96" name="inst_C509029B" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
+    <instance objName="obj_wall" x="224" y="144" name="inst_4FBE77A9" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
+    <instance objName="obj_wall" x="128" y="144" name="inst_4181F7DF" locked="0" code="" scaleX="4" scaleY="1" colour="4294967295" rotation="0"/>
+    <instance objName="obj_wall" x="224" y="256" name="inst_20CDD7C6" locked="0" code="" scaleX="1" scaleY="2" colour="4294967295" rotation="0"/>
+    <instance objName="obj_wall" x="272" y="224" name="inst_EEC2A73F" locked="0" code="" scaleX="2" scaleY="4" colour="4294967295" rotation="0"/>
+    <instance objName="obj_wall" x="160" y="224" name="inst_1C379D43" locked="0" code="" scaleX="2" scaleY="4" colour="4294967295" rotation="0"/>
+    <instance objName="obj_wall" x="272" y="144" name="inst_66E765A3" locked="0" code="" scaleX="5" scaleY="1" colour="4294967295" rotation="0"/>
+    <instance objName="obj_wall" x="336" y="96" name="inst_FE3B9ED0" locked="0" code="" scaleX="1" scaleY="3" colour="4294967295" rotation="0"/>
+    <instance objName="obj_wall" x="272" y="64" name="inst_0E9F60CF" locked="0" code="" scaleX="2" scaleY="3" colour="4294967295" rotation="0"/>
+    <instance objName="obj_dot" x="176" y="304" name="inst_F068399B" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
   </instances>
-  <tiles/>
+  <tiles>
+    <tile bgName="ts_worldmap" x="208" y="288" w="32" h="32" xo="0" yo="368" id="10000341" name="inst_118FEA8B" depth="1000000" locked="0" colour="4294967295" scaleX="1" scaleY="1"/>
+    <tile bgName="ts_worldmap" x="240" y="288" w="32" h="32" xo="0" yo="368" id="10000343" name="inst_DF4DD48F" depth="1000000" locked="0" colour="4294967295" scaleX="1" scaleY="1"/>
+    <tile bgName="ts_worldmap" x="224" y="256" w="16" h="16" xo="80" yo="432" id="10000352" name="inst_1E829D4F" depth="1000000" locked="0" colour="4294967295" scaleX="1" scaleY="1"/>
+    <tile bgName="ts_worldmap" x="176" y="256" w="16" h="16" xo="64" yo="432" id="10000355" name="inst_C6C58F8B" depth="1000000" locked="0" colour="4294967295" scaleX="1" scaleY="1"/>
+    <tile bgName="ts_worldmap" x="272" y="256" w="16" h="16" xo="96" yo="432" id="10000356" name="inst_392F5178" depth="1000000" locked="0" colour="4294967295" scaleX="1" scaleY="1"/>
+    <tile bgName="ts_worldmap" x="272" y="240" w="16" h="16" xo="96" yo="416" id="10000357" name="inst_8D7812CC" depth="1000000" locked="0" colour="4294967295" scaleX="1" scaleY="1"/>
+    <tile bgName="ts_worldmap" x="272" y="224" w="16" h="16" xo="96" yo="416" id="10000358" name="inst_C201ACAE" depth="1000000" locked="0" colour="4294967295" scaleX="1" scaleY="1"/>
+    <tile bgName="ts_worldmap" x="272" y="208" w="16" h="16" xo="96" yo="400" id="10000359" name="inst_1C2F570C" depth="1000000" locked="0" colour="4294967295" scaleX="1" scaleY="1"/>
+    <tile bgName="ts_worldmap" x="176" y="240" w="16" h="16" xo="64" yo="416" id="10000360" name="inst_F0D815CF" depth="1000000" locked="0" colour="4294967295" scaleX="1" scaleY="1"/>
+    <tile bgName="ts_worldmap" x="176" y="224" w="16" h="16" xo="64" yo="416" id="10000361" name="inst_4D11919A" depth="1000000" locked="0" colour="4294967295" scaleX="1" scaleY="1"/>
+    <tile bgName="ts_worldmap" x="176" y="208" w="16" h="16" xo="64" yo="400" id="10000362" name="inst_45DF51F6" depth="1000000" locked="0" colour="4294967295" scaleX="1" scaleY="1"/>
+    <tile bgName="ts_worldmap" x="160" y="288" w="16" h="32" xo="32" yo="368" id="10000372" name="inst_EF77760A" depth="1000000" locked="0" colour="4294967295" scaleX="1" scaleY="1"/>
+    <tile bgName="ts_worldmap" x="128" y="272" w="32" h="16" xo="48" yo="352" id="10000376" name="inst_C2224785" depth="1000000" locked="0" colour="4294967295" scaleX="1" scaleY="1"/>
+    <tile bgName="ts_worldmap" x="304" y="256" w="32" h="16" xo="48" yo="352" id="10000377" name="inst_360380BB" depth="1000000" locked="0" colour="4294967295" scaleX="1" scaleY="1"/>
+    <tile bgName="ts_worldmap" x="336" y="288" w="16" h="16" xo="48" yo="432" id="10000390" name="inst_D8C68B82" depth="1000000" locked="0" colour="4294967295" scaleX="1" scaleY="1"/>
+    <tile bgName="ts_worldmap" x="336" y="272" w="16" h="16" xo="48" yo="432" id="10000391" name="inst_35AD6346" depth="1000000" locked="0" colour="4294967295" scaleX="1" scaleY="1"/>
+    <tile bgName="ts_worldmap" x="336" y="368" w="16" h="16" xo="48" yo="448" id="10000392" name="inst_36870B43" depth="1000000" locked="0" colour="4294967295" scaleX="1" scaleY="1"/>
+    <tile bgName="ts_worldmap" x="336" y="256" w="16" h="16" xo="48" yo="416" id="10000393" name="inst_7373191A" depth="1000000" locked="0" colour="4294967295" scaleX="1" scaleY="1"/>
+    <tile bgName="ts_worldmap" x="336" y="304" w="16" h="16" xo="48" yo="432" id="10000399" name="inst_20065566" depth="1000000" locked="0" colour="4294967295" scaleX="1" scaleY="1"/>
+    <tile bgName="ts_worldmap" x="336" y="224" w="16" h="32" xo="32" yo="368" id="10000400" name="inst_19C9CF38" depth="1000000" locked="0" colour="4294967295" scaleX="1" scaleY="1"/>
+    <tile bgName="ts_worldmap" x="128" y="288" w="32" h="32" xo="144" yo="352" id="10000403" name="inst_5669F1EF" depth="1000000" locked="0" colour="4294967295" scaleX="1" scaleY="1"/>
+    <tile bgName="ts_worldmap" x="304" y="288" w="32" h="32" xo="176" yo="352" id="10000405" name="inst_9F0CA83B" depth="1000000" locked="0" colour="4294967295" scaleX="1" scaleY="1"/>
+    <tile bgName="ts_worldmap" x="128" y="256" w="32" h="16" xo="48" yo="352" id="10000409" name="inst_07F3AE2A" depth="1000000" locked="0" colour="4294967295" scaleX="1" scaleY="1"/>
+    <tile bgName="ts_worldmap" x="304" y="272" w="32" h="16" xo="48" yo="352" id="10000410" name="inst_4E9B4974" depth="1000000" locked="0" colour="4294967295" scaleX="1" scaleY="1"/>
+    <tile bgName="ts_worldmap" x="288" y="288" w="16" h="32" xo="32" yo="368" id="10000414" name="inst_17FAA472" depth="1000000" locked="0" colour="4294967295" scaleX="1" scaleY="1"/>
+    <tile bgName="ts_worldmap" x="160" y="256" w="16" h="16" xo="48" yo="432" id="10000417" name="inst_1DD7B6CB" depth="1000000" locked="0" colour="4294967295" scaleX="1" scaleY="1"/>
+    <tile bgName="ts_worldmap" x="160" y="240" w="16" h="16" xo="48" yo="432" id="10000418" name="inst_965D1A6D" depth="1000000" locked="0" colour="4294967295" scaleX="1" scaleY="1"/>
+    <tile bgName="ts_worldmap" x="160" y="224" w="16" h="16" xo="48" yo="432" id="10000419" name="inst_3DD9A657" depth="1000000" locked="0" colour="4294967295" scaleX="1" scaleY="1"/>
+    <tile bgName="ts_worldmap" x="288" y="224" w="16" h="16" xo="48" yo="432" id="10000422" name="inst_314AFA37" depth="1000000" locked="0" colour="4294967295" scaleX="1" scaleY="1"/>
+    <tile bgName="ts_worldmap" x="288" y="240" w="16" h="16" xo="48" yo="432" id="10000423" name="inst_5DB2FEDB" depth="1000000" locked="0" colour="4294967295" scaleX="1" scaleY="1"/>
+    <tile bgName="ts_worldmap" x="288" y="256" w="16" h="16" xo="48" yo="432" id="10000424" name="inst_A4B3A1A0" depth="1000000" locked="0" colour="4294967295" scaleX="1" scaleY="1"/>
+    <tile bgName="ts_worldmap" x="288" y="272" w="16" h="16" xo="32" yo="432" id="10000426" name="inst_51272A24" depth="1000000" locked="0" colour="4294967295" scaleX="1" scaleY="1"/>
+    <tile bgName="ts_worldmap" x="160" y="272" w="16" h="16" xo="16" yo="432" id="10000427" name="inst_CA1F0813" depth="1000000" locked="0" colour="4294967295" scaleX="1" scaleY="1"/>
+    <tile bgName="ts_worldmap" x="176" y="192" w="16" h="16" xo="16" yo="400" id="10000430" name="inst_01C327C5" depth="1000000" locked="0" colour="4294967295" scaleX="1" scaleY="1"/>
+    <tile bgName="ts_worldmap" x="224" y="192" w="16" h="16" xo="16" yo="400" id="10000435" name="inst_C8462F94" depth="1000000" locked="0" colour="4294967295" scaleX="1" scaleY="1"/>
+    <tile bgName="ts_worldmap" x="272" y="192" w="16" h="16" xo="16" yo="400" id="10000436" name="inst_9458876C" depth="1000000" locked="0" colour="4294967295" scaleX="1" scaleY="1"/>
+    <tile bgName="ts_worldmap" x="176" y="272" w="16" h="16" xo="16" yo="400" id="10000444" name="inst_4FBB2BDE" depth="1000000" locked="0" colour="4294967295" scaleX="1" scaleY="1"/>
+    <tile bgName="ts_worldmap" x="224" y="272" w="16" h="16" xo="16" yo="400" id="10000447" name="inst_9A3D54EC" depth="1000000" locked="0" colour="4294967295" scaleX="1" scaleY="1"/>
+    <tile bgName="ts_worldmap" x="272" y="272" w="16" h="16" xo="16" yo="400" id="10000450" name="inst_EFFA69AF" depth="1000000" locked="0" colour="4294967295" scaleX="1" scaleY="1"/>
+    <tile bgName="ts_worldmap" x="336" y="320" w="16" h="16" xo="48" yo="432" id="10000452" name="inst_7960F5A0" depth="1000000" locked="0" colour="4294967295" scaleX="1" scaleY="1"/>
+    <tile bgName="ts_worldmap" x="176" y="320" w="16" h="16" xo="16" yo="400" id="10000475" name="inst_4DCB8016" depth="1000000" locked="0" colour="4294967295" scaleX="1" scaleY="1"/>
+    <tile bgName="ts_worldmap" x="192" y="320" w="16" h="16" xo="16" yo="400" id="10000476" name="inst_3EBC7287" depth="1000000" locked="0" colour="4294967295" scaleX="1" scaleY="1"/>
+    <tile bgName="ts_worldmap" x="208" y="320" w="16" h="16" xo="16" yo="400" id="10000477" name="inst_2547FFEC" depth="1000000" locked="0" colour="4294967295" scaleX="1" scaleY="1"/>
+    <tile bgName="ts_worldmap" x="224" y="320" w="16" h="16" xo="16" yo="400" id="10000478" name="inst_B0EDA0F2" depth="1000000" locked="0" colour="4294967295" scaleX="1" scaleY="1"/>
+    <tile bgName="ts_worldmap" x="240" y="320" w="16" h="16" xo="16" yo="400" id="10000479" name="inst_EB254FFE" depth="1000000" locked="0" colour="4294967295" scaleX="1" scaleY="1"/>
+    <tile bgName="ts_worldmap" x="256" y="320" w="16" h="16" xo="16" yo="400" id="10000480" name="inst_B562C1E9" depth="1000000" locked="0" colour="4294967295" scaleX="1" scaleY="1"/>
+    <tile bgName="ts_worldmap" x="272" y="320" w="16" h="16" xo="16" yo="400" id="10000481" name="inst_64EC5440" depth="1000000" locked="0" colour="4294967295" scaleX="1" scaleY="1"/>
+    <tile bgName="ts_worldmap" x="112" y="256" w="16" h="16" xo="48" yo="416" id="10000493" name="inst_4B8F576C" depth="1000000" locked="0" colour="4294967295" scaleX="1" scaleY="1"/>
+    <tile bgName="ts_worldmap" x="112" y="368" w="16" h="16" xo="48" yo="448" id="10000494" name="inst_33DB0E7C" depth="1000000" locked="0" colour="4294967295" scaleX="1" scaleY="1"/>
+    <tile bgName="ts_worldmap" x="112" y="272" w="16" h="16" xo="48" yo="432" id="10000500" name="inst_35BDC8BA" depth="1000000" locked="0" colour="4294967295" scaleX="1" scaleY="1"/>
+    <tile bgName="ts_worldmap" x="112" y="288" w="16" h="16" xo="48" yo="432" id="10000501" name="inst_0E8405AE" depth="1000000" locked="0" colour="4294967295" scaleX="1" scaleY="1"/>
+    <tile bgName="ts_worldmap" x="112" y="304" w="16" h="16" xo="48" yo="432" id="10000502" name="inst_E93D8F50" depth="1000000" locked="0" colour="4294967295" scaleX="1" scaleY="1"/>
+    <tile bgName="ts_worldmap" x="112" y="320" w="16" h="16" xo="48" yo="432" id="10000503" name="inst_F7BA7471" depth="1000000" locked="0" colour="4294967295" scaleX="1" scaleY="1"/>
+    <tile bgName="ts_worldmap" x="288" y="320" w="16" h="16" xo="32" yo="416" id="10000504" name="inst_51C1B0F7" depth="1000000" locked="0" colour="4294967295" scaleX="1" scaleY="1"/>
+    <tile bgName="ts_worldmap" x="160" y="320" w="16" h="16" xo="16" yo="416" id="10000505" name="inst_CEBE93DE" depth="1000000" locked="0" colour="4294967295" scaleX="1" scaleY="1"/>
+    <tile bgName="ts_worldmap" x="160" y="368" w="16" h="16" xo="16" yo="432" id="10000506" name="inst_F2457A25" depth="1000000" locked="0" colour="4294967295" scaleX="1" scaleY="1"/>
+    <tile bgName="ts_worldmap" x="288" y="368" w="16" h="16" xo="32" yo="432" id="10000507" name="inst_95146975" depth="1000000" locked="0" colour="4294967295" scaleX="1" scaleY="1"/>
+    <tile bgName="ts_worldmap" x="176" y="368" w="16" h="16" xo="16" yo="400" id="10000508" name="inst_C66DE2C5" depth="1000000" locked="0" colour="4294967295" scaleX="1" scaleY="1"/>
+    <tile bgName="ts_worldmap" x="192" y="368" w="16" h="16" xo="16" yo="400" id="10000509" name="inst_445A06A9" depth="1000000" locked="0" colour="4294967295" scaleX="1" scaleY="1"/>
+    <tile bgName="ts_worldmap" x="208" y="368" w="16" h="16" xo="16" yo="400" id="10000510" name="inst_A1CD2714" depth="1000000" locked="0" colour="4294967295" scaleX="1" scaleY="1"/>
+    <tile bgName="ts_worldmap" x="224" y="368" w="16" h="16" xo="16" yo="400" id="10000511" name="inst_C7D43C13" depth="1000000" locked="0" colour="4294967295" scaleX="1" scaleY="1"/>
+    <tile bgName="ts_worldmap" x="240" y="368" w="16" h="16" xo="16" yo="400" id="10000512" name="inst_643E8E40" depth="1000000" locked="0" colour="4294967295" scaleX="1" scaleY="1"/>
+    <tile bgName="ts_worldmap" x="256" y="368" w="16" h="16" xo="16" yo="400" id="10000513" name="inst_AB44C551" depth="1000000" locked="0" colour="4294967295" scaleX="1" scaleY="1"/>
+    <tile bgName="ts_worldmap" x="272" y="368" w="16" h="16" xo="16" yo="400" id="10000514" name="inst_E6E30A38" depth="1000000" locked="0" colour="4294967295" scaleX="1" scaleY="1"/>
+    <tile bgName="ts_worldmap" x="160" y="336" w="16" h="16" xo="48" yo="432" id="10000515" name="inst_0A0783D5" depth="1000000" locked="0" colour="4294967295" scaleX="1" scaleY="1"/>
+    <tile bgName="ts_worldmap" x="160" y="352" w="16" h="16" xo="48" yo="432" id="10000516" name="inst_EDBAC2C8" depth="1000000" locked="0" colour="4294967295" scaleX="1" scaleY="1"/>
+    <tile bgName="ts_worldmap" x="288" y="336" w="16" h="16" xo="48" yo="432" id="10000517" name="inst_6AA379DC" depth="1000000" locked="0" colour="4294967295" scaleX="1" scaleY="1"/>
+    <tile bgName="ts_worldmap" x="288" y="352" w="16" h="16" xo="48" yo="432" id="10000518" name="inst_46D2A8C2" depth="1000000" locked="0" colour="4294967295" scaleX="1" scaleY="1"/>
+    <tile bgName="ts_worldmap" x="272" y="336" w="16" h="16" xo="32" yo="320" id="10000519" name="inst_F4AC5A05" depth="1000000" locked="0" colour="4294967295" scaleX="1" scaleY="1"/>
+    <tile bgName="ts_worldmap" x="272" y="352" w="16" h="16" xo="32" yo="352" id="10000520" name="inst_F11152F0" depth="1000000" locked="0" colour="4294967295" scaleX="1" scaleY="1"/>
+    <tile bgName="ts_worldmap" x="176" y="336" w="16" h="16" xo="0" yo="320" id="10000521" name="inst_8C9254A6" depth="1000000" locked="0" colour="4294967295" scaleX="1" scaleY="1"/>
+    <tile bgName="ts_worldmap" x="176" y="352" w="16" h="16" xo="0" yo="352" id="10000522" name="inst_AD246FAA" depth="1000000" locked="0" colour="4294967295" scaleX="1" scaleY="1"/>
+    <tile bgName="ts_worldmap" x="256" y="336" w="16" h="16" xo="16" yo="320" id="10000523" name="inst_3C8ACCC8" depth="1000000" locked="0" colour="4294967295" scaleX="1" scaleY="1"/>
+    <tile bgName="ts_worldmap" x="240" y="336" w="16" h="16" xo="16" yo="320" id="10000524" name="inst_06D9F027" depth="1000000" locked="0" colour="4294967295" scaleX="1" scaleY="1"/>
+    <tile bgName="ts_worldmap" x="192" y="336" w="16" h="16" xo="16" yo="320" id="10000525" name="inst_8B6CFB8D" depth="1000000" locked="0" colour="4294967295" scaleX="1" scaleY="1"/>
+    <tile bgName="ts_worldmap" x="208" y="336" w="16" h="16" xo="16" yo="320" id="10000526" name="inst_A2A481B5" depth="1000000" locked="0" colour="4294967295" scaleX="1" scaleY="1"/>
+    <tile bgName="ts_worldmap" x="224" y="336" w="16" h="16" xo="16" yo="320" id="10000527" name="inst_EAB3A9DF" depth="1000000" locked="0" colour="4294967295" scaleX="1" scaleY="1"/>
+    <tile bgName="ts_worldmap" x="192" y="352" w="16" h="16" xo="16" yo="352" id="10000528" name="inst_62CEA8E8" depth="1000000" locked="0" colour="4294967295" scaleX="1" scaleY="1"/>
+    <tile bgName="ts_worldmap" x="208" y="352" w="16" h="16" xo="16" yo="352" id="10000529" name="inst_DCF88C35" depth="1000000" locked="0" colour="4294967295" scaleX="1" scaleY="1"/>
+    <tile bgName="ts_worldmap" x="224" y="352" w="16" h="16" xo="16" yo="352" id="10000530" name="inst_AA7A8C7D" depth="1000000" locked="0" colour="4294967295" scaleX="1" scaleY="1"/>
+    <tile bgName="ts_worldmap" x="240" y="352" w="16" h="16" xo="16" yo="352" id="10000531" name="inst_377A5B80" depth="1000000" locked="0" colour="4294967295" scaleX="1" scaleY="1"/>
+    <tile bgName="ts_worldmap" x="256" y="352" w="16" h="16" xo="16" yo="352" id="10000532" name="inst_1BD6C5E4" depth="1000000" locked="0" colour="4294967295" scaleX="1" scaleY="1"/>
+    <tile bgName="ts_worldmap" x="128" y="384" w="32" h="32" xo="176" yo="320" id="10000544" name="inst_FFC305CC" depth="1000000" locked="0" colour="4294967295" scaleX="1" scaleY="1"/>
+    <tile bgName="ts_worldmap" x="304" y="384" w="32" h="32" xo="176" yo="320" id="10000545" name="inst_D6F6FF91" depth="1000000" locked="0" colour="4294967295" scaleX="1" scaleY="1"/>
+    <tile bgName="ts_worldmap" x="128" y="336" w="32" h="32" xo="48" yo="320" id="10000546" name="inst_343588B6" depth="1000000" locked="0" colour="4294967295" scaleX="1" scaleY="1"/>
+    <tile bgName="ts_worldmap" x="176" y="384" w="32" h="32" xo="0" yo="368" id="10000550" name="inst_4354B5EA" depth="1000000" locked="0" colour="4294967295" scaleX="1" scaleY="1"/>
+    <tile bgName="ts_worldmap" x="240" y="384" w="32" h="32" xo="0" yo="368" id="10000551" name="inst_62B1C036" depth="1000000" locked="0" colour="4294967295" scaleX="1" scaleY="1"/>
+    <tile bgName="ts_worldmap" x="304" y="336" w="32" h="32" xo="48" yo="320" id="10000553" name="inst_53C8A42D" depth="1000000" locked="0" colour="4294967295" scaleX="1" scaleY="1"/>
+    <tile bgName="ts_worldmap" x="272" y="384" w="16" h="32" xo="0" yo="368" id="10000554" name="inst_9F1A869F" depth="1000000" locked="0" colour="4294967295" scaleX="1" scaleY="1"/>
+    <tile bgName="ts_worldmap" x="112" y="384" w="16" h="32" xo="32" yo="368" id="10000556" name="inst_7A6CC2AA" depth="1000000" locked="0" colour="4294967295" scaleX="1" scaleY="1"/>
+    <tile bgName="ts_worldmap" x="128" y="368" w="32" h="16" xo="48" yo="352" id="10000557" name="inst_3B9032A3" depth="1000000" locked="0" colour="4294967295" scaleX="1" scaleY="1"/>
+    <tile bgName="ts_worldmap" x="128" y="320" w="32" h="16" xo="48" yo="352" id="10000558" name="inst_5B8EEC3E" depth="1000000" locked="0" colour="4294967295" scaleX="1" scaleY="1"/>
+    <tile bgName="ts_worldmap" x="304" y="320" w="32" h="16" xo="48" yo="352" id="10000559" name="inst_0F7DC962" depth="1000000" locked="0" colour="4294967295" scaleX="1" scaleY="1"/>
+    <tile bgName="ts_worldmap" x="304" y="368" w="32" h="16" xo="48" yo="352" id="10000560" name="inst_F6C9FE1E" depth="1000000" locked="0" colour="4294967295" scaleX="1" scaleY="1"/>
+    <tile bgName="ts_worldmap" x="112" y="224" w="16" h="32" xo="32" yo="368" id="10000561" name="inst_F43986AC" depth="1000000" locked="0" colour="4294967295" scaleX="1" scaleY="1"/>
+    <tile bgName="ts_worldmap" x="128" y="224" w="32" h="32" xo="112" yo="320" id="10000562" name="inst_A167D477" depth="1000000" locked="0" colour="4294967295" scaleX="1" scaleY="1"/>
+    <tile bgName="ts_worldmap" x="304" y="224" w="32" h="32" xo="80" yo="320" id="10000563" name="inst_9BD17CEF" depth="1000000" locked="0" colour="4294967295" scaleX="1" scaleY="1"/>
+    <tile bgName="ts_worldmap" x="192" y="192" w="16" h="16" xo="48" yo="400" id="10000566" name="inst_9B4C51DD" depth="1000000" locked="0" colour="4294967295" scaleX="1" scaleY="1"/>
+    <tile bgName="ts_worldmap" x="208" y="192" w="16" h="16" xo="48" yo="400" id="10000567" name="inst_96E670CB" depth="1000000" locked="0" colour="4294967295" scaleX="1" scaleY="1"/>
+    <tile bgName="ts_worldmap" x="240" y="192" w="16" h="16" xo="48" yo="400" id="10000568" name="inst_69A80A8D" depth="1000000" locked="0" colour="4294967295" scaleX="1" scaleY="1"/>
+    <tile bgName="ts_worldmap" x="144" y="192" w="16" h="16" xo="16" yo="400" id="10000572" name="inst_83BBAB8B" depth="1000000" locked="0" colour="4294967295" scaleX="1" scaleY="1"/>
+    <tile bgName="ts_worldmap" x="128" y="192" w="16" h="16" xo="16" yo="400" id="10000573" name="inst_719763D7" depth="1000000" locked="0" colour="4294967295" scaleX="1" scaleY="1"/>
+    <tile bgName="ts_worldmap" x="320" y="192" w="16" h="16" xo="16" yo="400" id="10000575" name="inst_76AD62BD" depth="1000000" locked="0" colour="4294967295" scaleX="1" scaleY="1"/>
+    <tile bgName="ts_worldmap" x="128" y="208" w="16" h="16" xo="16" yo="400" id="10000585" name="inst_425B2D4F" depth="1000000" locked="0" colour="4294967295" scaleX="1" scaleY="1"/>
+    <tile bgName="ts_worldmap" x="144" y="208" w="16" h="16" xo="16" yo="400" id="10000586" name="inst_74CC572E" depth="1000000" locked="0" colour="4294967295" scaleX="1" scaleY="1"/>
+    <tile bgName="ts_worldmap" x="304" y="208" w="16" h="16" xo="16" yo="400" id="10000587" name="inst_007E5CB9" depth="1000000" locked="0" colour="4294967295" scaleX="1" scaleY="1"/>
+    <tile bgName="ts_worldmap" x="320" y="208" w="16" h="16" xo="16" yo="400" id="10000588" name="inst_1946B20B" depth="1000000" locked="0" colour="4294967295" scaleX="1" scaleY="1"/>
+    <tile bgName="ts_worldmap" x="112" y="336" w="16" h="16" xo="48" yo="432" id="10000589" name="inst_D7ADB36F" depth="1000000" locked="0" colour="4294967295" scaleX="1" scaleY="1"/>
+    <tile bgName="ts_worldmap" x="112" y="352" w="16" h="16" xo="48" yo="432" id="10000590" name="inst_47E1B5F3" depth="1000000" locked="0" colour="4294967295" scaleX="1" scaleY="1"/>
+    <tile bgName="ts_worldmap" x="336" y="336" w="16" h="16" xo="48" yo="432" id="10000591" name="inst_AAB70DE7" depth="1000000" locked="0" colour="4294967295" scaleX="1" scaleY="1"/>
+    <tile bgName="ts_worldmap" x="336" y="352" w="16" h="16" xo="48" yo="432" id="10000595" name="inst_0561B7D7" depth="1000000" locked="0" colour="4294967295" scaleX="1" scaleY="1"/>
+    <tile bgName="ts_worldmap" x="112" y="416" w="16" h="16" xo="16" yo="416" id="10000596" name="inst_4E16C4E5" depth="1000000" locked="0" colour="4294967295" scaleX="1" scaleY="1"/>
+    <tile bgName="ts_worldmap" x="112" y="464" w="16" h="16" xo="16" yo="432" id="10000597" name="inst_6F87D5AC" depth="1000000" locked="0" colour="4294967295" scaleX="1" scaleY="1"/>
+    <tile bgName="ts_worldmap" x="336" y="464" w="16" h="16" xo="32" yo="432" id="10000598" name="inst_8565D80A" depth="1000000" locked="0" colour="4294967295" scaleX="1" scaleY="1"/>
+    <tile bgName="ts_worldmap" x="336" y="416" w="16" h="16" xo="32" yo="416" id="10000599" name="inst_079407F1" depth="1000000" locked="0" colour="4294967295" scaleX="1" scaleY="1"/>
+    <tile bgName="ts_worldmap" x="128" y="464" w="16" h="16" xo="16" yo="400" id="10000600" name="inst_FDB40406" depth="1000000" locked="0" colour="4294967295" scaleX="1" scaleY="1"/>
+    <tile bgName="ts_worldmap" x="144" y="464" w="16" h="16" xo="16" yo="400" id="10000601" name="inst_AECA37F6" depth="1000000" locked="0" colour="4294967295" scaleX="1" scaleY="1"/>
+    <tile bgName="ts_worldmap" x="160" y="464" w="16" h="16" xo="16" yo="400" id="10000602" name="inst_EAC945BC" depth="1000000" locked="0" colour="4294967295" scaleX="1" scaleY="1"/>
+    <tile bgName="ts_worldmap" x="176" y="464" w="16" h="16" xo="16" yo="400" id="10000603" name="inst_AE6D8AC3" depth="1000000" locked="0" colour="4294967295" scaleX="1" scaleY="1"/>
+    <tile bgName="ts_worldmap" x="192" y="464" w="16" h="16" xo="16" yo="400" id="10000604" name="inst_CE78CDB8" depth="1000000" locked="0" colour="4294967295" scaleX="1" scaleY="1"/>
+    <tile bgName="ts_worldmap" x="208" y="464" w="16" h="16" xo="16" yo="400" id="10000605" name="inst_9F65A02E" depth="1000000" locked="0" colour="4294967295" scaleX="1" scaleY="1"/>
+    <tile bgName="ts_worldmap" x="224" y="464" w="16" h="16" xo="16" yo="400" id="10000606" name="inst_01676F05" depth="1000000" locked="0" colour="4294967295" scaleX="1" scaleY="1"/>
+    <tile bgName="ts_worldmap" x="240" y="464" w="16" h="16" xo="16" yo="400" id="10000607" name="inst_49856322" depth="1000000" locked="0" colour="4294967295" scaleX="1" scaleY="1"/>
+    <tile bgName="ts_worldmap" x="256" y="464" w="16" h="16" xo="16" yo="400" id="10000608" name="inst_23DDEF56" depth="1000000" locked="0" colour="4294967295" scaleX="1" scaleY="1"/>
+    <tile bgName="ts_worldmap" x="272" y="464" w="16" h="16" xo="16" yo="400" id="10000609" name="inst_9E05CC0F" depth="1000000" locked="0" colour="4294967295" scaleX="1" scaleY="1"/>
+    <tile bgName="ts_worldmap" x="288" y="464" w="16" h="16" xo="16" yo="400" id="10000610" name="inst_A07A1F16" depth="1000000" locked="0" colour="4294967295" scaleX="1" scaleY="1"/>
+    <tile bgName="ts_worldmap" x="304" y="464" w="16" h="16" xo="16" yo="400" id="10000611" name="inst_CB67298E" depth="1000000" locked="0" colour="4294967295" scaleX="1" scaleY="1"/>
+    <tile bgName="ts_worldmap" x="320" y="464" w="16" h="16" xo="16" yo="400" id="10000612" name="inst_FFAB2216" depth="1000000" locked="0" colour="4294967295" scaleX="1" scaleY="1"/>
+    <tile bgName="ts_worldmap" x="320" y="416" w="16" h="16" xo="16" yo="400" id="10000613" name="inst_D298C582" depth="1000000" locked="0" colour="4294967295" scaleX="1" scaleY="1"/>
+    <tile bgName="ts_worldmap" x="304" y="416" w="16" h="16" xo="16" yo="400" id="10000614" name="inst_126B33BF" depth="1000000" locked="0" colour="4294967295" scaleX="1" scaleY="1"/>
+    <tile bgName="ts_worldmap" x="288" y="416" w="16" h="16" xo="16" yo="400" id="10000615" name="inst_035314AD" depth="1000000" locked="0" colour="4294967295" scaleX="1" scaleY="1"/>
+    <tile bgName="ts_worldmap" x="272" y="416" w="16" h="16" xo="16" yo="400" id="10000616" name="inst_FFF4DF66" depth="1000000" locked="0" colour="4294967295" scaleX="1" scaleY="1"/>
+    <tile bgName="ts_worldmap" x="256" y="416" w="16" h="16" xo="16" yo="400" id="10000617" name="inst_DF219F37" depth="1000000" locked="0" colour="4294967295" scaleX="1" scaleY="1"/>
+    <tile bgName="ts_worldmap" x="240" y="416" w="16" h="16" xo="16" yo="400" id="10000618" name="inst_F1AE3782" depth="1000000" locked="0" colour="4294967295" scaleX="1" scaleY="1"/>
+    <tile bgName="ts_worldmap" x="224" y="416" w="16" h="16" xo="16" yo="400" id="10000619" name="inst_A3A0B3DB" depth="1000000" locked="0" colour="4294967295" scaleX="1" scaleY="1"/>
+    <tile bgName="ts_worldmap" x="208" y="416" w="16" h="16" xo="16" yo="400" id="10000620" name="inst_EA2BD07A" depth="1000000" locked="0" colour="4294967295" scaleX="1" scaleY="1"/>
+    <tile bgName="ts_worldmap" x="192" y="416" w="16" h="16" xo="16" yo="400" id="10000621" name="inst_414A2FBA" depth="1000000" locked="0" colour="4294967295" scaleX="1" scaleY="1"/>
+    <tile bgName="ts_worldmap" x="176" y="416" w="16" h="16" xo="16" yo="400" id="10000622" name="inst_92D71477" depth="1000000" locked="0" colour="4294967295" scaleX="1" scaleY="1"/>
+    <tile bgName="ts_worldmap" x="160" y="416" w="16" h="16" xo="16" yo="400" id="10000623" name="inst_E3D37E69" depth="1000000" locked="0" colour="4294967295" scaleX="1" scaleY="1"/>
+    <tile bgName="ts_worldmap" x="144" y="416" w="16" h="16" xo="16" yo="400" id="10000624" name="inst_F94017B5" depth="1000000" locked="0" colour="4294967295" scaleX="1" scaleY="1"/>
+    <tile bgName="ts_worldmap" x="128" y="416" w="16" h="16" xo="16" yo="400" id="10000625" name="inst_FB1E1847" depth="1000000" locked="0" colour="4294967295" scaleX="1" scaleY="1"/>
+    <tile bgName="ts_worldmap" x="112" y="432" w="16" h="16" xo="48" yo="432" id="10000626" name="inst_CD71E7A5" depth="1000000" locked="0" colour="4294967295" scaleX="1" scaleY="1"/>
+    <tile bgName="ts_worldmap" x="112" y="448" w="16" h="16" xo="48" yo="432" id="10000627" name="inst_CE828036" depth="1000000" locked="0" colour="4294967295" scaleX="1" scaleY="1"/>
+    <tile bgName="ts_worldmap" x="336" y="432" w="16" h="16" xo="48" yo="432" id="10000628" name="inst_DD0A3710" depth="1000000" locked="0" colour="4294967295" scaleX="1" scaleY="1"/>
+    <tile bgName="ts_worldmap" x="336" y="448" w="16" h="16" xo="48" yo="432" id="10000629" name="inst_0FBA9C3A" depth="1000000" locked="0" colour="4294967295" scaleX="1" scaleY="1"/>
+    <tile bgName="ts_worldmap" x="128" y="432" w="16" h="16" xo="0" yo="320" id="10000630" name="inst_F68789A0" depth="1000000" locked="0" colour="4294967295" scaleX="1" scaleY="1"/>
+    <tile bgName="ts_worldmap" x="128" y="448" w="16" h="16" xo="0" yo="352" id="10000631" name="inst_376B99FE" depth="1000000" locked="0" colour="4294967295" scaleX="1" scaleY="1"/>
+    <tile bgName="ts_worldmap" x="144" y="432" w="16" h="16" xo="16" yo="320" id="10000632" name="inst_4FF1FCAB" depth="1000000" locked="0" colour="4294967295" scaleX="1" scaleY="1"/>
+    <tile bgName="ts_worldmap" x="160" y="432" w="16" h="16" xo="16" yo="320" id="10000633" name="inst_FF766F0D" depth="1000000" locked="0" colour="4294967295" scaleX="1" scaleY="1"/>
+    <tile bgName="ts_worldmap" x="208" y="432" w="16" h="16" xo="16" yo="320" id="10000634" name="inst_6B54C55D" depth="1000000" locked="0" colour="4294967295" scaleX="1" scaleY="1"/>
+    <tile bgName="ts_worldmap" x="176" y="432" w="16" h="16" xo="16" yo="320" id="10000635" name="inst_7C3AF4C6" depth="1000000" locked="0" colour="4294967295" scaleX="1" scaleY="1"/>
+    <tile bgName="ts_worldmap" x="192" y="432" w="16" h="16" xo="16" yo="320" id="10000636" name="inst_898D4762" depth="1000000" locked="0" colour="4294967295" scaleX="1" scaleY="1"/>
+    <tile bgName="ts_worldmap" x="224" y="432" w="16" h="16" xo="16" yo="320" id="10000637" name="inst_4294465C" depth="1000000" locked="0" colour="4294967295" scaleX="1" scaleY="1"/>
+    <tile bgName="ts_worldmap" x="240" y="432" w="16" h="16" xo="16" yo="320" id="10000638" name="inst_F0F9BA7F" depth="1000000" locked="0" colour="4294967295" scaleX="1" scaleY="1"/>
+    <tile bgName="ts_worldmap" x="256" y="432" w="16" h="16" xo="16" yo="320" id="10000639" name="inst_84049F25" depth="1000000" locked="0" colour="4294967295" scaleX="1" scaleY="1"/>
+    <tile bgName="ts_worldmap" x="272" y="432" w="16" h="16" xo="16" yo="320" id="10000640" name="inst_99AD26F7" depth="1000000" locked="0" colour="4294967295" scaleX="1" scaleY="1"/>
+    <tile bgName="ts_worldmap" x="288" y="432" w="16" h="16" xo="16" yo="320" id="10000641" name="inst_0A91D27B" depth="1000000" locked="0" colour="4294967295" scaleX="1" scaleY="1"/>
+    <tile bgName="ts_worldmap" x="304" y="432" w="16" h="16" xo="16" yo="320" id="10000642" name="inst_687F6ED4" depth="1000000" locked="0" colour="4294967295" scaleX="1" scaleY="1"/>
+    <tile bgName="ts_worldmap" x="320" y="432" w="16" h="16" xo="32" yo="320" id="10000643" name="inst_8E07F17F" depth="1000000" locked="0" colour="4294967295" scaleX="1" scaleY="1"/>
+    <tile bgName="ts_worldmap" x="320" y="448" w="16" h="16" xo="32" yo="352" id="10000644" name="inst_97CBDBB9" depth="1000000" locked="0" colour="4294967295" scaleX="1" scaleY="1"/>
+    <tile bgName="ts_worldmap" x="304" y="448" w="16" h="16" xo="16" yo="352" id="10000645" name="inst_309A0695" depth="1000000" locked="0" colour="4294967295" scaleX="1" scaleY="1"/>
+    <tile bgName="ts_worldmap" x="288" y="448" w="16" h="16" xo="16" yo="352" id="10000646" name="inst_A53548F2" depth="1000000" locked="0" colour="4294967295" scaleX="1" scaleY="1"/>
+    <tile bgName="ts_worldmap" x="272" y="448" w="16" h="16" xo="16" yo="352" id="10000647" name="inst_A6E3ADC3" depth="1000000" locked="0" colour="4294967295" scaleX="1" scaleY="1"/>
+    <tile bgName="ts_worldmap" x="256" y="448" w="16" h="16" xo="16" yo="352" id="10000648" name="inst_1980E1F7" depth="1000000" locked="0" colour="4294967295" scaleX="1" scaleY="1"/>
+    <tile bgName="ts_worldmap" x="240" y="448" w="16" h="16" xo="16" yo="352" id="10000649" name="inst_1EABE2D6" depth="1000000" locked="0" colour="4294967295" scaleX="1" scaleY="1"/>
+    <tile bgName="ts_worldmap" x="224" y="448" w="16" h="16" xo="16" yo="352" id="10000650" name="inst_23A4F425" depth="1000000" locked="0" colour="4294967295" scaleX="1" scaleY="1"/>
+    <tile bgName="ts_worldmap" x="208" y="448" w="16" h="16" xo="16" yo="352" id="10000651" name="inst_C3F4456F" depth="1000000" locked="0" colour="4294967295" scaleX="1" scaleY="1"/>
+    <tile bgName="ts_worldmap" x="192" y="448" w="16" h="16" xo="16" yo="352" id="10000652" name="inst_ED0D3C78" depth="1000000" locked="0" colour="4294967295" scaleX="1" scaleY="1"/>
+    <tile bgName="ts_worldmap" x="160" y="448" w="16" h="16" xo="16" yo="352" id="10000653" name="inst_7B9A3FE2" depth="1000000" locked="0" colour="4294967295" scaleX="1" scaleY="1"/>
+    <tile bgName="ts_worldmap" x="176" y="448" w="16" h="16" xo="16" yo="352" id="10000654" name="inst_5632CD2F" depth="1000000" locked="0" colour="4294967295" scaleX="1" scaleY="1"/>
+    <tile bgName="ts_worldmap" x="144" y="448" w="16" h="16" xo="16" yo="352" id="10000655" name="inst_00944D80" depth="1000000" locked="0" colour="4294967295" scaleX="1" scaleY="1"/>
+    <tile bgName="ts_worldmap" x="160" y="384" w="16" h="32" xo="32" yo="368" id="10000656" name="inst_92975695" depth="1000000" locked="0" colour="4294967295" scaleX="1" scaleY="1"/>
+    <tile bgName="ts_worldmap" x="288" y="384" w="16" h="32" xo="32" yo="368" id="10000657" name="inst_E341CF68" depth="1000000" locked="0" colour="4294967295" scaleX="1" scaleY="1"/>
+    <tile bgName="ts_worldmap" x="80" y="224" w="32" h="32" xo="144" yo="352" id="10000659" name="inst_A36267A4" depth="1000000" locked="0" colour="4294967295" scaleX="1" scaleY="1"/>
+    <tile bgName="ts_worldmap" x="80" y="288" w="32" h="32" xo="176" yo="352" id="10000660" name="inst_5FAED815" depth="1000000" locked="0" colour="4294967295" scaleX="1" scaleY="1"/>
+    <tile bgName="ts_worldmap" x="352" y="288" w="32" h="32" xo="144" yo="352" id="10000663" name="inst_3693B13E" depth="1000000" locked="0" colour="4294967295" scaleX="1" scaleY="1"/>
+    <tile bgName="ts_worldmap" x="336" y="384" w="16" h="32" xo="32" yo="368" id="10000664" name="inst_56FD15D6" depth="1000000" locked="0" colour="4294967295" scaleX="1" scaleY="1"/>
+    <tile bgName="ts_worldmap" x="208" y="384" w="32" h="32" xo="0" yo="368" id="10000665" name="inst_AFD6034A" depth="1000000" locked="0" colour="4294967295" scaleX="1" scaleY="1"/>
+    <tile bgName="ts_worldmap" x="176" y="288" w="32" h="32" xo="0" yo="368" id="10000666" name="inst_6241EE99" depth="1000000" locked="0" colour="4294967295" scaleX="1" scaleY="1"/>
+    <tile bgName="ts_worldmap" x="272" y="288" w="16" h="32" xo="0" yo="368" id="10000667" name="inst_0362CB6D" depth="1000000" locked="0" colour="4294967295" scaleX="1" scaleY="1"/>
+    <tile bgName="ts_worldmap" x="224" y="208" w="16" h="16" xo="80" yo="400" id="10000668" name="inst_A51D3EEB" depth="1000000" locked="0" colour="4294967295" scaleX="1" scaleY="1"/>
+    <tile bgName="ts_worldmap" x="192" y="256" w="16" h="16" xo="80" yo="384" id="10000669" name="inst_25D8B2B6" depth="1000000" locked="0" colour="4294967295" scaleX="1" scaleY="1"/>
+    <tile bgName="ts_worldmap" x="192" y="208" w="16" h="16" xo="80" yo="384" id="10000670" name="inst_4E188E56" depth="1000000" locked="0" colour="4294967295" scaleX="1" scaleY="1"/>
+    <tile bgName="ts_worldmap" x="240" y="208" w="16" h="16" xo="80" yo="384" id="10000671" name="inst_AB36D36D" depth="1000000" locked="0" colour="4294967295" scaleX="1" scaleY="1"/>
+    <tile bgName="ts_worldmap" x="240" y="256" w="16" h="16" xo="80" yo="384" id="10000672" name="inst_EC30A356" depth="1000000" locked="0" colour="4294967295" scaleX="1" scaleY="1"/>
+    <tile bgName="ts_worldmap" x="208" y="256" w="16" h="16" xo="96" yo="384" id="10000673" name="inst_7EB8B7DC" depth="1000000" locked="0" colour="4294967295" scaleX="1" scaleY="1"/>
+    <tile bgName="ts_worldmap" x="208" y="208" w="16" h="16" xo="96" yo="384" id="10000674" name="inst_FAF85212" depth="1000000" locked="0" colour="4294967295" scaleX="1" scaleY="1"/>
+    <tile bgName="ts_worldmap" x="256" y="208" w="16" h="16" xo="96" yo="384" id="10000675" name="inst_822ACAAF" depth="1000000" locked="0" colour="4294967295" scaleX="1" scaleY="1"/>
+    <tile bgName="ts_worldmap" x="256" y="256" w="16" h="16" xo="96" yo="384" id="10000676" name="inst_4FC24D56" depth="1000000" locked="0" colour="4294967295" scaleX="1" scaleY="1"/>
+    <tile bgName="ts_worldmap" x="192" y="272" w="16" h="16" xo="48" yo="400" id="10000677" name="inst_B7AC1398" depth="1000000" locked="0" colour="4294967295" scaleX="1" scaleY="1"/>
+    <tile bgName="ts_worldmap" x="208" y="272" w="16" h="16" xo="48" yo="400" id="10000678" name="inst_6246E32A" depth="1000000" locked="0" colour="4294967295" scaleX="1" scaleY="1"/>
+    <tile bgName="ts_worldmap" x="240" y="272" w="16" h="16" xo="48" yo="400" id="10000679" name="inst_DB22787A" depth="1000000" locked="0" colour="4294967295" scaleX="1" scaleY="1"/>
+    <tile bgName="ts_worldmap" x="256" y="272" w="16" h="16" xo="48" yo="400" id="10000680" name="inst_0F055410" depth="1000000" locked="0" colour="4294967295" scaleX="1" scaleY="1"/>
+    <tile bgName="ts_worldmap" x="16" y="288" w="32" h="32" xo="0" yo="368" id="10000681" name="inst_911D4063" depth="1000000" locked="0" colour="4294967295" scaleX="1" scaleY="1"/>
+    <tile bgName="ts_worldmap" x="48" y="288" w="32" h="32" xo="0" yo="368" id="10000682" name="inst_A17BEE05" depth="1000000" locked="0" colour="4294967295" scaleX="1" scaleY="1"/>
+    <tile bgName="ts_worldmap" x="0" y="288" w="16" h="32" xo="16" yo="368" id="10000683" name="inst_C6DECA23" depth="1000000" locked="0" colour="4294967295" scaleX="1" scaleY="1"/>
+    <tile bgName="ts_worldmap" x="384" y="288" w="32" h="32" xo="0" yo="368" id="10000684" name="inst_FE2E8F4A" depth="1000000" locked="0" colour="4294967295" scaleX="1" scaleY="1"/>
+    <tile bgName="ts_worldmap" x="416" y="288" w="32" h="32" xo="0" yo="368" id="10000685" name="inst_2091B88F" depth="1000000" locked="0" colour="4294967295" scaleX="1" scaleY="1"/>
+    <tile bgName="ts_worldmap" x="448" y="288" w="32" h="32" xo="0" yo="368" id="10000686" name="inst_4599F339" depth="1000000" locked="0" colour="4294967295" scaleX="1" scaleY="1"/>
+    <tile bgName="ts_worldmap" x="352" y="224" w="32" h="32" xo="176" yo="352" id="10000687" name="inst_1F3CD2F3" depth="1000000" locked="0" colour="4294967295" scaleX="1" scaleY="1"/>
+    <tile bgName="ts_worldmap" x="352" y="384" w="32" h="32" xo="176" yo="352" id="10000688" name="inst_15087786" depth="1000000" locked="0" colour="4294967295" scaleX="1" scaleY="1"/>
+    <tile bgName="ts_worldmap" x="80" y="384" w="32" h="32" xo="144" yo="352" id="10000689" name="inst_78E555E2" depth="1000000" locked="0" colour="4294967295" scaleX="1" scaleY="1"/>
+    <tile bgName="ts_worldmap" x="80" y="160" w="32" h="32" xo="144" yo="352" id="10000690" name="inst_DFA547F0" depth="1000000" locked="0" colour="4294967295" scaleX="1" scaleY="1"/>
+    <tile bgName="ts_worldmap" x="352" y="160" w="32" h="32" xo="176" yo="352" id="10000691" name="inst_3900F270" depth="1000000" locked="0" colour="4294967295" scaleX="1" scaleY="1"/>
+    <tile bgName="ts_worldmap" x="192" y="160" w="32" h="32" xo="176" yo="320" id="10000692" name="inst_61D7D182" depth="1000000" locked="0" colour="4294967295" scaleX="1" scaleY="1"/>
+    <tile bgName="ts_worldmap" x="240" y="160" w="32" h="32" xo="176" yo="320" id="10000693" name="inst_B91C65B8" depth="1000000" locked="0" colour="4294967295" scaleX="1" scaleY="1"/>
+    <tile bgName="ts_worldmap" x="80" y="192" w="32" h="16" xo="48" yo="352" id="10000694" name="inst_1F81BBA5" depth="1000000" locked="0" colour="4294967295" scaleX="1" scaleY="1"/>
+    <tile bgName="ts_worldmap" x="80" y="208" w="32" h="16" xo="48" yo="352" id="10000695" name="inst_F796DDED" depth="1000000" locked="0" colour="4294967295" scaleX="1" scaleY="1"/>
+    <tile bgName="ts_worldmap" x="80" y="272" w="32" h="16" xo="48" yo="352" id="10000696" name="inst_96E4B950" depth="1000000" locked="0" colour="4294967295" scaleX="1" scaleY="1"/>
+    <tile bgName="ts_worldmap" x="80" y="256" w="32" h="16" xo="48" yo="352" id="10000697" name="inst_1EF840A9" depth="1000000" locked="0" colour="4294967295" scaleX="1" scaleY="1"/>
+    <tile bgName="ts_worldmap" x="352" y="192" w="32" h="16" xo="48" yo="352" id="10000698" name="inst_CE62E2B1" depth="1000000" locked="0" colour="4294967295" scaleX="1" scaleY="1"/>
+    <tile bgName="ts_worldmap" x="352" y="208" w="32" h="16" xo="48" yo="352" id="10000699" name="inst_B9543AB7" depth="1000000" locked="0" colour="4294967295" scaleX="1" scaleY="1"/>
+    <tile bgName="ts_worldmap" x="352" y="256" w="32" h="16" xo="48" yo="352" id="10000700" name="inst_73FB8D51" depth="1000000" locked="0" colour="4294967295" scaleX="1" scaleY="1"/>
+    <tile bgName="ts_worldmap" x="352" y="272" w="32" h="16" xo="48" yo="352" id="10000701" name="inst_A8A10EFD" depth="1000000" locked="0" colour="4294967295" scaleX="1" scaleY="1"/>
+    <tile bgName="ts_worldmap" x="80" y="320" w="32" h="16" xo="48" yo="352" id="10000702" name="inst_8316EC25" depth="1000000" locked="0" colour="4294967295" scaleX="1" scaleY="1"/>
+    <tile bgName="ts_worldmap" x="80" y="368" w="32" h="16" xo="48" yo="352" id="10000703" name="inst_514AEF93" depth="1000000" locked="0" colour="4294967295" scaleX="1" scaleY="1"/>
+    <tile bgName="ts_worldmap" x="352" y="416" w="32" h="16" xo="48" yo="352" id="10000704" name="inst_609BD813" depth="1000000" locked="0" colour="4294967295" scaleX="1" scaleY="1"/>
+    <tile bgName="ts_worldmap" x="352" y="368" w="32" h="16" xo="48" yo="352" id="10000705" name="inst_64C21623" depth="1000000" locked="0" colour="4294967295" scaleX="1" scaleY="1"/>
+    <tile bgName="ts_worldmap" x="352" y="320" w="32" h="16" xo="48" yo="352" id="10000706" name="inst_2DD35A61" depth="1000000" locked="0" colour="4294967295" scaleX="1" scaleY="1"/>
+    <tile bgName="ts_worldmap" x="80" y="416" w="32" h="16" xo="48" yo="352" id="10000707" name="inst_4B3877A3" depth="1000000" locked="0" colour="4294967295" scaleX="1" scaleY="1"/>
+    <tile bgName="ts_worldmap" x="80" y="336" w="32" h="32" xo="48" yo="320" id="10000708" name="inst_7EB81491" depth="1000000" locked="0" colour="4294967295" scaleX="1" scaleY="1"/>
+    <tile bgName="ts_worldmap" x="352" y="336" w="32" h="32" xo="48" yo="320" id="10000709" name="inst_71B345FE" depth="1000000" locked="0" colour="4294967295" scaleX="1" scaleY="1"/>
+    <tile bgName="ts_worldmap" x="352" y="432" w="32" h="32" xo="48" yo="320" id="10000710" name="inst_30BDAEBC" depth="1000000" locked="0" colour="4294967295" scaleX="1" scaleY="1"/>
+    <tile bgName="ts_worldmap" x="80" y="432" w="32" h="32" xo="48" yo="320" id="10000711" name="inst_0BEE8F3B" depth="1000000" locked="0" colour="4294967295" scaleX="1" scaleY="1"/>
+    <tile bgName="ts_worldmap" x="80" y="464" w="32" h="16" xo="48" yo="352" id="10000712" name="inst_239B6166" depth="1000000" locked="0" colour="4294967295" scaleX="1" scaleY="1"/>
+    <tile bgName="ts_worldmap" x="352" y="464" w="32" h="16" xo="48" yo="352" id="10000713" name="inst_FE4FAA34" depth="1000000" locked="0" colour="4294967295" scaleX="1" scaleY="1"/>
+    <tile bgName="ts_worldmap" x="80" y="480" w="32" h="32" xo="144" yo="352" id="10000714" name="inst_FF6E26BB" depth="1000000" locked="0" colour="4294967295" scaleX="1" scaleY="1"/>
+    <tile bgName="ts_worldmap" x="352" y="480" w="32" h="32" xo="176" yo="352" id="10000715" name="inst_F61855B0" depth="1000000" locked="0" colour="4294967295" scaleX="1" scaleY="1"/>
+    <tile bgName="ts_worldmap" x="176" y="480" w="32" h="32" xo="144" yo="320" id="10000716" name="inst_8BA89C44" depth="1000000" locked="0" colour="4294967295" scaleX="1" scaleY="1"/>
+    <tile bgName="ts_worldmap" x="256" y="480" w="32" h="32" xo="144" yo="320" id="10000717" name="inst_07772B10" depth="1000000" locked="0" colour="4294967295" scaleX="1" scaleY="1"/>
+    <tile bgName="ts_worldmap" x="112" y="480" w="16" h="32" xo="32" yo="368" id="10000718" name="inst_B0D1B41C" depth="1000000" locked="0" colour="4294967295" scaleX="1" scaleY="1"/>
+    <tile bgName="ts_worldmap" x="160" y="480" w="16" h="32" xo="32" yo="368" id="10000719" name="inst_588F718D" depth="1000000" locked="0" colour="4294967295" scaleX="1" scaleY="1"/>
+    <tile bgName="ts_worldmap" x="208" y="480" w="16" h="32" xo="32" yo="368" id="10000720" name="inst_6B5AA2A3" depth="1000000" locked="0" colour="4294967295" scaleX="1" scaleY="1"/>
+    <tile bgName="ts_worldmap" x="240" y="480" w="16" h="32" xo="32" yo="368" id="10000721" name="inst_223F55C9" depth="1000000" locked="0" colour="4294967295" scaleX="1" scaleY="1"/>
+    <tile bgName="ts_worldmap" x="288" y="480" w="16" h="32" xo="32" yo="368" id="10000722" name="inst_61A93DE0" depth="1000000" locked="0" colour="4294967295" scaleX="1" scaleY="1"/>
+    <tile bgName="ts_worldmap" x="336" y="480" w="16" h="32" xo="32" yo="368" id="10000723" name="inst_DC6A15EE" depth="1000000" locked="0" colour="4294967295" scaleX="1" scaleY="1"/>
+    <tile bgName="ts_worldmap" x="80" y="512" w="32" h="16" xo="48" yo="352" id="10000724" name="inst_BA7A9A50" depth="1000000" locked="0" colour="4294967295" scaleX="1" scaleY="1"/>
+    <tile bgName="ts_worldmap" x="176" y="512" w="32" h="16" xo="48" yo="352" id="10000725" name="inst_9F09D0A0" depth="1000000" locked="0" colour="4294967295" scaleX="1" scaleY="1"/>
+    <tile bgName="ts_worldmap" x="256" y="512" w="32" h="16" xo="48" yo="352" id="10000726" name="inst_E3F64A38" depth="1000000" locked="0" colour="4294967295" scaleX="1" scaleY="1"/>
+    <tile bgName="ts_worldmap" x="352" y="512" w="32" h="16" xo="48" yo="352" id="10000727" name="inst_ABC3B96D" depth="1000000" locked="0" colour="4294967295" scaleX="1" scaleY="1"/>
+    <tile bgName="ts_worldmap" x="80" y="528" w="32" h="32" xo="80" yo="352" id="10000729" name="inst_8CE7A4F9" depth="1000000" locked="0" colour="4294967295" scaleX="1" scaleY="1"/>
+    <tile bgName="ts_worldmap" x="352" y="528" w="32" h="32" xo="112" yo="352" id="10000730" name="inst_4499E270" depth="1000000" locked="0" colour="4294967295" scaleX="1" scaleY="1"/>
+    <tile bgName="ts_worldmap" x="176" y="528" w="32" h="32" xo="176" yo="320" id="10000731" name="inst_7EE634C1" depth="1000000" locked="0" colour="4294967295" scaleX="1" scaleY="1"/>
+    <tile bgName="ts_worldmap" x="256" y="528" w="32" h="32" xo="176" yo="320" id="10000732" name="inst_693DB4C2" depth="1000000" locked="0" colour="4294967295" scaleX="1" scaleY="1"/>
+    <tile bgName="ts_worldmap" x="112" y="528" w="32" h="32" xo="0" yo="368" id="10000733" name="inst_053090CD" depth="1000000" locked="0" colour="4294967295" scaleX="1" scaleY="1"/>
+    <tile bgName="ts_worldmap" x="144" y="528" w="32" h="32" xo="0" yo="368" id="10000734" name="inst_DA7E2195" depth="1000000" locked="0" colour="4294967295" scaleX="1" scaleY="1"/>
+    <tile bgName="ts_worldmap" x="288" y="528" w="32" h="32" xo="0" yo="368" id="10000735" name="inst_99D2DE4F" depth="1000000" locked="0" colour="4294967295" scaleX="1" scaleY="1"/>
+    <tile bgName="ts_worldmap" x="320" y="528" w="32" h="32" xo="0" yo="368" id="10000736" name="inst_8C134E1F" depth="1000000" locked="0" colour="4294967295" scaleX="1" scaleY="1"/>
+    <tile bgName="ts_worldmap" x="208" y="528" w="32" h="32" xo="0" yo="368" id="10000737" name="inst_8DD8F3D6" depth="1000000" locked="0" colour="4294967295" scaleX="1" scaleY="1"/>
+    <tile bgName="ts_worldmap" x="240" y="528" w="16" h="32" xo="0" yo="368" id="10000738" name="inst_81506F40" depth="1000000" locked="0" colour="4294967295" scaleX="1" scaleY="1"/>
+    <tile bgName="ts_worldmap" x="128" y="480" w="32" h="32" xo="0" yo="368" id="10000739" name="inst_761ADE5C" depth="1000000" locked="0" colour="4294967295" scaleX="1" scaleY="1"/>
+    <tile bgName="ts_worldmap" x="304" y="480" w="32" h="32" xo="0" yo="368" id="10000740" name="inst_BAA41CF1" depth="1000000" locked="0" colour="4294967295" scaleX="1" scaleY="1"/>
+    <tile bgName="ts_worldmap" x="224" y="480" w="16" h="32" xo="16" yo="368" id="10000741" name="inst_049B89FB" depth="1000000" locked="0" colour="4294967295" scaleX="1" scaleY="1"/>
+    <tile bgName="ts_worldmap" x="112" y="512" w="16" h="16" xo="0" yo="400" id="10000742" name="inst_D4780DB7" depth="1000000" locked="0" colour="4294967295" scaleX="1" scaleY="1"/>
+    <tile bgName="ts_worldmap" x="208" y="512" w="16" h="16" xo="0" yo="400" id="10000743" name="inst_0CCB7C49" depth="1000000" locked="0" colour="4294967295" scaleX="1" scaleY="1"/>
+    <tile bgName="ts_worldmap" x="288" y="512" w="16" h="16" xo="0" yo="400" id="10000744" name="inst_0D61CB8E" depth="1000000" locked="0" colour="4294967295" scaleX="1" scaleY="1"/>
+    <tile bgName="ts_worldmap" x="160" y="512" w="16" h="16" xo="32" yo="400" id="10000745" name="inst_98214344" depth="1000000" locked="0" colour="4294967295" scaleX="1" scaleY="1"/>
+    <tile bgName="ts_worldmap" x="240" y="512" w="16" h="16" xo="32" yo="400" id="10000746" name="inst_DE230100" depth="1000000" locked="0" colour="4294967295" scaleX="1" scaleY="1"/>
+    <tile bgName="ts_worldmap" x="336" y="512" w="16" h="16" xo="32" yo="400" id="10000747" name="inst_6AEF7A47" depth="1000000" locked="0" colour="4294967295" scaleX="1" scaleY="1"/>
+    <tile bgName="ts_worldmap" x="128" y="512" w="16" h="16" xo="16" yo="400" id="10000748" name="inst_FDC32A38" depth="1000000" locked="0" colour="4294967295" scaleX="1" scaleY="1"/>
+    <tile bgName="ts_worldmap" x="144" y="512" w="16" h="16" xo="16" yo="400" id="10000749" name="inst_0B7FA967" depth="1000000" locked="0" colour="4294967295" scaleX="1" scaleY="1"/>
+    <tile bgName="ts_worldmap" x="224" y="512" w="16" h="16" xo="16" yo="400" id="10000750" name="inst_BF1D833F" depth="1000000" locked="0" colour="4294967295" scaleX="1" scaleY="1"/>
+    <tile bgName="ts_worldmap" x="304" y="512" w="16" h="16" xo="16" yo="400" id="10000751" name="inst_A7CDD81F" depth="1000000" locked="0" colour="4294967295" scaleX="1" scaleY="1"/>
+    <tile bgName="ts_worldmap" x="320" y="512" w="16" h="16" xo="16" yo="400" id="10000752" name="inst_56C47D5A" depth="1000000" locked="0" colour="4294967295" scaleX="1" scaleY="1"/>
+    <tile bgName="ts_worldmap" x="112" y="160" w="16" h="32" xo="32" yo="368" id="10000761" name="inst_0B7BA4BD" depth="1000000" locked="0" colour="4294967295" scaleX="1" scaleY="1"/>
+    <tile bgName="ts_worldmap" x="224" y="160" w="16" h="32" xo="32" yo="368" id="10000762" name="inst_8BBFB016" depth="1000000" locked="0" colour="4294967295" scaleX="1" scaleY="1"/>
+    <tile bgName="ts_worldmap" x="176" y="160" w="16" h="32" xo="32" yo="368" id="10000763" name="inst_7DA43888" depth="1000000" locked="0" colour="4294967295" scaleX="1" scaleY="1"/>
+    <tile bgName="ts_worldmap" x="272" y="160" w="16" h="32" xo="32" yo="368" id="10000764" name="inst_2D0E278C" depth="1000000" locked="0" colour="4294967295" scaleX="1" scaleY="1"/>
+    <tile bgName="ts_worldmap" x="336" y="160" w="16" h="32" xo="32" yo="368" id="10000765" name="inst_75386801" depth="1000000" locked="0" colour="4294967295" scaleX="1" scaleY="1"/>
+    <tile bgName="ts_worldmap" x="192" y="144" w="32" h="16" xo="48" yo="352" id="10000766" name="inst_7D125286" depth="1000000" locked="0" colour="4294967295" scaleX="1" scaleY="1"/>
+    <tile bgName="ts_worldmap" x="240" y="144" w="32" h="16" xo="48" yo="352" id="10000767" name="inst_55E49D29" depth="1000000" locked="0" colour="4294967295" scaleX="1" scaleY="1"/>
+    <tile bgName="ts_worldmap" x="352" y="144" w="32" h="16" xo="48" yo="352" id="10000768" name="inst_C96E44CE" depth="1000000" locked="0" colour="4294967295" scaleX="1" scaleY="1"/>
+    <tile bgName="ts_worldmap" x="80" y="144" w="32" h="16" xo="48" yo="352" id="10000769" name="inst_18FCFA5E" depth="1000000" locked="0" colour="4294967295" scaleX="1" scaleY="1"/>
+    <tile bgName="ts_worldmap" x="128" y="160" w="32" h="32" xo="0" yo="368" id="10000770" name="inst_8BE6AA32" depth="1000000" locked="0" colour="4294967295" scaleX="1" scaleY="1"/>
+    <tile bgName="ts_worldmap" x="288" y="160" w="32" h="32" xo="0" yo="368" id="10000771" name="inst_459EEAAB" depth="1000000" locked="0" colour="4294967295" scaleX="1" scaleY="1"/>
+    <tile bgName="ts_worldmap" x="160" y="160" w="16" h="32" xo="0" yo="368" id="10000772" name="inst_B1F308E6" depth="1000000" locked="0" colour="4294967295" scaleX="1" scaleY="1"/>
+    <tile bgName="ts_worldmap" x="320" y="160" w="16" h="32" xo="0" yo="368" id="10000773" name="inst_B693C4EE" depth="1000000" locked="0" colour="4294967295" scaleX="1" scaleY="1"/>
+    <tile bgName="ts_worldmap" x="112" y="144" w="16" h="16" xo="16" yo="432" id="10000774" name="inst_0FAB4462" depth="1000000" locked="0" colour="4294967295" scaleX="1" scaleY="1"/>
+    <tile bgName="ts_worldmap" x="336" y="144" w="16" h="16" xo="32" yo="432" id="10000777" name="inst_E27BA7CA" depth="1000000" locked="0" colour="4294967295" scaleX="1" scaleY="1"/>
+    <tile bgName="ts_worldmap" x="288" y="144" w="16" h="16" xo="16" yo="400" id="10000780" name="inst_EDF050BE" depth="1000000" locked="0" colour="4294967295" scaleX="1" scaleY="1"/>
+    <tile bgName="ts_worldmap" x="304" y="144" w="16" h="16" xo="16" yo="400" id="10000781" name="inst_B951E39B" depth="1000000" locked="0" colour="4294967295" scaleX="1" scaleY="1"/>
+    <tile bgName="ts_worldmap" x="320" y="144" w="16" h="16" xo="16" yo="400" id="10000782" name="inst_23A7C9AD" depth="1000000" locked="0" colour="4294967295" scaleX="1" scaleY="1"/>
+    <tile bgName="ts_worldmap" x="128" y="144" w="16" h="16" xo="16" yo="400" id="10000783" name="inst_07E8B0E6" depth="1000000" locked="0" colour="4294967295" scaleX="1" scaleY="1"/>
+    <tile bgName="ts_worldmap" x="144" y="144" w="16" h="16" xo="16" yo="400" id="10000784" name="inst_04924E7D" depth="1000000" locked="0" colour="4294967295" scaleX="1" scaleY="1"/>
+    <tile bgName="ts_worldmap" x="160" y="144" w="16" h="16" xo="16" yo="400" id="10000785" name="inst_02F464EF" depth="1000000" locked="0" colour="4294967295" scaleX="1" scaleY="1"/>
+    <tile bgName="ts_worldmap" x="176" y="144" w="16" h="16" xo="32" yo="400" id="10000786" name="inst_24A65EC6" depth="1000000" locked="0" colour="4294967295" scaleX="1" scaleY="1"/>
+    <tile bgName="ts_worldmap" x="272" y="144" w="16" h="16" xo="0" yo="400" id="10000787" name="inst_AFAE312A" depth="1000000" locked="0" colour="4294967295" scaleX="1" scaleY="1"/>
+    <tile bgName="ts_worldmap" x="336" y="128" w="16" h="16" xo="48" yo="432" id="10000788" name="inst_A0B09B56" depth="1000000" locked="0" colour="4294967295" scaleX="1" scaleY="1"/>
+    <tile bgName="ts_worldmap" x="336" y="112" w="16" h="16" xo="48" yo="432" id="10000789" name="inst_B298B16A" depth="1000000" locked="0" colour="4294967295" scaleX="1" scaleY="1"/>
+    <tile bgName="ts_worldmap" x="352" y="112" w="32" h="32" xo="48" yo="320" id="10000790" name="inst_65D552C4" depth="1000000" locked="0" colour="4294967295" scaleX="1" scaleY="1"/>
+    <tile bgName="ts_worldmap" x="352" y="96" w="32" h="16" xo="48" yo="352" id="10000791" name="inst_BE7F71E9" depth="1000000" locked="0" colour="4294967295" scaleX="1" scaleY="1"/>
+    <tile bgName="ts_worldmap" x="336" y="64" w="16" h="32" xo="32" yo="368" id="10000792" name="inst_785BB1ED" depth="1000000" locked="0" colour="4294967295" scaleX="1" scaleY="1"/>
+    <tile bgName="ts_worldmap" x="304" y="96" w="32" h="16" xo="48" yo="352" id="10000793" name="inst_099AE2CF" depth="1000000" locked="0" colour="4294967295" scaleX="1" scaleY="1"/>
+    <tile bgName="ts_worldmap" x="352" y="64" w="32" h="32" xo="112" yo="320" id="10000794" name="inst_FFC77E2D" depth="1000000" locked="0" colour="4294967295" scaleX="1" scaleY="1"/>
+    <tile bgName="ts_worldmap" x="304" y="64" w="32" h="32" xo="80" yo="320" id="10000795" name="inst_675FDC05" depth="1000000" locked="0" colour="4294967295" scaleX="1" scaleY="1"/>
+    <tile bgName="ts_worldmap" x="304" y="112" w="32" h="32" xo="112" yo="352" id="10000796" name="inst_D20EEF58" depth="1000000" locked="0" colour="4294967295" scaleX="1" scaleY="1"/>
+    <tile bgName="ts_worldmap" x="272" y="112" w="16" h="32" xo="32" yo="368" id="10000798" name="inst_D6E2BE3F" depth="1000000" locked="0" colour="4294967295" scaleX="1" scaleY="1"/>
+    <tile bgName="ts_worldmap" x="288" y="112" w="16" h="32" xo="32" yo="368" id="10000799" name="inst_067DB73E" depth="1000000" locked="0" colour="4294967295" scaleX="1" scaleY="1"/>
+    <tile bgName="ts_worldmap" x="192" y="112" w="32" h="32" xo="48" yo="368" id="10000801" name="inst_55D14DD1" depth="1000000" locked="0" colour="4294967295" scaleX="1" scaleY="1"/>
+    <tile bgName="ts_worldmap" x="240" y="112" w="32" h="32" xo="48" yo="368" id="10000802" name="inst_A1723DA9" depth="1000000" locked="0" colour="4294967295" scaleX="1" scaleY="1"/>
+    <tile bgName="ts_worldmap" x="176" y="112" w="16" h="32" xo="32" yo="368" id="10000803" name="inst_EEDB35E7" depth="1000000" locked="0" colour="4294967295" scaleX="1" scaleY="1"/>
+    <tile bgName="ts_worldmap" x="224" y="112" w="16" h="32" xo="32" yo="368" id="10000804" name="inst_F23CEBE9" depth="1000000" locked="0" colour="4294967295" scaleX="1" scaleY="1"/>
+    <tile bgName="ts_worldmap" x="192" y="96" w="32" h="16" xo="48" yo="352" id="10000805" name="inst_2BAB0791" depth="1000000" locked="0" colour="4294967295" scaleX="1" scaleY="1"/>
+    <tile bgName="ts_worldmap" x="240" y="96" w="32" h="16" xo="48" yo="352" id="10000806" name="inst_84FEDB42" depth="1000000" locked="0" colour="4294967295" scaleX="1" scaleY="1"/>
+    <tile bgName="ts_worldmap" x="224" y="144" w="16" h="16" xo="48" yo="400" id="10000807" name="inst_9DEED20A" depth="1000000" locked="0" colour="4294967295" scaleX="1" scaleY="1"/>
+    <tile bgName="ts_worldmap" x="224" y="96" w="16" h="16" xo="48" yo="400" id="10000808" name="inst_E3FC5C35" depth="1000000" locked="0" colour="4294967295" scaleX="1" scaleY="1"/>
+    <tile bgName="ts_worldmap" x="336" y="96" w="16" h="16" xo="48" yo="416" id="10000809" name="inst_0032653B" depth="1000000" locked="0" colour="4294967295" scaleX="1" scaleY="1"/>
+    <tile bgName="ts_worldmap" x="80" y="112" w="32" h="32" xo="48" yo="320" id="10000810" name="inst_7733A584" depth="1000000" locked="0" colour="4294967295" scaleX="1" scaleY="1"/>
+    <tile bgName="ts_worldmap" x="80" y="96" w="32" h="16" xo="48" yo="352" id="10000811" name="inst_B84F012F" depth="1000000" locked="0" colour="4294967295" scaleX="1" scaleY="1"/>
+    <tile bgName="ts_worldmap" x="112" y="64" w="16" h="32" xo="32" yo="368" id="10000813" name="inst_0CA61EDD" depth="1000000" locked="0" colour="4294967295" scaleX="1" scaleY="1"/>
+    <tile bgName="ts_worldmap" x="160" y="112" w="16" h="32" xo="32" yo="368" id="10000814" name="inst_A9A83AD7" depth="1000000" locked="0" colour="4294967295" scaleX="1" scaleY="1"/>
+    <tile bgName="ts_worldmap" x="128" y="64" w="32" h="32" xo="112" yo="320" id="10000815" name="inst_AB7ED981" depth="1000000" locked="0" colour="4294967295" scaleX="1" scaleY="1"/>
+    <tile bgName="ts_worldmap" x="128" y="112" w="32" h="32" xo="80" yo="352" id="10000816" name="inst_41284AC3" depth="1000000" locked="0" colour="4294967295" scaleX="1" scaleY="1"/>
+    <tile bgName="ts_worldmap" x="80" y="64" w="32" h="32" xo="80" yo="320" id="10000817" name="inst_002B4913" depth="1000000" locked="0" colour="4294967295" scaleX="1" scaleY="1"/>
+    <tile bgName="ts_worldmap" x="128" y="96" w="32" h="16" xo="48" yo="352" id="10000818" name="inst_B146918E" depth="1000000" locked="0" colour="4294967295" scaleX="1" scaleY="1"/>
+    <tile bgName="ts_worldmap" x="112" y="96" w="16" h="16" xo="48" yo="416" id="10000819" name="inst_1CC90105" depth="1000000" locked="0" colour="4294967295" scaleX="1" scaleY="1"/>
+    <tile bgName="ts_worldmap" x="112" y="128" w="16" h="16" xo="48" yo="432" id="10000820" name="inst_84DD8671" depth="1000000" locked="0" colour="4294967295" scaleX="1" scaleY="1"/>
+    <tile bgName="ts_worldmap" x="112" y="112" w="16" h="16" xo="48" yo="432" id="10000821" name="inst_84B6E3DB" depth="1000000" locked="0" colour="4294967295" scaleX="1" scaleY="1"/>
+    <tile bgName="ts_worldmap" x="160" y="96" w="16" h="16" xo="16" yo="432" id="10000822" name="inst_E4139BA5" depth="1000000" locked="0" colour="4294967295" scaleX="1" scaleY="1"/>
+    <tile bgName="ts_worldmap" x="176" y="96" w="16" h="16" xo="32" yo="432" id="10000823" name="inst_0736E595" depth="1000000" locked="0" colour="4294967295" scaleX="1" scaleY="1"/>
+    <tile bgName="ts_worldmap" x="80" y="48" w="16" h="16" xo="16" yo="400" id="10000824" name="inst_275B30B2" depth="1000000" locked="0" colour="4294967295" scaleX="1" scaleY="1"/>
+    <tile bgName="ts_worldmap" x="96" y="48" w="16" h="16" xo="16" yo="400" id="10000825" name="inst_E30D202E" depth="1000000" locked="0" colour="4294967295" scaleX="1" scaleY="1"/>
+    <tile bgName="ts_worldmap" x="112" y="48" w="16" h="16" xo="16" yo="400" id="10000826" name="inst_71EFA171" depth="1000000" locked="0" colour="4294967295" scaleX="1" scaleY="1"/>
+    <tile bgName="ts_worldmap" x="128" y="48" w="16" h="16" xo="16" yo="400" id="10000827" name="inst_B962A8D6" depth="1000000" locked="0" colour="4294967295" scaleX="1" scaleY="1"/>
+    <tile bgName="ts_worldmap" x="144" y="48" w="16" h="16" xo="16" yo="400" id="10000828" name="inst_A162EAEA" depth="1000000" locked="0" colour="4294967295" scaleX="1" scaleY="1"/>
+    <tile bgName="ts_worldmap" x="160" y="48" w="16" h="16" xo="32" yo="416" id="10000829" name="inst_69B7EBFD" depth="1000000" locked="0" colour="4294967295" scaleX="1" scaleY="1"/>
+    <tile bgName="ts_worldmap" x="160" y="64" w="16" h="16" xo="48" yo="432" id="10000830" name="inst_5BE59C36" depth="1000000" locked="0" colour="4294967295" scaleX="1" scaleY="1"/>
+    <tile bgName="ts_worldmap" x="160" y="80" w="16" h="16" xo="48" yo="432" id="10000831" name="inst_EC0A546B" depth="1000000" locked="0" colour="4294967295" scaleX="1" scaleY="1"/>
+    <tile bgName="ts_worldmap" x="192" y="64" w="32" h="32" xo="80" yo="320" id="10000832" name="inst_9FBA0627" depth="1000000" locked="0" colour="4294967295" scaleX="1" scaleY="1"/>
+    <tile bgName="ts_worldmap" x="240" y="64" w="32" h="32" xo="112" yo="320" id="10000833" name="inst_AFAE24B6" depth="1000000" locked="0" colour="4294967295" scaleX="1" scaleY="1"/>
+    <tile bgName="ts_worldmap" x="224" y="64" w="16" h="32" xo="32" yo="368" id="10000834" name="inst_0CE9E220" depth="1000000" locked="0" colour="4294967295" scaleX="1" scaleY="1"/>
+    <tile bgName="ts_worldmap" x="176" y="80" w="16" h="16" xo="48" yo="432" id="10000835" name="inst_8DC2AD05" depth="1000000" locked="0" colour="4294967295" scaleX="1" scaleY="1"/>
+    <tile bgName="ts_worldmap" x="176" y="64" w="16" h="16" xo="48" yo="432" id="10000836" name="inst_5D441736" depth="1000000" locked="0" colour="4294967295" scaleX="1" scaleY="1"/>
+    <tile bgName="ts_worldmap" x="272" y="80" w="16" h="16" xo="48" yo="432" id="10000837" name="inst_7E6190D4" depth="1000000" locked="0" colour="4294967295" scaleX="1" scaleY="1"/>
+    <tile bgName="ts_worldmap" x="272" y="64" w="16" h="16" xo="48" yo="432" id="10000838" name="inst_9650CCA8" depth="1000000" locked="0" colour="4294967295" scaleX="1" scaleY="1"/>
+    <tile bgName="ts_worldmap" x="288" y="80" w="16" h="16" xo="48" yo="432" id="10000839" name="inst_02C99E3C" depth="1000000" locked="0" colour="4294967295" scaleX="1" scaleY="1"/>
+    <tile bgName="ts_worldmap" x="288" y="64" w="16" h="16" xo="48" yo="432" id="10000840" name="inst_B679005B" depth="1000000" locked="0" colour="4294967295" scaleX="1" scaleY="1"/>
+    <tile bgName="ts_worldmap" x="176" y="48" w="16" h="16" xo="16" yo="416" id="10000841" name="inst_EC98A0EA" depth="1000000" locked="0" colour="4294967295" scaleX="1" scaleY="1"/>
+    <tile bgName="ts_worldmap" x="288" y="48" w="16" h="16" xo="16" yo="416" id="10000842" name="inst_1B7CDDC8" depth="1000000" locked="0" colour="4294967295" scaleX="1" scaleY="1"/>
+    <tile bgName="ts_worldmap" x="288" y="96" w="16" h="16" xo="32" yo="432" id="10000843" name="inst_BECDB4F3" depth="1000000" locked="0" colour="4294967295" scaleX="1" scaleY="1"/>
+    <tile bgName="ts_worldmap" x="272" y="96" w="16" h="16" xo="16" yo="432" id="10000844" name="inst_614A8D7C" depth="1000000" locked="0" colour="4294967295" scaleX="1" scaleY="1"/>
+    <tile bgName="ts_worldmap" x="272" y="48" w="16" h="16" xo="32" yo="416" id="10000845" name="inst_3A1EFFE5" depth="1000000" locked="0" colour="4294967295" scaleX="1" scaleY="1"/>
+    <tile bgName="ts_worldmap" x="384" y="48" w="16" h="16" xo="32" yo="416" id="10000846" name="inst_D03FDF0E" depth="1000000" locked="0" colour="4294967295" scaleX="1" scaleY="1"/>
+    <tile bgName="ts_worldmap" x="64" y="48" w="16" h="16" xo="16" yo="416" id="10000847" name="inst_3FE659AF" depth="1000000" locked="0" colour="4294967295" scaleX="1" scaleY="1"/>
+    <tile bgName="ts_worldmap" x="192" y="48" w="16" h="16" xo="16" yo="400" id="10000848" name="inst_5E559A43" depth="1000000" locked="0" colour="4294967295" scaleX="1" scaleY="1"/>
+    <tile bgName="ts_worldmap" x="208" y="48" w="16" h="16" xo="16" yo="400" id="10000849" name="inst_D413311D" depth="1000000" locked="0" colour="4294967295" scaleX="1" scaleY="1"/>
+    <tile bgName="ts_worldmap" x="224" y="48" w="16" h="16" xo="16" yo="400" id="10000850" name="inst_1F145C0E" depth="1000000" locked="0" colour="4294967295" scaleX="1" scaleY="1"/>
+    <tile bgName="ts_worldmap" x="240" y="48" w="16" h="16" xo="16" yo="400" id="10000851" name="inst_026BB5A2" depth="1000000" locked="0" colour="4294967295" scaleX="1" scaleY="1"/>
+    <tile bgName="ts_worldmap" x="256" y="48" w="16" h="16" xo="16" yo="400" id="10000852" name="inst_DF013B83" depth="1000000" locked="0" colour="4294967295" scaleX="1" scaleY="1"/>
+    <tile bgName="ts_worldmap" x="304" y="48" w="16" h="16" xo="16" yo="400" id="10000853" name="inst_5AFF3712" depth="1000000" locked="0" colour="4294967295" scaleX="1" scaleY="1"/>
+    <tile bgName="ts_worldmap" x="320" y="48" w="16" h="16" xo="16" yo="400" id="10000854" name="inst_99F692E2" depth="1000000" locked="0" colour="4294967295" scaleX="1" scaleY="1"/>
+    <tile bgName="ts_worldmap" x="336" y="48" w="16" h="16" xo="16" yo="400" id="10000855" name="inst_6475961C" depth="1000000" locked="0" colour="4294967295" scaleX="1" scaleY="1"/>
+    <tile bgName="ts_worldmap" x="352" y="48" w="16" h="16" xo="16" yo="400" id="10000856" name="inst_E096F4B9" depth="1000000" locked="0" colour="4294967295" scaleX="1" scaleY="1"/>
+    <tile bgName="ts_worldmap" x="368" y="48" w="16" h="16" xo="16" yo="400" id="10000857" name="inst_39F46E40" depth="1000000" locked="0" colour="4294967295" scaleX="1" scaleY="1"/>
+    <tile bgName="ts_worldmap" x="384" y="64" w="16" h="16" xo="48" yo="432" id="10000858" name="inst_7AD13637" depth="1000000" locked="0" colour="4294967295" scaleX="1" scaleY="1"/>
+    <tile bgName="ts_worldmap" x="384" y="80" w="16" h="16" xo="48" yo="432" id="10000859" name="inst_9A3F5647" depth="1000000" locked="0" colour="4294967295" scaleX="1" scaleY="1"/>
+    <tile bgName="ts_worldmap" x="384" y="96" w="16" h="16" xo="48" yo="432" id="10000860" name="inst_792E90FD" depth="1000000" locked="0" colour="4294967295" scaleX="1" scaleY="1"/>
+    <tile bgName="ts_worldmap" x="384" y="112" w="16" h="16" xo="48" yo="432" id="10000861" name="inst_4EDBC464" depth="1000000" locked="0" colour="4294967295" scaleX="1" scaleY="1"/>
+    <tile bgName="ts_worldmap" x="384" y="128" w="16" h="16" xo="48" yo="432" id="10000862" name="inst_71776860" depth="1000000" locked="0" colour="4294967295" scaleX="1" scaleY="1"/>
+    <tile bgName="ts_worldmap" x="384" y="144" w="16" h="16" xo="48" yo="432" id="10000863" name="inst_000BD57E" depth="1000000" locked="0" colour="4294967295" scaleX="1" scaleY="1"/>
+    <tile bgName="ts_worldmap" x="384" y="160" w="16" h="16" xo="48" yo="432" id="10000864" name="inst_2CDE1C4E" depth="1000000" locked="0" colour="4294967295" scaleX="1" scaleY="1"/>
+    <tile bgName="ts_worldmap" x="384" y="176" w="16" h="16" xo="48" yo="432" id="10000865" name="inst_EC015C9D" depth="1000000" locked="0" colour="4294967295" scaleX="1" scaleY="1"/>
+    <tile bgName="ts_worldmap" x="384" y="192" w="16" h="16" xo="48" yo="432" id="10000866" name="inst_8A5C94E1" depth="1000000" locked="0" colour="4294967295" scaleX="1" scaleY="1"/>
+    <tile bgName="ts_worldmap" x="384" y="208" w="16" h="16" xo="48" yo="432" id="10000867" name="inst_9AC2FC43" depth="1000000" locked="0" colour="4294967295" scaleX="1" scaleY="1"/>
+    <tile bgName="ts_worldmap" x="384" y="224" w="16" h="16" xo="48" yo="432" id="10000868" name="inst_350C1662" depth="1000000" locked="0" colour="4294967295" scaleX="1" scaleY="1"/>
+    <tile bgName="ts_worldmap" x="384" y="240" w="16" h="16" xo="48" yo="432" id="10000869" name="inst_5CCFBD4A" depth="1000000" locked="0" colour="4294967295" scaleX="1" scaleY="1"/>
+    <tile bgName="ts_worldmap" x="384" y="256" w="16" h="16" xo="48" yo="432" id="10000870" name="inst_7CF25E45" depth="1000000" locked="0" colour="4294967295" scaleX="1" scaleY="1"/>
+    <tile bgName="ts_worldmap" x="64" y="64" w="16" h="16" xo="48" yo="432" id="10000871" name="inst_4AB46EE9" depth="1000000" locked="0" colour="4294967295" scaleX="1" scaleY="1"/>
+    <tile bgName="ts_worldmap" x="64" y="80" w="16" h="16" xo="48" yo="432" id="10000872" name="inst_090F8D38" depth="1000000" locked="0" colour="4294967295" scaleX="1" scaleY="1"/>
+    <tile bgName="ts_worldmap" x="64" y="96" w="16" h="16" xo="48" yo="432" id="10000873" name="inst_464EFFE6" depth="1000000" locked="0" colour="4294967295" scaleX="1" scaleY="1"/>
+    <tile bgName="ts_worldmap" x="64" y="112" w="16" h="16" xo="48" yo="432" id="10000874" name="inst_557D09A7" depth="1000000" locked="0" colour="4294967295" scaleX="1" scaleY="1"/>
+    <tile bgName="ts_worldmap" x="64" y="128" w="16" h="16" xo="48" yo="432" id="10000875" name="inst_FA5A6AFC" depth="1000000" locked="0" colour="4294967295" scaleX="1" scaleY="1"/>
+    <tile bgName="ts_worldmap" x="64" y="144" w="16" h="16" xo="48" yo="432" id="10000876" name="inst_B51736A9" depth="1000000" locked="0" colour="4294967295" scaleX="1" scaleY="1"/>
+    <tile bgName="ts_worldmap" x="64" y="160" w="16" h="16" xo="48" yo="432" id="10000877" name="inst_4EE9D3EA" depth="1000000" locked="0" colour="4294967295" scaleX="1" scaleY="1"/>
+    <tile bgName="ts_worldmap" x="64" y="176" w="16" h="16" xo="48" yo="432" id="10000878" name="inst_D2C8286A" depth="1000000" locked="0" colour="4294967295" scaleX="1" scaleY="1"/>
+    <tile bgName="ts_worldmap" x="64" y="192" w="16" h="16" xo="48" yo="432" id="10000879" name="inst_6578CE53" depth="1000000" locked="0" colour="4294967295" scaleX="1" scaleY="1"/>
+    <tile bgName="ts_worldmap" x="64" y="208" w="16" h="16" xo="48" yo="432" id="10000880" name="inst_9D8B14D4" depth="1000000" locked="0" colour="4294967295" scaleX="1" scaleY="1"/>
+    <tile bgName="ts_worldmap" x="64" y="224" w="16" h="16" xo="48" yo="432" id="10000881" name="inst_7599B04B" depth="1000000" locked="0" colour="4294967295" scaleX="1" scaleY="1"/>
+    <tile bgName="ts_worldmap" x="64" y="240" w="16" h="16" xo="48" yo="432" id="10000882" name="inst_3C0AEAF1" depth="1000000" locked="0" colour="4294967295" scaleX="1" scaleY="1"/>
+    <tile bgName="ts_worldmap" x="64" y="256" w="16" h="16" xo="48" yo="432" id="10000883" name="inst_38DD3CDF" depth="1000000" locked="0" colour="4294967295" scaleX="1" scaleY="1"/>
+    <tile bgName="ts_worldmap" x="64" y="336" w="16" h="16" xo="48" yo="432" id="10000884" name="inst_39207E2D" depth="1000000" locked="0" colour="4294967295" scaleX="1" scaleY="1"/>
+    <tile bgName="ts_worldmap" x="64" y="352" w="16" h="16" xo="48" yo="432" id="10000885" name="inst_6CBFCE9A" depth="1000000" locked="0" colour="4294967295" scaleX="1" scaleY="1"/>
+    <tile bgName="ts_worldmap" x="64" y="368" w="16" h="16" xo="48" yo="432" id="10000886" name="inst_CBB18C70" depth="1000000" locked="0" colour="4294967295" scaleX="1" scaleY="1"/>
+    <tile bgName="ts_worldmap" x="64" y="384" w="16" h="16" xo="48" yo="432" id="10000887" name="inst_9FB6D43D" depth="1000000" locked="0" colour="4294967295" scaleX="1" scaleY="1"/>
+    <tile bgName="ts_worldmap" x="64" y="400" w="16" h="16" xo="48" yo="432" id="10000888" name="inst_E646C41F" depth="1000000" locked="0" colour="4294967295" scaleX="1" scaleY="1"/>
+    <tile bgName="ts_worldmap" x="64" y="416" w="16" h="16" xo="48" yo="432" id="10000889" name="inst_4AE08C8D" depth="1000000" locked="0" colour="4294967295" scaleX="1" scaleY="1"/>
+    <tile bgName="ts_worldmap" x="64" y="432" w="16" h="16" xo="48" yo="432" id="10000890" name="inst_8CAF5418" depth="1000000" locked="0" colour="4294967295" scaleX="1" scaleY="1"/>
+    <tile bgName="ts_worldmap" x="64" y="448" w="16" h="16" xo="48" yo="432" id="10000891" name="inst_6945452C" depth="1000000" locked="0" colour="4294967295" scaleX="1" scaleY="1"/>
+    <tile bgName="ts_worldmap" x="64" y="464" w="16" h="16" xo="48" yo="432" id="10000892" name="inst_7CDCA2E8" depth="1000000" locked="0" colour="4294967295" scaleX="1" scaleY="1"/>
+    <tile bgName="ts_worldmap" x="64" y="480" w="16" h="16" xo="48" yo="432" id="10000893" name="inst_4C072B80" depth="1000000" locked="0" colour="4294967295" scaleX="1" scaleY="1"/>
+    <tile bgName="ts_worldmap" x="64" y="496" w="16" h="16" xo="48" yo="432" id="10000894" name="inst_49D09F06" depth="1000000" locked="0" colour="4294967295" scaleX="1" scaleY="1"/>
+    <tile bgName="ts_worldmap" x="64" y="512" w="16" h="16" xo="48" yo="432" id="10000895" name="inst_845246B4" depth="1000000" locked="0" colour="4294967295" scaleX="1" scaleY="1"/>
+    <tile bgName="ts_worldmap" x="64" y="528" w="16" h="16" xo="48" yo="432" id="10000896" name="inst_F70F998C" depth="1000000" locked="0" colour="4294967295" scaleX="1" scaleY="1"/>
+    <tile bgName="ts_worldmap" x="64" y="544" w="16" h="16" xo="48" yo="432" id="10000897" name="inst_252CF572" depth="1000000" locked="0" colour="4294967295" scaleX="1" scaleY="1"/>
+    <tile bgName="ts_worldmap" x="384" y="336" w="16" h="16" xo="48" yo="432" id="10000898" name="inst_19193E35" depth="1000000" locked="0" colour="4294967295" scaleX="1" scaleY="1"/>
+    <tile bgName="ts_worldmap" x="384" y="352" w="16" h="16" xo="48" yo="432" id="10000899" name="inst_E39A7A21" depth="1000000" locked="0" colour="4294967295" scaleX="1" scaleY="1"/>
+    <tile bgName="ts_worldmap" x="384" y="368" w="16" h="16" xo="48" yo="432" id="10000900" name="inst_41ABCBD5" depth="1000000" locked="0" colour="4294967295" scaleX="1" scaleY="1"/>
+    <tile bgName="ts_worldmap" x="384" y="384" w="16" h="16" xo="48" yo="432" id="10000901" name="inst_8F0921E5" depth="1000000" locked="0" colour="4294967295" scaleX="1" scaleY="1"/>
+    <tile bgName="ts_worldmap" x="384" y="400" w="16" h="16" xo="48" yo="432" id="10000902" name="inst_24B1609F" depth="1000000" locked="0" colour="4294967295" scaleX="1" scaleY="1"/>
+    <tile bgName="ts_worldmap" x="384" y="416" w="16" h="16" xo="48" yo="432" id="10000903" name="inst_06A2A041" depth="1000000" locked="0" colour="4294967295" scaleX="1" scaleY="1"/>
+    <tile bgName="ts_worldmap" x="384" y="432" w="16" h="16" xo="48" yo="432" id="10000904" name="inst_10D63A3D" depth="1000000" locked="0" colour="4294967295" scaleX="1" scaleY="1"/>
+    <tile bgName="ts_worldmap" x="384" y="448" w="16" h="16" xo="48" yo="432" id="10000905" name="inst_D1FD07F0" depth="1000000" locked="0" colour="4294967295" scaleX="1" scaleY="1"/>
+    <tile bgName="ts_worldmap" x="384" y="464" w="16" h="16" xo="48" yo="432" id="10000906" name="inst_D5CFE103" depth="1000000" locked="0" colour="4294967295" scaleX="1" scaleY="1"/>
+    <tile bgName="ts_worldmap" x="384" y="480" w="16" h="16" xo="48" yo="432" id="10000907" name="inst_663921A1" depth="1000000" locked="0" colour="4294967295" scaleX="1" scaleY="1"/>
+    <tile bgName="ts_worldmap" x="384" y="496" w="16" h="16" xo="48" yo="432" id="10000908" name="inst_EB10B5FF" depth="1000000" locked="0" colour="4294967295" scaleX="1" scaleY="1"/>
+    <tile bgName="ts_worldmap" x="384" y="512" w="16" h="16" xo="48" yo="432" id="10000909" name="inst_FCF6B8EF" depth="1000000" locked="0" colour="4294967295" scaleX="1" scaleY="1"/>
+    <tile bgName="ts_worldmap" x="384" y="528" w="16" h="16" xo="48" yo="432" id="10000910" name="inst_4B413C65" depth="1000000" locked="0" colour="4294967295" scaleX="1" scaleY="1"/>
+    <tile bgName="ts_worldmap" x="384" y="544" w="16" h="16" xo="48" yo="432" id="10000911" name="inst_5D3DAA6A" depth="1000000" locked="0" colour="4294967295" scaleX="1" scaleY="1"/>
+    <tile bgName="ts_worldmap" x="64" y="320" w="16" h="16" xo="32" yo="416" id="10000912" name="inst_35E9BA75" depth="1000000" locked="0" colour="4294967295" scaleX="1" scaleY="1"/>
+    <tile bgName="ts_worldmap" x="384" y="320" w="16" h="16" xo="16" yo="416" id="10000913" name="inst_9E45D3CF" depth="1000000" locked="0" colour="4294967295" scaleX="1" scaleY="1"/>
+    <tile bgName="ts_worldmap" x="384" y="272" w="16" h="16" xo="16" yo="432" id="10000914" name="inst_68D8F72F" depth="1000000" locked="0" colour="4294967295" scaleX="1" scaleY="1"/>
+    <tile bgName="ts_worldmap" x="64" y="272" w="16" h="16" xo="32" yo="432" id="10000915" name="inst_BB2DB876" depth="1000000" locked="0" colour="4294967295" scaleX="1" scaleY="1"/>
+    <tile bgName="ts_worldmap" x="48" y="272" w="16" h="16" xo="16" yo="400" id="10000916" name="inst_27815A92" depth="1000000" locked="0" colour="4294967295" scaleX="1" scaleY="1"/>
+    <tile bgName="ts_worldmap" x="32" y="272" w="16" h="16" xo="16" yo="400" id="10000917" name="inst_3EE172C6" depth="1000000" locked="0" colour="4294967295" scaleX="1" scaleY="1"/>
+    <tile bgName="ts_worldmap" x="16" y="272" w="16" h="16" xo="16" yo="400" id="10000918" name="inst_BFE80785" depth="1000000" locked="0" colour="4294967295" scaleX="1" scaleY="1"/>
+    <tile bgName="ts_worldmap" x="0" y="272" w="16" h="16" xo="16" yo="400" id="10000919" name="inst_7B722E7F" depth="1000000" locked="0" colour="4294967295" scaleX="1" scaleY="1"/>
+    <tile bgName="ts_worldmap" x="0" y="320" w="16" h="16" xo="16" yo="400" id="10000920" name="inst_FBEF7C80" depth="1000000" locked="0" colour="4294967295" scaleX="1" scaleY="1"/>
+    <tile bgName="ts_worldmap" x="16" y="320" w="16" h="16" xo="16" yo="400" id="10000921" name="inst_D05E8C10" depth="1000000" locked="0" colour="4294967295" scaleX="1" scaleY="1"/>
+    <tile bgName="ts_worldmap" x="32" y="320" w="16" h="16" xo="16" yo="400" id="10000922" name="inst_1D206582" depth="1000000" locked="0" colour="4294967295" scaleX="1" scaleY="1"/>
+    <tile bgName="ts_worldmap" x="48" y="320" w="16" h="16" xo="16" yo="400" id="10000923" name="inst_BECE805A" depth="1000000" locked="0" colour="4294967295" scaleX="1" scaleY="1"/>
+    <tile bgName="ts_worldmap" x="400" y="272" w="16" h="16" xo="16" yo="400" id="10000924" name="inst_496C8763" depth="1000000" locked="0" colour="4294967295" scaleX="1" scaleY="1"/>
+    <tile bgName="ts_worldmap" x="416" y="272" w="16" h="16" xo="16" yo="400" id="10000925" name="inst_D49415ED" depth="1000000" locked="0" colour="4294967295" scaleX="1" scaleY="1"/>
+    <tile bgName="ts_worldmap" x="432" y="272" w="16" h="16" xo="16" yo="400" id="10000926" name="inst_659FA151" depth="1000000" locked="0" colour="4294967295" scaleX="1" scaleY="1"/>
+    <tile bgName="ts_worldmap" x="448" y="272" w="16" h="16" xo="16" yo="400" id="10000927" name="inst_208F0514" depth="1000000" locked="0" colour="4294967295" scaleX="1" scaleY="1"/>
+    <tile bgName="ts_worldmap" x="464" y="272" w="16" h="16" xo="16" yo="400" id="10000928" name="inst_F36F09A6" depth="1000000" locked="0" colour="4294967295" scaleX="1" scaleY="1"/>
+    <tile bgName="ts_worldmap" x="400" y="320" w="16" h="16" xo="16" yo="400" id="10000929" name="inst_A3BBAB83" depth="1000000" locked="0" colour="4294967295" scaleX="1" scaleY="1"/>
+    <tile bgName="ts_worldmap" x="416" y="320" w="16" h="16" xo="16" yo="400" id="10000930" name="inst_C8723CEE" depth="1000000" locked="0" colour="4294967295" scaleX="1" scaleY="1"/>
+    <tile bgName="ts_worldmap" x="432" y="320" w="16" h="16" xo="16" yo="400" id="10000931" name="inst_75C603E2" depth="1000000" locked="0" colour="4294967295" scaleX="1" scaleY="1"/>
+    <tile bgName="ts_worldmap" x="448" y="320" w="16" h="16" xo="16" yo="400" id="10000932" name="inst_E178AE4F" depth="1000000" locked="0" colour="4294967295" scaleX="1" scaleY="1"/>
+    <tile bgName="ts_worldmap" x="464" y="320" w="16" h="16" xo="16" yo="400" id="10000933" name="inst_0EA88BC5" depth="1000000" locked="0" colour="4294967295" scaleX="1" scaleY="1"/>
+    <tile bgName="ts_worldmap" x="80" y="560" w="16" h="16" xo="16" yo="400" id="10000934" name="inst_27C8C25F" depth="1000000" locked="0" colour="4294967295" scaleX="1" scaleY="1"/>
+    <tile bgName="ts_worldmap" x="96" y="560" w="16" h="16" xo="16" yo="400" id="10000935" name="inst_B33EC239" depth="1000000" locked="0" colour="4294967295" scaleX="1" scaleY="1"/>
+    <tile bgName="ts_worldmap" x="112" y="560" w="16" h="16" xo="16" yo="400" id="10000936" name="inst_BA972A17" depth="1000000" locked="0" colour="4294967295" scaleX="1" scaleY="1"/>
+    <tile bgName="ts_worldmap" x="128" y="560" w="16" h="16" xo="16" yo="400" id="10000937" name="inst_9EC86336" depth="1000000" locked="0" colour="4294967295" scaleX="1" scaleY="1"/>
+    <tile bgName="ts_worldmap" x="144" y="560" w="16" h="16" xo="16" yo="400" id="10000938" name="inst_5A0C91C4" depth="1000000" locked="0" colour="4294967295" scaleX="1" scaleY="1"/>
+    <tile bgName="ts_worldmap" x="160" y="560" w="16" h="16" xo="16" yo="400" id="10000939" name="inst_3849E12D" depth="1000000" locked="0" colour="4294967295" scaleX="1" scaleY="1"/>
+    <tile bgName="ts_worldmap" x="176" y="560" w="16" h="16" xo="16" yo="400" id="10000940" name="inst_4267DFCF" depth="1000000" locked="0" colour="4294967295" scaleX="1" scaleY="1"/>
+    <tile bgName="ts_worldmap" x="192" y="560" w="16" h="16" xo="16" yo="400" id="10000941" name="inst_89C6C1F5" depth="1000000" locked="0" colour="4294967295" scaleX="1" scaleY="1"/>
+    <tile bgName="ts_worldmap" x="208" y="560" w="16" h="16" xo="16" yo="400" id="10000942" name="inst_AB6728D5" depth="1000000" locked="0" colour="4294967295" scaleX="1" scaleY="1"/>
+    <tile bgName="ts_worldmap" x="224" y="560" w="16" h="16" xo="16" yo="400" id="10000943" name="inst_92F8192B" depth="1000000" locked="0" colour="4294967295" scaleX="1" scaleY="1"/>
+    <tile bgName="ts_worldmap" x="240" y="560" w="16" h="16" xo="16" yo="400" id="10000944" name="inst_96BA7C3A" depth="1000000" locked="0" colour="4294967295" scaleX="1" scaleY="1"/>
+    <tile bgName="ts_worldmap" x="256" y="560" w="16" h="16" xo="16" yo="400" id="10000945" name="inst_269B55E1" depth="1000000" locked="0" colour="4294967295" scaleX="1" scaleY="1"/>
+    <tile bgName="ts_worldmap" x="272" y="560" w="16" h="16" xo="16" yo="400" id="10000946" name="inst_B03BEACE" depth="1000000" locked="0" colour="4294967295" scaleX="1" scaleY="1"/>
+    <tile bgName="ts_worldmap" x="288" y="560" w="16" h="16" xo="16" yo="400" id="10000947" name="inst_E911D8F6" depth="1000000" locked="0" colour="4294967295" scaleX="1" scaleY="1"/>
+    <tile bgName="ts_worldmap" x="304" y="560" w="16" h="16" xo="16" yo="400" id="10000948" name="inst_B6BA74A8" depth="1000000" locked="0" colour="4294967295" scaleX="1" scaleY="1"/>
+    <tile bgName="ts_worldmap" x="320" y="560" w="16" h="16" xo="16" yo="400" id="10000949" name="inst_7C607367" depth="1000000" locked="0" colour="4294967295" scaleX="1" scaleY="1"/>
+    <tile bgName="ts_worldmap" x="336" y="560" w="16" h="16" xo="16" yo="400" id="10000950" name="inst_250B539D" depth="1000000" locked="0" colour="4294967295" scaleX="1" scaleY="1"/>
+    <tile bgName="ts_worldmap" x="352" y="560" w="16" h="16" xo="16" yo="400" id="10000951" name="inst_02F35D96" depth="1000000" locked="0" colour="4294967295" scaleX="1" scaleY="1"/>
+    <tile bgName="ts_worldmap" x="368" y="560" w="16" h="16" xo="16" yo="400" id="10000952" name="inst_2ADB7D0E" depth="1000000" locked="0" colour="4294967295" scaleX="1" scaleY="1"/>
+    <tile bgName="ts_worldmap" x="384" y="560" w="16" h="16" xo="32" yo="432" id="10000953" name="inst_DC53AC67" depth="1000000" locked="0" colour="4294967295" scaleX="1" scaleY="1"/>
+    <tile bgName="ts_worldmap" x="64" y="560" w="16" h="16" xo="16" yo="432" id="10000954" name="inst_E011A16C" depth="1000000" locked="0" colour="4294967295" scaleX="1" scaleY="1"/>
+    <tile bgName="ts_worldmap" x="416" y="336" w="16" h="16" xo="16" yo="320" id="10000955" name="inst_29E8A00A" depth="1000000" locked="0" colour="4294967295" scaleX="1" scaleY="1"/>
+    <tile bgName="ts_worldmap" x="432" y="336" w="16" h="16" xo="16" yo="320" id="10000956" name="inst_F3AC8410" depth="1000000" locked="0" colour="4294967295" scaleX="1" scaleY="1"/>
+    <tile bgName="ts_worldmap" x="448" y="336" w="16" h="16" xo="16" yo="320" id="10000957" name="inst_E241BDAA" depth="1000000" locked="0" colour="4294967295" scaleX="1" scaleY="1"/>
+    <tile bgName="ts_worldmap" x="464" y="336" w="16" h="16" xo="16" yo="320" id="10000958" name="inst_2F901D95" depth="1000000" locked="0" colour="4294967295" scaleX="1" scaleY="1"/>
+    <tile bgName="ts_worldmap" x="0" y="336" w="16" h="16" xo="16" yo="320" id="10000959" name="inst_2326C5B9" depth="1000000" locked="0" colour="4294967295" scaleX="1" scaleY="1"/>
+    <tile bgName="ts_worldmap" x="16" y="336" w="16" h="16" xo="16" yo="320" id="10000960" name="inst_5D449C51" depth="1000000" locked="0" colour="4294967295" scaleX="1" scaleY="1"/>
+    <tile bgName="ts_worldmap" x="32" y="336" w="16" h="16" xo="16" yo="320" id="10000961" name="inst_044E569A" depth="1000000" locked="0" colour="4294967295" scaleX="1" scaleY="1"/>
+    <tile bgName="ts_worldmap" x="80" y="576" w="16" h="16" xo="16" yo="320" id="10000962" name="inst_574462D5" depth="1000000" locked="0" colour="4294967295" scaleX="1" scaleY="1"/>
+    <tile bgName="ts_worldmap" x="96" y="576" w="16" h="16" xo="16" yo="320" id="10000963" name="inst_7AD69577" depth="1000000" locked="0" colour="4294967295" scaleX="1" scaleY="1"/>
+    <tile bgName="ts_worldmap" x="128" y="576" w="16" h="16" xo="16" yo="320" id="10000964" name="inst_F8850BC3" depth="1000000" locked="0" colour="4294967295" scaleX="1" scaleY="1"/>
+    <tile bgName="ts_worldmap" x="144" y="576" w="16" h="16" xo="16" yo="320" id="10000965" name="inst_B8D0A3A3" depth="1000000" locked="0" colour="4294967295" scaleX="1" scaleY="1"/>
+    <tile bgName="ts_worldmap" x="160" y="576" w="16" h="16" xo="16" yo="320" id="10000966" name="inst_89390F57" depth="1000000" locked="0" colour="4294967295" scaleX="1" scaleY="1"/>
+    <tile bgName="ts_worldmap" x="176" y="576" w="16" h="16" xo="16" yo="320" id="10000967" name="inst_BAA567FF" depth="1000000" locked="0" colour="4294967295" scaleX="1" scaleY="1"/>
+    <tile bgName="ts_worldmap" x="192" y="576" w="16" h="16" xo="16" yo="320" id="10000968" name="inst_361F9F67" depth="1000000" locked="0" colour="4294967295" scaleX="1" scaleY="1"/>
+    <tile bgName="ts_worldmap" x="224" y="576" w="16" h="16" xo="16" yo="320" id="10000969" name="inst_E39634EE" depth="1000000" locked="0" colour="4294967295" scaleX="1" scaleY="1"/>
+    <tile bgName="ts_worldmap" x="240" y="576" w="16" h="16" xo="16" yo="320" id="10000970" name="inst_A24BBE4A" depth="1000000" locked="0" colour="4294967295" scaleX="1" scaleY="1"/>
+    <tile bgName="ts_worldmap" x="256" y="576" w="16" h="16" xo="16" yo="320" id="10000971" name="inst_CDA6706E" depth="1000000" locked="0" colour="4294967295" scaleX="1" scaleY="1"/>
+    <tile bgName="ts_worldmap" x="272" y="576" w="16" h="16" xo="16" yo="320" id="10000972" name="inst_CDA78D0A" depth="1000000" locked="0" colour="4294967295" scaleX="1" scaleY="1"/>
+    <tile bgName="ts_worldmap" x="288" y="576" w="16" h="16" xo="16" yo="320" id="10000973" name="inst_9D6851F1" depth="1000000" locked="0" colour="4294967295" scaleX="1" scaleY="1"/>
+    <tile bgName="ts_worldmap" x="304" y="576" w="16" h="16" xo="16" yo="320" id="10000974" name="inst_D66989A4" depth="1000000" locked="0" colour="4294967295" scaleX="1" scaleY="1"/>
+    <tile bgName="ts_worldmap" x="320" y="576" w="16" h="16" xo="16" yo="320" id="10000975" name="inst_E1556E71" depth="1000000" locked="0" colour="4294967295" scaleX="1" scaleY="1"/>
+    <tile bgName="ts_worldmap" x="336" y="576" w="16" h="16" xo="16" yo="320" id="10000976" name="inst_2D795879" depth="1000000" locked="0" colour="4294967295" scaleX="1" scaleY="1"/>
+    <tile bgName="ts_worldmap" x="352" y="576" w="16" h="16" xo="16" yo="320" id="10000977" name="inst_EDC04DF7" depth="1000000" locked="0" colour="4294967295" scaleX="1" scaleY="1"/>
+    <tile bgName="ts_worldmap" x="368" y="576" w="16" h="16" xo="16" yo="320" id="10000978" name="inst_35D2B3F9" depth="1000000" locked="0" colour="4294967295" scaleX="1" scaleY="1"/>
+    <tile bgName="ts_worldmap" x="112" y="576" w="16" h="16" xo="16" yo="320" id="10000980" name="inst_9F3E12D1" depth="1000000" locked="0" colour="4294967295" scaleX="1" scaleY="1"/>
+    <tile bgName="ts_worldmap" x="208" y="576" w="16" h="16" xo="16" yo="320" id="10000981" name="inst_927C5CF3" depth="1000000" locked="0" colour="4294967295" scaleX="1" scaleY="1"/>
+    <tile bgName="ts_worldmap" x="48" y="336" w="16" h="16" xo="32" yo="320" id="10000982" name="inst_8299568D" depth="1000000" locked="0" colour="4294967295" scaleX="1" scaleY="1"/>
+    <tile bgName="ts_worldmap" x="400" y="336" w="16" h="16" xo="0" yo="320" id="10000983" name="inst_228CF2A9" depth="1000000" locked="0" colour="4294967295" scaleX="1" scaleY="1"/>
+    <tile bgName="ts_worldmap" x="48" y="352" w="16" h="16" xo="32" yo="336" id="10000984" name="inst_65BB4127" depth="1000000" locked="0" colour="4294967295" scaleX="1" scaleY="1"/>
+    <tile bgName="ts_worldmap" x="48" y="368" w="16" h="16" xo="32" yo="336" id="10000985" name="inst_402EBBCB" depth="1000000" locked="0" colour="4294967295" scaleX="1" scaleY="1"/>
+    <tile bgName="ts_worldmap" x="48" y="384" w="16" h="16" xo="32" yo="336" id="10000986" name="inst_64FFAA32" depth="1000000" locked="0" colour="4294967295" scaleX="1" scaleY="1"/>
+    <tile bgName="ts_worldmap" x="48" y="400" w="16" h="16" xo="32" yo="336" id="10000987" name="inst_3919572D" depth="1000000" locked="0" colour="4294967295" scaleX="1" scaleY="1"/>
+    <tile bgName="ts_worldmap" x="48" y="416" w="16" h="16" xo="32" yo="336" id="10000988" name="inst_9FC6AB2B" depth="1000000" locked="0" colour="4294967295" scaleX="1" scaleY="1"/>
+    <tile bgName="ts_worldmap" x="48" y="432" w="16" h="16" xo="32" yo="336" id="10000989" name="inst_7EEC5E22" depth="1000000" locked="0" colour="4294967295" scaleX="1" scaleY="1"/>
+    <tile bgName="ts_worldmap" x="48" y="448" w="16" h="16" xo="32" yo="336" id="10000990" name="inst_2F65C934" depth="1000000" locked="0" colour="4294967295" scaleX="1" scaleY="1"/>
+    <tile bgName="ts_worldmap" x="48" y="464" w="16" h="16" xo="32" yo="336" id="10000991" name="inst_3BC0EB1B" depth="1000000" locked="0" colour="4294967295" scaleX="1" scaleY="1"/>
+    <tile bgName="ts_worldmap" x="48" y="480" w="16" h="16" xo="32" yo="336" id="10000992" name="inst_C1A91B96" depth="1000000" locked="0" colour="4294967295" scaleX="1" scaleY="1"/>
+    <tile bgName="ts_worldmap" x="48" y="496" w="16" h="16" xo="32" yo="336" id="10000993" name="inst_6830960F" depth="1000000" locked="0" colour="4294967295" scaleX="1" scaleY="1"/>
+    <tile bgName="ts_worldmap" x="48" y="512" w="16" h="16" xo="32" yo="336" id="10000994" name="inst_B4F1FD35" depth="1000000" locked="0" colour="4294967295" scaleX="1" scaleY="1"/>
+    <tile bgName="ts_worldmap" x="48" y="528" w="16" h="16" xo="32" yo="336" id="10000995" name="inst_592B673F" depth="1000000" locked="0" colour="4294967295" scaleX="1" scaleY="1"/>
+    <tile bgName="ts_worldmap" x="48" y="544" w="16" h="16" xo="32" yo="336" id="10000996" name="inst_361216F2" depth="1000000" locked="0" colour="4294967295" scaleX="1" scaleY="1"/>
+    <tile bgName="ts_worldmap" x="48" y="560" w="16" h="16" xo="32" yo="336" id="10000997" name="inst_2D51D833" depth="1000000" locked="0" colour="4294967295" scaleX="1" scaleY="1"/>
+    <tile bgName="ts_worldmap" x="64" y="576" w="16" h="16" xo="16" yo="320" id="10000998" name="inst_8802539E" depth="1000000" locked="0" colour="4294967295" scaleX="1" scaleY="1"/>
+    <tile bgName="ts_worldmap" x="384" y="576" w="16" h="16" xo="16" yo="320" id="10000999" name="inst_F96F6BFD" depth="1000000" locked="0" colour="4294967295" scaleX="1" scaleY="1"/>
+    <tile bgName="ts_worldmap" x="400" y="352" w="16" h="16" xo="0" yo="336" id="10001000" name="inst_F81DE503" depth="1000000" locked="0" colour="4294967295" scaleX="1" scaleY="1"/>
+    <tile bgName="ts_worldmap" x="400" y="368" w="16" h="16" xo="0" yo="336" id="10001001" name="inst_7D752CBC" depth="1000000" locked="0" colour="4294967295" scaleX="1" scaleY="1"/>
+    <tile bgName="ts_worldmap" x="400" y="384" w="16" h="16" xo="0" yo="336" id="10001002" name="inst_2E165106" depth="1000000" locked="0" colour="4294967295" scaleX="1" scaleY="1"/>
+    <tile bgName="ts_worldmap" x="400" y="400" w="16" h="16" xo="0" yo="336" id="10001003" name="inst_6BF543B8" depth="1000000" locked="0" colour="4294967295" scaleX="1" scaleY="1"/>
+    <tile bgName="ts_worldmap" x="400" y="416" w="16" h="16" xo="0" yo="336" id="10001004" name="inst_F8906BEF" depth="1000000" locked="0" colour="4294967295" scaleX="1" scaleY="1"/>
+    <tile bgName="ts_worldmap" x="400" y="432" w="16" h="16" xo="0" yo="336" id="10001005" name="inst_06AD5C9B" depth="1000000" locked="0" colour="4294967295" scaleX="1" scaleY="1"/>
+    <tile bgName="ts_worldmap" x="400" y="448" w="16" h="16" xo="0" yo="336" id="10001006" name="inst_9DD110DF" depth="1000000" locked="0" colour="4294967295" scaleX="1" scaleY="1"/>
+    <tile bgName="ts_worldmap" x="400" y="464" w="16" h="16" xo="0" yo="336" id="10001007" name="inst_1F36012E" depth="1000000" locked="0" colour="4294967295" scaleX="1" scaleY="1"/>
+    <tile bgName="ts_worldmap" x="400" y="480" w="16" h="16" xo="0" yo="336" id="10001008" name="inst_6130EC31" depth="1000000" locked="0" colour="4294967295" scaleX="1" scaleY="1"/>
+    <tile bgName="ts_worldmap" x="400" y="496" w="16" h="16" xo="0" yo="336" id="10001009" name="inst_B335CC11" depth="1000000" locked="0" colour="4294967295" scaleX="1" scaleY="1"/>
+    <tile bgName="ts_worldmap" x="400" y="512" w="16" h="16" xo="0" yo="336" id="10001010" name="inst_3DE4E1BE" depth="1000000" locked="0" colour="4294967295" scaleX="1" scaleY="1"/>
+    <tile bgName="ts_worldmap" x="400" y="528" w="16" h="16" xo="0" yo="336" id="10001011" name="inst_851A49EF" depth="1000000" locked="0" colour="4294967295" scaleX="1" scaleY="1"/>
+    <tile bgName="ts_worldmap" x="400" y="544" w="16" h="16" xo="0" yo="336" id="10001012" name="inst_9B48B540" depth="1000000" locked="0" colour="4294967295" scaleX="1" scaleY="1"/>
+    <tile bgName="ts_worldmap" x="400" y="560" w="16" h="16" xo="0" yo="336" id="10001013" name="inst_7DE74379" depth="1000000" locked="0" colour="4294967295" scaleX="1" scaleY="1"/>
+    <tile bgName="ts_worldmap" x="400" y="576" w="16" h="16" xo="128" yo="432" id="10001015" name="inst_A548EF2A" depth="1000000" locked="0" colour="4294967295" scaleX="1" scaleY="1"/>
+    <tile bgName="ts_worldmap" x="48" y="576" w="16" h="16" xo="112" yo="432" id="10001016" name="inst_7C80145A" depth="1000000" locked="0" colour="4294967295" scaleX="1" scaleY="1"/>
+    <tile bgName="ts_worldmap" x="0" y="256" w="16" h="16" xo="16" yo="352" id="10001017" name="inst_703B4678" depth="1000000" locked="0" colour="4294967295" scaleX="1" scaleY="1"/>
+    <tile bgName="ts_worldmap" x="16" y="256" w="16" h="16" xo="16" yo="352" id="10001018" name="inst_16B4CDC3" depth="1000000" locked="0" colour="4294967295" scaleX="1" scaleY="1"/>
+    <tile bgName="ts_worldmap" x="32" y="256" w="16" h="16" xo="16" yo="352" id="10001019" name="inst_238093D7" depth="1000000" locked="0" colour="4294967295" scaleX="1" scaleY="1"/>
+    <tile bgName="ts_worldmap" x="48" y="256" w="16" h="16" xo="32" yo="352" id="10001020" name="inst_1693DF9B" depth="1000000" locked="0" colour="4294967295" scaleX="1" scaleY="1"/>
+    <tile bgName="ts_worldmap" x="48" y="240" w="16" h="16" xo="32" yo="336" id="10001021" name="inst_BB758B98" depth="1000000" locked="0" colour="4294967295" scaleX="1" scaleY="1"/>
+    <tile bgName="ts_worldmap" x="48" y="224" w="16" h="16" xo="32" yo="336" id="10001022" name="inst_7D1EA3EE" depth="1000000" locked="0" colour="4294967295" scaleX="1" scaleY="1"/>
+    <tile bgName="ts_worldmap" x="48" y="208" w="16" h="16" xo="32" yo="336" id="10001023" name="inst_C8F688D2" depth="1000000" locked="0" colour="4294967295" scaleX="1" scaleY="1"/>
+    <tile bgName="ts_worldmap" x="48" y="192" w="16" h="16" xo="32" yo="336" id="10001024" name="inst_BC8BC886" depth="1000000" locked="0" colour="4294967295" scaleX="1" scaleY="1"/>
+    <tile bgName="ts_worldmap" x="48" y="176" w="16" h="16" xo="32" yo="336" id="10001025" name="inst_E39173CD" depth="1000000" locked="0" colour="4294967295" scaleX="1" scaleY="1"/>
+    <tile bgName="ts_worldmap" x="48" y="160" w="16" h="16" xo="32" yo="336" id="10001026" name="inst_5CED6BB6" depth="1000000" locked="0" colour="4294967295" scaleX="1" scaleY="1"/>
+    <tile bgName="ts_worldmap" x="48" y="144" w="16" h="16" xo="32" yo="336" id="10001027" name="inst_22BE2D38" depth="1000000" locked="0" colour="4294967295" scaleX="1" scaleY="1"/>
+    <tile bgName="ts_worldmap" x="48" y="128" w="16" h="16" xo="32" yo="336" id="10001028" name="inst_A7D3F1E3" depth="1000000" locked="0" colour="4294967295" scaleX="1" scaleY="1"/>
+    <tile bgName="ts_worldmap" x="48" y="112" w="16" h="16" xo="32" yo="336" id="10001029" name="inst_2FF7BF3B" depth="1000000" locked="0" colour="4294967295" scaleX="1" scaleY="1"/>
+    <tile bgName="ts_worldmap" x="48" y="96" w="16" h="16" xo="32" yo="336" id="10001030" name="inst_A4FCD44F" depth="1000000" locked="0" colour="4294967295" scaleX="1" scaleY="1"/>
+    <tile bgName="ts_worldmap" x="48" y="80" w="16" h="16" xo="32" yo="336" id="10001031" name="inst_6108BAA0" depth="1000000" locked="0" colour="4294967295" scaleX="1" scaleY="1"/>
+    <tile bgName="ts_worldmap" x="48" y="64" w="16" h="16" xo="32" yo="336" id="10001032" name="inst_EEEF5CBC" depth="1000000" locked="0" colour="4294967295" scaleX="1" scaleY="1"/>
+    <tile bgName="ts_worldmap" x="48" y="48" w="16" h="16" xo="32" yo="336" id="10001033" name="inst_FB38F41C" depth="1000000" locked="0" colour="4294967295" scaleX="1" scaleY="1"/>
+    <tile bgName="ts_worldmap" x="48" y="32" w="16" h="16" xo="112" yo="416" id="10001034" name="inst_62830513" depth="1000000" locked="0" colour="4294967295" scaleX="1" scaleY="1"/>
+    <tile bgName="ts_worldmap" x="64" y="32" w="16" h="16" xo="16" yo="352" id="10001035" name="inst_45F5D969" depth="1000000" locked="0" colour="4294967295" scaleX="1" scaleY="1"/>
+    <tile bgName="ts_worldmap" x="80" y="32" w="16" h="16" xo="16" yo="352" id="10001036" name="inst_A7AAB6EC" depth="1000000" locked="0" colour="4294967295" scaleX="1" scaleY="1"/>
+    <tile bgName="ts_worldmap" x="96" y="32" w="16" h="16" xo="16" yo="352" id="10001037" name="inst_39696005" depth="1000000" locked="0" colour="4294967295" scaleX="1" scaleY="1"/>
+    <tile bgName="ts_worldmap" x="112" y="32" w="16" h="16" xo="16" yo="352" id="10001038" name="inst_0D86C578" depth="1000000" locked="0" colour="4294967295" scaleX="1" scaleY="1"/>
+    <tile bgName="ts_worldmap" x="128" y="32" w="16" h="16" xo="16" yo="352" id="10001039" name="inst_746D3B66" depth="1000000" locked="0" colour="4294967295" scaleX="1" scaleY="1"/>
+    <tile bgName="ts_worldmap" x="144" y="32" w="16" h="16" xo="16" yo="352" id="10001040" name="inst_437CED1B" depth="1000000" locked="0" colour="4294967295" scaleX="1" scaleY="1"/>
+    <tile bgName="ts_worldmap" x="160" y="32" w="16" h="16" xo="16" yo="352" id="10001041" name="inst_D3ADE1D0" depth="1000000" locked="0" colour="4294967295" scaleX="1" scaleY="1"/>
+    <tile bgName="ts_worldmap" x="176" y="32" w="16" h="16" xo="16" yo="352" id="10001042" name="inst_10FDB993" depth="1000000" locked="0" colour="4294967295" scaleX="1" scaleY="1"/>
+    <tile bgName="ts_worldmap" x="192" y="32" w="16" h="16" xo="16" yo="352" id="10001043" name="inst_16B13DFB" depth="1000000" locked="0" colour="4294967295" scaleX="1" scaleY="1"/>
+    <tile bgName="ts_worldmap" x="208" y="32" w="16" h="16" xo="16" yo="352" id="10001044" name="inst_E45C54FB" depth="1000000" locked="0" colour="4294967295" scaleX="1" scaleY="1"/>
+    <tile bgName="ts_worldmap" x="224" y="32" w="16" h="16" xo="16" yo="352" id="10001045" name="inst_92C6395D" depth="1000000" locked="0" colour="4294967295" scaleX="1" scaleY="1"/>
+    <tile bgName="ts_worldmap" x="240" y="32" w="16" h="16" xo="16" yo="352" id="10001046" name="inst_87D7A361" depth="1000000" locked="0" colour="4294967295" scaleX="1" scaleY="1"/>
+    <tile bgName="ts_worldmap" x="256" y="32" w="16" h="16" xo="16" yo="352" id="10001047" name="inst_5403247B" depth="1000000" locked="0" colour="4294967295" scaleX="1" scaleY="1"/>
+    <tile bgName="ts_worldmap" x="272" y="32" w="16" h="16" xo="16" yo="352" id="10001048" name="inst_9657C792" depth="1000000" locked="0" colour="4294967295" scaleX="1" scaleY="1"/>
+    <tile bgName="ts_worldmap" x="288" y="32" w="16" h="16" xo="16" yo="352" id="10001049" name="inst_AF6D9350" depth="1000000" locked="0" colour="4294967295" scaleX="1" scaleY="1"/>
+    <tile bgName="ts_worldmap" x="304" y="32" w="16" h="16" xo="16" yo="352" id="10001050" name="inst_A758BB54" depth="1000000" locked="0" colour="4294967295" scaleX="1" scaleY="1"/>
+    <tile bgName="ts_worldmap" x="320" y="32" w="16" h="16" xo="16" yo="352" id="10001051" name="inst_7C4FE9B5" depth="1000000" locked="0" colour="4294967295" scaleX="1" scaleY="1"/>
+    <tile bgName="ts_worldmap" x="352" y="32" w="16" h="16" xo="16" yo="352" id="10001052" name="inst_A1A2F6C9" depth="1000000" locked="0" colour="4294967295" scaleX="1" scaleY="1"/>
+    <tile bgName="ts_worldmap" x="368" y="32" w="16" h="16" xo="16" yo="352" id="10001053" name="inst_44A20498" depth="1000000" locked="0" colour="4294967295" scaleX="1" scaleY="1"/>
+    <tile bgName="ts_worldmap" x="384" y="32" w="16" h="16" xo="16" yo="352" id="10001054" name="inst_631F36B6" depth="1000000" locked="0" colour="4294967295" scaleX="1" scaleY="1"/>
+    <tile bgName="ts_worldmap" x="336" y="32" w="16" h="16" xo="16" yo="352" id="10001055" name="inst_FC281056" depth="1000000" locked="0" colour="4294967295" scaleX="1" scaleY="1"/>
+    <tile bgName="ts_worldmap" x="400" y="32" w="16" h="16" xo="128" yo="416" id="10001056" name="inst_EB7B401A" depth="1000000" locked="0" colour="4294967295" scaleX="1" scaleY="1"/>
+    <tile bgName="ts_worldmap" x="400" y="48" w="16" h="16" xo="0" yo="336" id="10001057" name="inst_0470575E" depth="1000000" locked="0" colour="4294967295" scaleX="1" scaleY="1"/>
+    <tile bgName="ts_worldmap" x="400" y="64" w="16" h="16" xo="0" yo="336" id="10001058" name="inst_85900F0D" depth="1000000" locked="0" colour="4294967295" scaleX="1" scaleY="1"/>
+    <tile bgName="ts_worldmap" x="400" y="80" w="16" h="16" xo="0" yo="336" id="10001059" name="inst_48A826D5" depth="1000000" locked="0" colour="4294967295" scaleX="1" scaleY="1"/>
+    <tile bgName="ts_worldmap" x="400" y="96" w="16" h="16" xo="0" yo="336" id="10001060" name="inst_BC82439A" depth="1000000" locked="0" colour="4294967295" scaleX="1" scaleY="1"/>
+    <tile bgName="ts_worldmap" x="400" y="112" w="16" h="16" xo="0" yo="336" id="10001061" name="inst_482B22EE" depth="1000000" locked="0" colour="4294967295" scaleX="1" scaleY="1"/>
+    <tile bgName="ts_worldmap" x="400" y="128" w="16" h="16" xo="0" yo="336" id="10001062" name="inst_90608B0A" depth="1000000" locked="0" colour="4294967295" scaleX="1" scaleY="1"/>
+    <tile bgName="ts_worldmap" x="400" y="144" w="16" h="16" xo="0" yo="336" id="10001063" name="inst_84B2487A" depth="1000000" locked="0" colour="4294967295" scaleX="1" scaleY="1"/>
+    <tile bgName="ts_worldmap" x="400" y="160" w="16" h="16" xo="0" yo="336" id="10001064" name="inst_F19025E1" depth="1000000" locked="0" colour="4294967295" scaleX="1" scaleY="1"/>
+    <tile bgName="ts_worldmap" x="400" y="176" w="16" h="16" xo="0" yo="336" id="10001065" name="inst_FB5A6CC4" depth="1000000" locked="0" colour="4294967295" scaleX="1" scaleY="1"/>
+    <tile bgName="ts_worldmap" x="400" y="192" w="16" h="16" xo="0" yo="336" id="10001066" name="inst_63DFF194" depth="1000000" locked="0" colour="4294967295" scaleX="1" scaleY="1"/>
+    <tile bgName="ts_worldmap" x="400" y="208" w="16" h="16" xo="0" yo="336" id="10001067" name="inst_DF531D3D" depth="1000000" locked="0" colour="4294967295" scaleX="1" scaleY="1"/>
+    <tile bgName="ts_worldmap" x="400" y="224" w="16" h="16" xo="0" yo="336" id="10001068" name="inst_8661DFA5" depth="1000000" locked="0" colour="4294967295" scaleX="1" scaleY="1"/>
+    <tile bgName="ts_worldmap" x="400" y="240" w="16" h="16" xo="0" yo="336" id="10001069" name="inst_4D7C0FCC" depth="1000000" locked="0" colour="4294967295" scaleX="1" scaleY="1"/>
+    <tile bgName="ts_worldmap" x="416" y="256" w="16" h="16" xo="16" yo="352" id="10001071" name="inst_ACB65159" depth="1000000" locked="0" colour="4294967295" scaleX="1" scaleY="1"/>
+    <tile bgName="ts_worldmap" x="432" y="256" w="16" h="16" xo="16" yo="352" id="10001072" name="inst_9598218D" depth="1000000" locked="0" colour="4294967295" scaleX="1" scaleY="1"/>
+    <tile bgName="ts_worldmap" x="448" y="256" w="16" h="16" xo="16" yo="352" id="10001073" name="inst_26923F77" depth="1000000" locked="0" colour="4294967295" scaleX="1" scaleY="1"/>
+    <tile bgName="ts_worldmap" x="464" y="256" w="16" h="16" xo="16" yo="352" id="10001074" name="inst_ADA8FAF2" depth="1000000" locked="0" colour="4294967295" scaleX="1" scaleY="1"/>
+    <tile bgName="ts_worldmap" x="400" y="256" w="16" h="16" xo="0" yo="352" id="10001075" name="inst_723018FB" depth="1000000" locked="0" colour="4294967295" scaleX="1" scaleY="1"/>
+    <tile bgName="ts_worldmap" x="112" y="208" w="16" h="16" xo="16" yo="432" id="10001076" name="inst_2074A372" depth="1000000" locked="0" colour="4294967295" scaleX="1" scaleY="1"/>
+    <tile bgName="ts_worldmap" x="112" y="192" w="16" h="16" xo="16" yo="416" id="10001077" name="inst_E6E0F736" depth="1000000" locked="0" colour="4294967295" scaleX="1" scaleY="1"/>
+    <tile bgName="ts_worldmap" x="160" y="208" w="16" h="16" xo="32" yo="416" id="10001079" name="inst_3726D8F5" depth="1000000" locked="0" colour="4294967295" scaleX="1" scaleY="1"/>
+    <tile bgName="ts_worldmap" x="160" y="192" w="16" h="16" xo="16" yo="400" id="10001080" name="inst_6AA43F83" depth="1000000" locked="0" colour="4294967295" scaleX="1" scaleY="1"/>
+    <tile bgName="ts_worldmap" x="304" y="192" w="16" h="16" xo="16" yo="400" id="10001081" name="inst_BB2C96FB" depth="1000000" locked="0" colour="4294967295" scaleX="1" scaleY="1"/>
+    <tile bgName="ts_worldmap" x="336" y="192" w="16" h="16" xo="32" yo="416" id="10001082" name="inst_78102A9D" depth="1000000" locked="0" colour="4294967295" scaleX="1" scaleY="1"/>
+    <tile bgName="ts_worldmap" x="336" y="208" w="16" h="16" xo="32" yo="432" id="10001083" name="inst_0CDE414E" depth="1000000" locked="0" colour="4294967295" scaleX="1" scaleY="1"/>
+    <tile bgName="ts_worldmap" x="288" y="208" w="16" h="16" xo="16" yo="416" id="10001084" name="inst_DA1AEED8" depth="1000000" locked="0" colour="4294967295" scaleX="1" scaleY="1"/>
+    <tile bgName="ts_worldmap" x="288" y="192" w="16" h="16" xo="16" yo="400" id="10001085" name="inst_8DCFAE0E" depth="1000000" locked="0" colour="4294967295" scaleX="1" scaleY="1"/>
+    <tile bgName="ts_worldmap" x="256" y="192" w="16" h="16" xo="48" yo="400" id="10001086" name="inst_64044DCF" depth="1000000" locked="0" colour="4294967295" scaleX="1" scaleY="1"/>
+  </tiles>
   <PhysicsWorld>0</PhysicsWorld>
   <PhysicsWorldTop>0</PhysicsWorldTop>
   <PhysicsWorldLeft>0</PhysicsWorldLeft>

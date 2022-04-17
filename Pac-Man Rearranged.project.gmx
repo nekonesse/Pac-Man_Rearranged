@@ -29,8 +29,14 @@
     <sprite>sprites\spr_font1small</sprite>
     <sprite>sprites\spr_font1big</sprite>
     <sprite>sprites\spr_lives</sprite>
-    <sprite>sprites\spr_ghostspawn</sprite>
     <sprite>sprites\spr_mapspawnmarker</sprite>
+    <sprite>sprites\spr_levelmarker</sprite>
+    <sprite>sprites\spr_levelmarkerbeat</sprite>
+    <sprite>sprites\spr_bossmarker</sprite>
+    <sprite>sprites\spr_bossmarkerbeat</sprite>
+    <sprite>sprites\spr_maptillemarker</sprite>
+    <sprite>sprites\spr_maptilemarkerinactive</sprite>
+    <sprite>sprites\spr_ghostspawn</sprite>
     <sprite>sprites\spr_shadow</sprite>
     <sprite>sprites\spr_powerdot</sprite>
     <sprites name="Ghosts">
@@ -120,6 +126,9 @@
     <sprite>sprites\spr_wall</sprite>
   </sprites>
   <backgrounds name="background">
+    <background>background\ts_worldmap</background>
+    <background>background\bg_world3</background>
+    <background>background\bg_world2</background>
     <background>background\bg_level2</background>
   </backgrounds>
   <paths name="paths"/>
@@ -135,6 +144,7 @@
       <script>scripts\jump_to_inst.gml</script>
       <script>scripts\pos_wave.gml</script>
       <script>scripts\random_chance.gml</script>
+      <script>scripts\sprite_replace_color.gml</script>
     </scripts>
   </scripts>
   <objects name="objects">
@@ -142,6 +152,7 @@
     <object>objects\obj_scoreindicator</object>
     <object>objects\obj_ghostspawn</object>
     <object>objects\obj_pacmanspawn</object>
+    <object>objects\obj_pacmapspawn</object>
     <object>objects\obj_dashpanel</object>
     <object>objects\obj_dot</object>
     <object>objects\obj_powerdot</object>
@@ -153,11 +164,12 @@
     <object>objects\obj_funky</object>
     <object>objects\obj_fruit</object>
     <object>objects\obj_pacman</object>
+    <object>objects\obj_pacmap</object>
     <object>objects\obj_wall</object>
   </objects>
   <rooms name="rooms">
-    <room>rooms\lvl_room2</room>
     <room>rooms\lvl_room3</room>
+    <room>rooms\lvl_room2</room>
   </rooms>
   <help>
     <rtf>help.rtf</rtf>
