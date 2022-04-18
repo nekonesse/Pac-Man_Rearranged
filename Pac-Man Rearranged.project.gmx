@@ -139,12 +139,13 @@
     </scripts>
     <scripts name="Functions">
       <script>scripts\approach_val.gml</script>
+      <script>scripts\collision_line_first.gml</script>
       <script>scripts\draw_sprite_ext_skew.gml</script>
       <script>scripts\inst_wrap.gml</script>
       <script>scripts\jump_to_inst.gml</script>
       <script>scripts\pos_wave.gml</script>
       <script>scripts\random_chance.gml</script>
-      <script>scripts\sprite_replace_color.gml</script>
+      <script>scripts\range_finder.gml</script>
     </scripts>
   </scripts>
   <objects name="objects">
@@ -153,6 +154,7 @@
     <object>objects\obj_ghostspawn</object>
     <object>objects\obj_pacmanspawn</object>
     <object>objects\obj_pacmapspawn</object>
+    <object>objects\obj_levelmarker</object>
     <object>objects\obj_dashpanel</object>
     <object>objects\obj_dot</object>
     <object>objects\obj_powerdot</object>
@@ -168,6 +170,7 @@
     <object>objects\obj_wall</object>
   </objects>
   <rooms name="rooms">
+    <room>rooms\rm_worldmap</room>
     <room>rooms\lvl_room3</room>
     <room>rooms\lvl_room2</room>
   </rooms>

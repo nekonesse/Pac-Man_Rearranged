@@ -1,6 +1,6 @@
-/// @description JumpInDirection(distance, direction)
-/// @param distance
-/// @param direction
+/// jump_to_inst(distance, direction)
+/// @arg distance
+/// @arg direction
  
 // Teleports parent object to a spot based on given direction and distance
  

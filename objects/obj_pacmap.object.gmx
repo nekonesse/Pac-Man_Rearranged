@@ -25,37 +25,14 @@
         <arguments>
           <argument>
             <kind>1</kind>
-            <string>//please dont mess with this its for the collision box
-boxx1 = 1
-boxy1 = 0.05
-boxx2 = 1
-boxy2 = 0.05
-//jumping stuff
-zspeed = 0;
-jumpspeed = -8;
-grav = 0.4;
-z = 0;
-zfloor = 0;
-//timer stuff i dont remember you can just look in the code
-timer1def = 120
-timer1 = timer1def
-timer1bool = false
-timerwait = 60;
-timerrespawn = 60;
-respawnstate = true;
-deadaf = false;
-//player default speed
-pm_defaultsp = 2;
-//player current speed
-pm_speed = pm_defaultsp;
-
-enum pacmapstates
+            <string>enum pacmapstates
 {
-normal,
-spawn
+normal
 }
 
-state = pacmapstates.spawn
+image_speed = 0.1;
+
+state = pacmapstates.normal
 </string>
           </argument>
         </arguments>
@@ -80,347 +57,32 @@ state = pacmapstates.spawn
             <kind>1</kind>
             <string>if state == pacmapstates.normal
 {
-var jump = keyboard_check_pressed(vk_space)
-
-pm_speed = pm_defaultsp;
-clamp(timer1, 0, timer1def)
-clamp(z,0,9999)
-clamp(zspeed,0,9999)
-
-timerwait = 60;
-timerrespawn = 60;
-respawnstate = false;
-deadaf = false;
-
-timer1 -= 1;
-
-if timer1 = 0
-{
-pm_defaultsp = 2
-timer1 = timer1def
-}
-
-if pm_speed != 0
-{
-image_speed = pm_speed / 8
-}
-else
-{
-image_speed = 1
-}
-
-move_wrap(true,true,8)
-
 depth = -y;
 
-//jumping
-if (jump &amp;&amp; zspeed == 0)
+if keyboard_check_pressed(vk_right)
 {
-    zspeed = jumpspeed;
-}
-
-if (z != zfloor)
-{
-zspeed += grav
-}
-
-if (z + zspeed &gt; zfloor)
-{
-zspeed = 0;
-z = zfloor
-}
-
-z += zspeed;
-
-var ins = collision_rectangle(x-boxx1,y-boxy1-1,x+boxx2,y+boxy2-1, obj_powerdot, false, false);
-if ins != noone &amp;&amp; z &gt; -4
-{
-    audio_play_sound(snd_powerdot,100, false)
-    global.points += 50
-    global.lifepoints += 50
-    var insscore = instance_create(x,y,obj_scoreindicator)
-    if insscore != noone
-    {
-        with(insscore)
-        {
-            drawscore = 50
-        }
-    }  
-    if global.scared == false
-    {
-        audio_play_sound(snd_scaredstart,99,false)
-    }
-    obj_music.timerscared = 600
-    global.scared = true
-    with(ins)
-    {
-        instance_destroy()
-    }
-exit
-}
-
-var insp = collision_rectangle(x-boxx1,y-boxy1,x+boxx2,y+boxy2, obj_dot, false, false);
-if insp != noone &amp;&amp; z &gt; -4
-{
-    audio_play_sound(choose(snd_wakka1,snd_wakka2,snd_wakka3,snd_wakka4),100, false)
-    var insscore = instance_create(x,y,obj_scoreindicator)
-    if insscore != noone
-    {
-        with(insscore)
-        {
-            drawscore = 10
-        }
-    }    
-    global.points += 10
-    global.lifepoints += 10
-    with(insp)
-    {
-    instance_destroy()
-    }
-exit
-}
-
-var insfruit = collision_rectangle(x-boxx1,y-boxy1,x+boxx2,y+boxy2, obj_fruit, false, false);
-if insfruit != noone &amp;&amp; z &gt; -4 &amp;&amp; insfruit.sprite_index != spr_empty
-{
-    audio_play_sound(snd_fruiteaten,100, false)
-    var insscore = instance_create(obj_fruit.x,obj_fruit.y,obj_scoreindicator)
-    global.points += global.fruitscore
-    if insscore != noone
-    {
-        with(insscore)
-        {
-            drawscore = global.fruitscore
-        }
-    }
-    global.lifepoints += global.fruitscore
-    with(insfruit)
-    {
-    instance_destroy()
-    }
-exit
-}
-
-var ins2 = collision_rectangle(x-boxx1,y-boxy1,x+boxx2,y+boxy2, obj_dashpanel, false, false);
-if ins2 != noone &amp;&amp; z = 0
-{
-if !audio_is_playing(snd_dashpanel)
-{
-audio_play_sound(snd_dashpanel, 50,false)
-}
-pm_defaultsp = 4
-timer1 = timer1def
-}
-
-var insblink = collision_rectangle(x-boxx1,y-boxy1,x+boxx2,y+boxy2, obj_blinky, false, false);
-if insblink != noone &amp;&amp; z &gt; -16
-{
-if insblink.state == blinkystates.scared
-{
-audio_play_sound(snd_ghosteat,101,false)
-global.points += 200
-global.lifepoints += 200
-var insscore = instance_create(x,y,obj_scoreindicator)
-    if insscore != noone
-    {
-        with(insscore)
-        {
-            drawscore = 200
-        }
-    }  
-with(insblink)
-{
-state = blinkystates.eaten
-}
-}
-else if insblink.state == blinkystates.normal
-{
-player_die();
-exit;
-}
-}
-
-var inspinky = collision_rectangle(x-boxx1,y-boxy1,x+boxx2,y+boxy2, obj_pinky, false, false);
-if inspinky != noone &amp;&amp; z &gt; -16
-{
-if inspinky.state == pinkystates.scared
-{
-audio_play_sound(snd_ghosteat,101,false)
-global.points += 200
-global.lifepoints += 200
-var insscore = instance_create(x,y,obj_scoreindicator)
-    if insscore != noone
-    {
-        with(insscore)
-        {
-            drawscore = 200
-        }
-    }  
-with(inspinky)
-{
-state = pinkystates.eaten
-}
-}
-else if inspinky.state == pinkystates.normal
-{
-player_die();
-exit;
-}
-}
-
-var insclyde = collision_rectangle(x-boxx1,y-boxy1,x+boxx2,y+boxy2, obj_clyde, false, false);
-if insclyde != noone &amp;&amp; z &gt; -16
-if insclyde.state == clydestates.scared
-{
-audio_play_sound(snd_ghosteat,101,false)
-global.points += 200
-global.lifepoints += 200
-var insscore = instance_create(x,y,obj_scoreindicator)
-    if insscore != noone
-    {
-        with(insscore)
-        {
-            drawscore = 200
-        }
-    }  
-with(insclyde)
-{
-state = clydestates.eaten
-}
-}
-else if insclyde.state == clydestates.normal
-{
-player_die();
-exit;
-}
-
-var insinky = collision_rectangle(x-boxx1,y-boxy1,x+boxx2,y+boxy2, obj_inky, false, false);
-if insinky != noone &amp;&amp; z &gt; -16
-if insinky.state == inkystates.scared
-{
-audio_play_sound(snd_ghosteat,101,false)
-global.points += 200
-global.lifepoints += 200
-var insscore = instance_create(x,y,obj_scoreindicator)
-    if insscore != noone
-    {
-        with(insscore)
-        {
-            drawscore = 200
-        }
-    }  
-with(insinky)
-{
-state = inkystates.eaten
-}
-}
-else if insinky.state == inkystates.normal
-{
-player_die();
-exit;
-}
-
-var inssue = collision_rectangle(x-boxx1,y-boxy1,x+boxx2,y+boxy2, obj_sue, false, false);
-if inssue != noone &amp;&amp; z &gt; -16
-if inssue.state == suestates.scared
-{
-audio_play_sound(snd_ghosteat,101,false)
-global.points += 200
-global.lifepoints += 200
-var insscore = instance_create(x,y,obj_scoreindicator)
-    if insscore != noone
-    {
-        with(insscore)
-        {
-            drawscore = 200
-        }
-    }  
-with(inssue)
-{
-state = suestates.eaten
-}
-}
-else if inssue.state == suestates.normal
-{
-player_die();
-exit;
-}
-
-var insfunky = collision_rectangle(x-boxx1,y-boxy1,x+boxx2,y+boxy2, obj_funky, false, false);
-if insfunky != noone &amp;&amp; z &gt; insfunky.z-16
-if insfunky.state == funkystates.scared
-{
-audio_play_sound(snd_ghosteat,101,false)
-global.points += 200
-global.lifepoints += 200
-var insscore = instance_create(x,y,obj_scoreindicator)
-    if insscore != noone
-    {
-        with(insscore)
-        {
-            drawscore = 200
-        }
-    }  
-with(insfunky)
-{
-state = funkystates.eaten
-}
-}
-else if insfunky.state == funkystates.normal
-{
-player_die();
-exit;
-}
-
-if keyboard_check(vk_left) == true
-{
-if place_meeting(x-4,y, obj_wall) == false
-{
-direction = 180;
-sprite_index = spr_pacmanleft
-}
-}
-
-if keyboard_check(vk_right) == true
-{
-if place_meeting(x+4,y, obj_wall) == false
-{
-direction = 0;
 sprite_index = spr_pacmanright
-}
+x += 32;
 }
 
-if keyboard_check(vk_up) == true
+if keyboard_check_pressed(vk_left)
 {
-if place_meeting(x,y-4, obj_wall) == false
+sprite_index = spr_pacmanleft
+x -= 32;
+}
+
+if keyboard_check_pressed(vk_up)
 {
-direction = 90;
 sprite_index = spr_pacmanup
-}
+y -= 32;
 }
 
-if keyboard_check(vk_down) == true
+if keyboard_check_pressed(vk_down)
 {
-if place_meeting(x,y+4, obj_wall) == false
-{
-direction = 270;
 sprite_index = spr_pacmandown
-}
+y += 32;
 }
 
-move_contact_solid(direction,pm_speed)
-
-
-}
-else if state == pacmapstates.spawn
-{
-image_speed = 0;
-timerrespawn -= 1
-
-if timerrespawn &lt; 1
-{
-state = pacmapstates.normal
-}
 }
 </string>
           </argument>
@@ -444,7 +106,7 @@ state = pacmapstates.normal
         <arguments>
           <argument>
             <kind>1</kind>
-            <string>draw_sprite(sprite_index,image_index,x,y+z)
+            <string>draw_sprite(sprite_index,image_index,x,y)
 
 /// DEBUG FOR HITBOX
 //draw_rectangle(x-boxx1,y-boxy1,x+boxx2,y+boxy2,true)
