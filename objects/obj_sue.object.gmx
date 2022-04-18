@@ -237,7 +237,7 @@ move_contact_solid(direction,ghost_speed)
 }
 else if state == suestates.eaten
 {
-ghost_speed = 4
+ghost_speed = global.ghost_speed
 new_direction = -1;
 distance_to_pacman = 9999999;
 

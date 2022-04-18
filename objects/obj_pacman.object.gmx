@@ -44,6 +44,8 @@ timer1bool = false
 pm_defaultsp = 2;
 //player current speed
 pm_speed = pm_defaultsp;
+//bugfixing 
+immune = false;
 
 enum pacmanstates
 {
@@ -52,6 +54,9 @@ dead
 }
 
 state = pacmanstates.normal
+
+// fix
+global.ghost_speed = 1;
 </string>
           </argument>
         </arguments>
@@ -200,10 +205,11 @@ pm_defaultsp = 4
 timer1 = timer1def
 }
 
-var insblink = collision_rectangle(x-boxx1,y-boxy1,x+boxx2,y+boxy2, obj_blinky, false, false);
-if insblink != noone &amp;&amp; z &gt; -16
+// colisions
+var col_ghost = collision_rectangle(x-boxx1,y-boxy1,x+boxx2,y+boxy2, obj_ghost, false, false);
+if col_ghost != noone &amp;&amp; z &gt; -16
 {
-if insblink.state == blinkystates.scared
+if col_ghost.state == states.scared
 {
 audio_play_sound(snd_ghosteat,101,false)
 global.points += 200
@@ -215,17 +221,18 @@ var insscore = instance_create(x,y,obj_scoreindicator)
             drawscore = 200
         }
     }  
-with(insblink)
+with(col_ghost)
 {
-state = blinkystates.eaten
+state = states.eaten
 }
 }
-else if insblink.state == blinkystates.normal
+else if col_ghost.state == states.normal &amp;&amp; !immune
 {
 room_restart();
 }
 }
 
+/*
 var inspinky = collision_rectangle(x-boxx1,y-boxy1,x+boxx2,y+boxy2, obj_pinky, false, false);
 if inspinky != noone &amp;&amp; z &gt; -16
 {
@@ -246,7 +253,7 @@ with(inspinky)
 state = pinkystates.eaten
 }
 }
-else if inspinky.state == pinkystates.normal
+else if inspinky.state == pinkystates.normal &amp;&amp; !immune
 {
 room_restart();
 }
@@ -271,7 +278,7 @@ with(insclyde)
 state = clydestates.eaten
 }
 }
-else if insclyde.state == clydestates.normal
+else if insclyde.state == clydestates.normal &amp;&amp; !immune
 {
 room_restart();
 }
@@ -295,7 +302,7 @@ with(insinky)
 state = inkystates.eaten
 }
 }
-else if insinky.state == inkystates.normal
+else if insinky.state == inkystates.normal &amp;&amp; !immune
 {
 room_restart();
 }
@@ -319,7 +326,7 @@ with(inssue)
 state = suestates.eaten
 }
 }
-else if inssue.state == suestates.normal
+else if inssue.state == suestates.normal &amp;&amp; !immune
 {
 room_restart();
 }
@@ -343,11 +350,12 @@ with(insfunky)
 state = funkystates.eaten
 }
 }
-else if insfunky.state == funkystates.normal
+else if insfunky.state == funkystates.normal &amp;&amp; !immune
 {
 room_restart();
 }
-
+*/
+// keyboard checks
 if keyboard_check(vk_left) == true
 {
 if place_meeting(x-4,y, obj_wall) == false
@@ -389,6 +397,42 @@ else if state == pacmanstates.dead
 {
 image_speed = 1
 sprite_index = spr_pacmandie
+}
+</string>
+          </argument>
+        </arguments>
+      </action>
+      <action>
+        <libid>1</libid>
+        <id>603</id>
+        <kind>7</kind>
+        <userelative>0</userelative>
+        <isquestion>0</isquestion>
+        <useapplyto>-1</useapplyto>
+        <exetype>2</exetype>
+        <functionname></functionname>
+        <codestring></codestring>
+        <whoName>self</whoName>
+        <relative>0</relative>
+        <isnot>0</isnot>
+        <arguments>
+          <argument>
+            <kind>1</kind>
+            <string>/// bugfixing buttons
+if keyboard_check_pressed(ord('Z'))
+{
+    global.scared = true;
+}
+if keyboard_check_pressed(ord('X'))
+{
+    if immune
+    {
+        immune = false;
+    }
+    else
+    {
+        immune = true;
+    }
 }
 </string>
           </argument>
