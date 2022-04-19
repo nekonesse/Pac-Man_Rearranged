@@ -1177,4 +1177,3 @@ move_contact_solid(direction,ghost_speed)
 }
 ///////// other
 
-

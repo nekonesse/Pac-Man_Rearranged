@@ -170,7 +170,6 @@
     <object>objects\obj_dot</object>
     <object>objects\obj_powerdot</object>
     <object>objects\obj_fruit</object>
-    <object>objects\obj_pacman</object>
     <object>objects\obj_pacmap</object>
     <object>objects\obj_wall</object>
   </objects>
