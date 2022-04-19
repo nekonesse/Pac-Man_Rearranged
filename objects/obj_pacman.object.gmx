@@ -26,10 +26,10 @@
           <argument>
             <kind>1</kind>
             <string>//please dont mess with this its for the collision box
-boxx1 = 2
-boxy1 = 0.1
-boxx2 = 2
-boxy2 = 0.1
+boxx1 = 1
+boxy1 = 0.05
+boxx2 = 1
+boxy2 = 0.05
 //jumping stuff
 zspeed = 0;
 jumpspeed = -8;
@@ -40,6 +40,10 @@ zfloor = 0;
 timer1def = 120
 timer1 = timer1def
 timer1bool = false
+timerwait = 60;
+timerrespawn = 60;
+respawnstate = true;
+deadaf = false;
 //player default speed
 pm_defaultsp = 2;
 //player current speed
@@ -50,13 +54,15 @@ immune = false;
 enum pacmanstates
 {
 normal,
-dead
+dead,
+spawn
 }
 
 state = pacmanstates.normal
 
 // fix
 global.ghost_speed = 1;
+state = pacmanstates.spawn
 </string>
           </argument>
         </arguments>
@@ -87,6 +93,11 @@ pm_speed = pm_defaultsp;
 clamp(timer1, 0, timer1def)
 clamp(z,0,9999)
 clamp(zspeed,0,9999)
+
+timerwait = 60;
+timerrespawn = 60;
+respawnstate = false;
+deadaf = false;
 
 timer1 -= 1;
 
@@ -133,6 +144,7 @@ if ins != noone &amp;&amp; z &gt; -4
 {
     audio_play_sound(snd_powerdot,100, false)
     global.points += 50
+    global.lifepoints += 50
     var insscore = instance_create(x,y,obj_scoreindicator)
     if insscore != noone
     {
@@ -167,6 +179,7 @@ if insp != noone &amp;&amp; z &gt; -4
         }
     }    
     global.points += 10
+    global.lifepoints += 10
     with(insp)
     {
     instance_destroy()
@@ -187,6 +200,7 @@ if insfruit != noone &amp;&amp; z &gt; -4 &amp;&amp; insfruit.sprite_index != sp
             drawscore = global.fruitscore
         }
     }
+    global.lifepoints += global.fruitscore
     with(insfruit)
     {
     instance_destroy()
@@ -213,6 +227,7 @@ if col_ghost.state == states.scared
 {
 audio_play_sound(snd_ghosteat,101,false)
 global.points += 200
+global.lifepoints += 200
 var insscore = instance_create(x,y,obj_scoreindicator)
     if insscore != noone
     {
@@ -228,7 +243,8 @@ state = states.eaten
 }
 else if col_ghost.state == states.normal &amp;&amp; !immune
 {
-room_restart();
+player_die();
+exit;
 }
 }
 
@@ -240,6 +256,7 @@ if inspinky.state == pinkystates.scared
 {
 audio_play_sound(snd_ghosteat,101,false)
 global.points += 200
+global.lifepoints += 200
 var insscore = instance_create(x,y,obj_scoreindicator)
     if insscore != noone
     {
@@ -255,7 +272,8 @@ state = pinkystates.eaten
 }
 else if inspinky.state == pinkystates.normal &amp;&amp; !immune
 {
-room_restart();
+player_die();
+exit;
 }
 }
 
@@ -265,6 +283,7 @@ if insclyde.state == clydestates.scared
 {
 audio_play_sound(snd_ghosteat,101,false)
 global.points += 200
+global.lifepoints += 200
 var insscore = instance_create(x,y,obj_scoreindicator)
     if insscore != noone
     {
@@ -280,7 +299,8 @@ state = clydestates.eaten
 }
 else if insclyde.state == clydestates.normal &amp;&amp; !immune
 {
-room_restart();
+player_die();
+exit;
 }
 
 var insinky = collision_rectangle(x-boxx1,y-boxy1,x+boxx2,y+boxy2, obj_inky, false, false);
@@ -289,6 +309,7 @@ if insinky.state == inkystates.scared
 {
 audio_play_sound(snd_ghosteat,101,false)
 global.points += 200
+global.lifepoints += 200
 var insscore = instance_create(x,y,obj_scoreindicator)
     if insscore != noone
     {
@@ -304,7 +325,8 @@ state = inkystates.eaten
 }
 else if insinky.state == inkystates.normal &amp;&amp; !immune
 {
-room_restart();
+player_die();
+exit;
 }
 
 var inssue = collision_rectangle(x-boxx1,y-boxy1,x+boxx2,y+boxy2, obj_sue, false, false);
@@ -313,6 +335,7 @@ if inssue.state == suestates.scared
 {
 audio_play_sound(snd_ghosteat,101,false)
 global.points += 200
+global.lifepoints += 200
 var insscore = instance_create(x,y,obj_scoreindicator)
     if insscore != noone
     {
@@ -328,7 +351,8 @@ state = suestates.eaten
 }
 else if inssue.state == suestates.normal &amp;&amp; !immune
 {
-room_restart();
+player_die();
+exit;
 }
 
 var insfunky = collision_rectangle(x-boxx1,y-boxy1,x+boxx2,y+boxy2, obj_funky, false, false);
@@ -337,6 +361,7 @@ if insfunky.state == funkystates.scared
 {
 audio_play_sound(snd_ghosteat,101,false)
 global.points += 200
+global.lifepoints += 200
 var insscore = instance_create(x,y,obj_scoreindicator)
     if insscore != noone
     {
@@ -352,7 +377,8 @@ state = funkystates.eaten
 }
 else if insfunky.state == funkystates.normal &amp;&amp; !immune
 {
-room_restart();
+player_die();
+exit;
 }
 */
 // keyboard checks
@@ -391,12 +417,52 @@ direction = 270;
 sprite_index = spr_pacmandown
 }
 }
+
 move_contact_solid(direction,pm_speed)
+
+
 }
 else if state == pacmanstates.dead
 {
-image_speed = 1
-sprite_index = spr_pacmandie
+image_speed = 0.1
+
+if round(image_index) &gt; 5 &amp;&amp; sprite_index == spr_pacmandie
+{
+deadaf = true;
+sprite_index = spr_empty
+}
+
+if deadaf == true
+{
+    image_speed = 0;
+    timerwait -= 1
+
+    if timerwait &lt; 1
+    {
+        respawnstate = true;
+        player_respawn();
+
+        if respawnstate == true
+        {
+            timerrespawn -= 1
+
+            if timerrespawn &lt; 1
+            {
+                state = pacmanstates.normal
+            }
+        }
+    }
+}
+}
+else if state == pacmanstates.spawn
+{
+image_speed = 0;
+timerrespawn -= 1
+
+if timerrespawn &lt; 1
+{
+state = pacmanstates.normal
+}
 }
 </string>
           </argument>
@@ -457,7 +523,15 @@ if keyboard_check_pressed(ord('X'))
           <argument>
             <kind>1</kind>
             <string>draw_sprite(sprite_index,image_index,x,y+z)
-// debug pt 1 draw_rectangle(x-boxx1,y-boxy1,x+boxx2,y+boxy2,true)
+
+/// DEBUG FOR HITBOX
+//draw_rectangle(x-boxx1,y-boxy1,x+boxx2,y+boxy2,true)
+
+/// DEBUG FOR DEATH
+//draw_text(x,y-64,state)
+//draw_text(x,y-48,deadaf)
+//draw_text(x,y-32,sprite_index)
+//draw_text(x,y-16,image_index)
 </string>
           </argument>
         </arguments>

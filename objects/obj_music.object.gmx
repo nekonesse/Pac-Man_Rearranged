@@ -37,9 +37,16 @@ global.font3small = font_add_sprite_ext(spr_font3small, font3small_string, false
 global.font4small = font_add_sprite_ext(spr_font4small, font4small_string, false, 1)
 
 global.points = 0
+global.lifepoints = 0
+global.lifes = 3;
 
 global.scared = false
-musicplay = mus_world0
+
+switch room
+{
+case lvl_room2: musicplay = mus_world0 break;
+case lvl_room3: musicplay = mus_world1 break;
+}
 
 timerscared = 300
 
@@ -77,7 +84,7 @@ audio_master_gain(0)
         <arguments>
           <argument>
             <kind>1</kind>
-            <string>clamp(timerscared,0,300)
+            <string> clamp(timerscared,0,300)
 
 if !audio_is_playing(musicplay) &amp;&amp; global.scared == false
 {
@@ -90,21 +97,30 @@ if !audio_is_playing(snd_ghostambientscared)
 {
 audio_play_sound(snd_ghostambientscared, 1000, false)
 }
+timerscared -= 1
 }
 else
 {
+timerscared = 300
 audio_stop_sound(snd_ghostambientscared)
 }
 
 if timerscared = 0
 {
 global.scared = false
-timerscared = 600
+timerscared = 300
 }
 
-if global.scared = true
+if global.lifepoints &gt; 999 &amp;&amp; global.lifes &lt; 9
 {
-timerscared -= 1
+global.lifes += 1
+audio_play_sound(snd_lifegained, 1000, false)
+global.lifepoints -= 1000
+}
+
+if global.lifes &lt; 0
+{
+room_restart();
 }
 </string>
           </argument>
@@ -165,6 +181,20 @@ draw_set_color(c_yellow)
 draw_text(display_get_gui_width()-400,0,"1up")
 draw_set_color(c_white)
 draw_text(display_get_gui_width()-400,display_get_gui_height()-304,global.points)
+
+switch global.lifes
+{
+case 1: draw_sprite(spr_lives,0,0,display_get_gui_height()-32) break;
+case 2: draw_sprite(spr_lives,1,0,display_get_gui_height()-32) draw_sprite(spr_lives,4,32,display_get_gui_height()-32) break;
+case 3: draw_sprite(spr_lives,1,0,display_get_gui_height()-32) draw_sprite(spr_lives,3,32,display_get_gui_height()-32) break;
+case 4: draw_sprite(spr_lives,1,0,display_get_gui_height()-32) draw_sprite(spr_lives,2,32,display_get_gui_height()-32) draw_sprite(spr_lives,4,64,display_get_gui_height()-32) break;
+case 5: draw_sprite(spr_lives,1,0,display_get_gui_height()-32) draw_sprite(spr_lives,2,32,display_get_gui_height()-32) draw_sprite(spr_lives,3,64,display_get_gui_height()-32) break;
+case 6: draw_sprite(spr_lives,1,0,display_get_gui_height()-32) draw_sprite(spr_lives,2,32,display_get_gui_height()-32) draw_sprite(spr_lives,2,64,display_get_gui_height()-32) draw_sprite(spr_lives,4,96,display_get_gui_height()-32) break;
+case 7: draw_sprite(spr_lives,1,0,display_get_gui_height()-32) draw_sprite(spr_lives,2,32,display_get_gui_height()-32) draw_sprite(spr_lives,2,64,display_get_gui_height()-32) draw_sprite(spr_lives,3,96,display_get_gui_height()-32) break;
+case 8: draw_sprite(spr_lives,1,0,display_get_gui_height()-32) draw_sprite(spr_lives,2,32,display_get_gui_height()-32) draw_sprite(spr_lives,2,64,display_get_gui_height()-32) draw_sprite(spr_lives,2,96,display_get_gui_height()-32) draw_sprite(spr_lives,4,128,display_get_gui_height()-32) break;
+case 9: draw_sprite(spr_lives,1,0,display_get_gui_height()-32) draw_sprite(spr_lives,2,32,display_get_gui_height()-32) draw_sprite(spr_lives,2,64,display_get_gui_height()-32) draw_sprite(spr_lives,2,96,display_get_gui_height()-32) draw_sprite(spr_lives,3,128,display_get_gui_height()-32) break;
+}
+
 </string>
           </argument>
         </arguments>
@@ -188,7 +218,10 @@ draw_text(display_get_gui_width()-400,display_get_gui_height()-304,global.points
           <argument>
             <kind>1</kind>
             <string>// DEBUG FOR TIMER VALUES PT 1 
+if instance_exists(obj_funky)
+{
 draw_sprite(spr_shadow,0,obj_funky.x,obj_funky.y,)
+}
 draw_sprite(spr_shadow,0,obj_pacman.x,obj_pacman.y,)
 </string>
           </argument>

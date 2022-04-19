@@ -48,7 +48,12 @@
         <arguments>
           <argument>
             <kind>1</kind>
-            <string>if cut = true
+            <string>if place_meeting(x,y+12,obj_wall)
+{
+cut = true;
+}
+
+if cut = true
 {
 sprite_index = spr_dashpanelcut
 }
