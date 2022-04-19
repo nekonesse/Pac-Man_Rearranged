@@ -133,6 +133,7 @@
   </backgrounds>
   <paths name="paths"/>
   <scripts name="scripts">
+    <script>scripts\sc_all_old_ghost_codes.gml</script>
     <scripts name="Chomp Engine">
       <script>scripts\player_die.gml</script>
       <script>scripts\player_respawn.gml</script>
@@ -149,6 +150,16 @@
     </scripts>
   </scripts>
   <objects name="objects">
+    <object>objects\obj_pacman</object>
+    <object>objects\obj_ghost</object>
+    <objects name="ghosts">
+      <object>objects\obj_blinky</object>
+      <object>objects\obj_pinky</object>
+      <object>objects\obj_clyde</object>
+      <object>objects\obj_inky</object>
+      <object>objects\obj_sue</object>
+      <object>objects\obj_funky</object>
+    </objects>
     <object>objects\obj_music</object>
     <object>objects\obj_scoreindicator</object>
     <object>objects\obj_ghostspawn</object>
@@ -158,14 +169,7 @@
     <object>objects\obj_dashpanel</object>
     <object>objects\obj_dot</object>
     <object>objects\obj_powerdot</object>
-    <object>objects\obj_blinky</object>
-    <object>objects\obj_pinky</object>
-    <object>objects\obj_inky</object>
-    <object>objects\obj_clyde</object>
-    <object>objects\obj_sue</object>
-    <object>objects\obj_funky</object>
     <object>objects\obj_fruit</object>
-    <object>objects\obj_pacman</object>
     <object>objects\obj_pacmap</object>
     <object>objects\obj_wall</object>
   </objects>
