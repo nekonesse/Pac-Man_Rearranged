@@ -23,11 +23,16 @@
   </sounds>
   <sprites name="sprites">
     <sprite>sprites\spr_empty</sprite>
+    <sprite>sprites\spr_font5small</sprite>
     <sprite>sprites\spr_font4small</sprite>
     <sprite>sprites\spr_font3small</sprite>
     <sprite>sprites\spr_font2big</sprite>
     <sprite>sprites\spr_font1small</sprite>
     <sprite>sprites\spr_font1big</sprite>
+    <sprite>sprites\spr_ghosticons</sprite>
+    <sprite>sprites\spr_ghostindicatoricon</sprite>
+    <sprite>sprites\spr_ghostindicatorslot</sprite>
+    <sprite>sprites\spr_levelselectmenu</sprite>
     <sprite>sprites\spr_lives</sprite>
     <sprite>sprites\spr_mapspawnmarker</sprite>
     <sprite>sprites\spr_levelmarker</sprite>
